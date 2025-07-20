@@ -1,0 +1,2544 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.composingprograms.com/pages/22-data-abstraction.html
+Subject: 2.2 Data Abstraction
+Date: Thu, 8 May 2025 15:29:02 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----"
+
+
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/html
+Content-ID: <frame-7BB6BD1A5A54A6B79618CCDC48D96527@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/pages/22-data-abstraction.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-4b4a9154-116e-4ec3-b2eb-8eaa647cb52a@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-173c9111-53c8-413a=
+-bfd3-d7331eccaa3d@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
+" href=3D"cid:css-8aa115a6-d5e2-442e-bd32-bf3a2148dd01@mhtml.blink" /><link=
+ rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-5a73bf90-5371-4153-a2=
+ed-3a803d0b3a0a@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" h=
+ref=3D"cid:css-96971e45-0665-4da8-a144-0852a0d599fe@mhtml.blink" /><link re=
+l=3D"stylesheet" type=3D"text/css" href=3D"cid:css-95cf89bd-1e0f-48c6-a35c-=
+413b3d8865ab@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-f9048713-a859-4f0a-92bb-7dab95175162@mhtml.blink" />
+  <title>2.2 Data Abstraction</title>
+ =20
+
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/css/cp.css">
+
+  <!-- Stylesheets -->
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/tutor/css/pytutor.css">
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/tutor/css/ui-lightness/jquery-ui-1.8.21.custom.css">
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/tutor/css/codemirror.css">
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/coding-js/coding.css">
+
+  <!-- jQuery -->
+ =20
+ =20
+ =20
+ =20
+
+  <!-- codemirror.net online code editor -->
+ =20
+ =20
+
+  <!-- d3 -->
+ =20
+
+  <!-- Online Python Tutor -->
+ =20
+
+  <!-- Coding.js -->
+ =20
+ =20
+
+  <!-- Composing Programs -->
+ =20
+
+ =20
+   =20
+
+</head>
+
+<body id=3D"index" class=3D"home"><div id=3D"MathJax_Message" style=3D"disp=
+lay: none;"></div>
+  <div class=3D"container">
+
+    <div class=3D"nav-main">
+      <div class=3D"wrap">
+        <a class=3D"nav-home" href=3D"https://www.composingprograms.com/">
+          <span class=3D"nav-logo">c<span class=3D"nav-logo-compose">=E2=9A=
+=AC</span>mp<span class=3D"nav-logo-compose">=E2=9A=AC</span>sing pr<span c=
+lass=3D"nav-logo-compose">=E2=9A=AC</span>grams</span>
+        </a>
+        <ul class=3D"nav-site">
+          <li><a href=3D"https://www.composingprograms.com/">Text</a></li>
+          <li><a href=3D"https://www.composingprograms.com/projects.html">P=
+rojects</a></li>
+          <li><a href=3D"https://www.composingprograms.com/tutor.html">Tuto=
+r</a></li>
+          <li><a href=3D"https://www.composingprograms.com/about.html">Abou=
+t</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class=3D"content wrap documentationContent">
+      <div class=3D"nav-docs">
+	<h3>Chapter 2<a id=3D"hide_contents">Hide contents</a> </h3>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/21-introduction.h=
+tml">2.1 Introduction</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/21-introduction.=
+html#native-data-types">2.1.1 Native Data Types</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/22-data-abstracti=
+on.html">2.2 Data Abstraction</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/22-data-abstract=
+ion.html#example-rational-numbers">2.2.1 Example: Rational Numbers</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/22-data-abs=
+traction.html#pairs">2.2.2 Pairs</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/22-data-abs=
+traction.html#abstraction-barriers">2.2.3 Abstraction Barriers</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/22-data-abs=
+traction.html#the-properties-of-data">2.2.4 The Properties of Data</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/23-sequences.html=
+">2.3 Sequences</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/23-sequences.htm=
+l#lists">2.3.1 Lists</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/23-sequence=
+s.html#sequence-iteration">2.3.2 Sequence Iteration</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/23-sequence=
+s.html#sequence-processing">2.3.3 Sequence Processing</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/23-sequence=
+s.html#sequence-abstraction">2.3.4 Sequence Abstraction</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/23-sequence=
+s.html#strings">2.3.5 Strings</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/23-sequence=
+s.html#trees">2.3.6 Trees</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/23-sequence=
+s.html#linked-lists">2.3.7 Linked Lists</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/24-mutable-data.h=
+tml">2.4 Mutable Data</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/24-mutable-data.=
+html#the-object-metaphor">2.4.1 The Object Metaphor</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#sequence-objects">2.4.2 Sequence Objects</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#dictionaries">2.4.3 Dictionaries</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#local-state">2.4.4 Local State</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#the-benefits-of-non-local-assignment">2.4.5 The Benefits of Non-L=
+ocal Assignment</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#the-cost-of-non-local-assignment">2.4.6 The Cost of Non-Local Ass=
+ignment</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#implementing-lists-and-dictionaries">2.4.7 Implementing Lists and=
+ Dictionaries</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#dispatch-dictionaries">2.4.8 Dispatch Dictionaries</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/24-mutable-=
+data.html#propagating-constraints">2.4.9 Propagating Constraints</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/25-object-oriente=
+d-programming.html">2.5 Object-Oriented Programming</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/25-object-orient=
+ed-programming.html#objects-and-classes">2.5.1 Objects and Classes</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#defining-classes">2.5.2 Defining Classes</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#message-passing-and-dot-expressions">2.5.3 Message=
+ Passing and Dot Expressions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#class-attributes">2.5.4 Class Attributes</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#inheritance">2.5.5 Inheritance</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#using-inheritance">2.5.6 Using Inheritance</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#multiple-inheritance">2.5.7 Multiple Inheritance</=
+a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/25-object-o=
+riented-programming.html#the-role-of-objects">2.5.8 The Role of Objects</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/26-implementing-c=
+lasses-and-objects.html">2.6 Implementing Classes and Objects</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/26-implementing-=
+classes-and-objects.html#instances">2.6.1 Instances</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/26-implemen=
+ting-classes-and-objects.html#classes">2.6.2 Classes</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/26-implemen=
+ting-classes-and-objects.html#using-implemented-objects">2.6.3 Using Implem=
+ented Objects</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/27-object-abstrac=
+tion.html">2.7 Object Abstraction</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/27-object-abstra=
+ction.html#string-conversion">2.7.1 String Conversion</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/27-object-a=
+bstraction.html#special-methods">2.7.2 Special Methods</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/27-object-a=
+bstraction.html#multiple-representations">2.7.3 Multiple Representations</a=
+>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/27-object-a=
+bstraction.html#generic-functions">2.7.4 Generic Functions</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/28-efficiency.htm=
+l">2.8 Efficiency</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/28-efficiency.ht=
+ml#measuring-efficiency">2.8.1 Measuring Efficiency</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/28-efficien=
+cy.html#memoization">2.8.2 Memoization</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/28-efficien=
+cy.html#orders-of-growth">2.8.3 Orders of Growth</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/28-efficien=
+cy.html#example-exponentiation">2.8.4 Example: Exponentiation</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/28-efficien=
+cy.html#growth-categories">2.8.5 Growth Categories</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/29-recursive-obje=
+cts.html">2.9 Recursive Objects</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/29-recursive-obj=
+ects.html#linked-list-class">2.9.1 Linked List Class</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/29-recursiv=
+e-objects.html#tree-class">2.9.2 Tree Class</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/29-recursiv=
+e-objects.html#sets">2.9.3 Sets</a>
+		</li></div>
+      </div>
+
+      <div class=3D"inner-content">
+  <div class=3D"section" id=3D"data-abstraction">
+<h2>2.2&nbsp;&nbsp;&nbsp;Data Abstraction</h2>
+<p>As we consider the wide set of things in the world that we would like to
+represent in our programs, we find that most of them have compound structur=
+e.
+For example, a geographic position has latitude and longitude coordinates. =
+ To
+represent positions, we would like our programming language to have the
+capacity to couple together a latitude and longitude to form a pair, a
+<em>compound data</em> value that our programs can manipulate as a single c=
+onceptual
+unit, but which also has two parts that can be considered individually.</p>
+<p>The use of compound data enables us to increase the modularity of our pr=
+ograms.
+If we can manipulate geographic positions as whole values, then we can shie=
+ld
+parts of our program that compute using positions from the details of how t=
+hose
+positions are represented. The general technique of isolating the parts of =
+a
+program that deal with how data are represented from the parts that deal wi=
+th
+how data are manipulated is a powerful design methodology called <em>data
+abstraction</em>. Data abstraction makes programs much easier to design, ma=
+intain,
+and modify.</p>
+<p>Data abstraction is similar in character to functional abstraction.  Whe=
+n we
+create a functional abstraction, the details of how a function is implement=
+ed
+can be suppressed, and the particular function itself can be replaced by an=
+y
+other function with the same overall behavior.  In other words, we can make=
+ an
+abstraction that separates the way the function is used from the details of=
+ how
+the function is implemented.  Analogously, data abstraction isolates how a
+compound data value is used from the details of how it is constructed.</p>
+<p>The basic idea of data abstraction is to structure programs so that they
+operate on abstract data. That is, our programs should use data in such a w=
+ay
+as to make as few assumptions about the data as possible. At the same time,=
+ a
+concrete data representation is defined as an independent part of the progr=
+am.</p>
+<p>These two parts of a program, the part that operates on abstract data an=
+d the
+part that defines a concrete representation, are connected by a small set o=
+f
+functions that implement abstract data in terms of the concrete representat=
+ion.
+To illustrate this technique, we will consider how to design a set of funct=
+ions
+for manipulating rational numbers.</p>
+<div class=3D"section" id=3D"example-rational-numbers">
+<h3>2.2.1&nbsp;&nbsp;&nbsp;Example: Rational Numbers</h3>
+<p>A rational number is a ratio of integers, and rational numbers constitut=
+e an
+important sub-class of real numbers.  A rational number such as <tt class=
+=3D"docutils literal">1/3</tt> or
+<tt class=3D"docutils literal">17/29</tt> is typically written as:</p>
+<pre class=3D"literal-block">&lt;numerator&gt;/&lt;denominator&gt;
+</pre>
+<p>where both the <tt class=3D"docutils literal">&lt;numerator&gt;</tt> and=
+ <tt class=3D"docutils literal">&lt;denominator&gt;</tt> are placeholders f=
+or
+integer values.  Both parts are needed to exactly characterize the value of=
+ the
+rational number. Actually dividing integers produces a <tt class=3D"docutil=
+s literal">float</tt> approximation,
+losing the exact precision of integers.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"mi">1</span><span class=3D"o">/</span><span class=3D"=
+mi">3</span>
+<span class=3D"go">0.3333333333333333</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"mi">1</span><span cla=
+ss=3D"o">/</span><span class=3D"mi">3</span> <span class=3D"o">=3D=3D</span=
+> <span class=3D"mf">0.333333333333333300000</span>  <span class=3D"c1"># D=
+ividing integers yields an approximation</span>
+<span class=3D"go">True</span>
+</pre></div>
+
+<p>However, we can create an exact representation for rational numbers by
+combining together the numerator and denominator.</p>
+<p>We know from using functional abstractions that we can start programming
+productively before we have an implementation of some parts of our program.
+Let us begin by assuming that we already have a way of constructing a ratio=
+nal
+number from a numerator and a denominator. We also assume that, given a
+rational number, we have a way of selecting its numerator and its denominat=
+or
+component. Let us further assume that the constructor and selectors are
+available as the following three functions:</p>
+<ul class=3D"simple">
+<li><tt class=3D"docutils literal">rational(n, d)</tt> returns the rational=
+ number with numerator <tt class=3D"docutils literal">n</tt> and
+denominator <tt class=3D"docutils literal">d</tt>.</li>
+<li><tt class=3D"docutils literal">numer(x)</tt> returns the numerator of t=
+he rational number <tt class=3D"docutils literal">x</tt>.</li>
+<li><tt class=3D"docutils literal">denom(x)</tt> returns the denominator of=
+ the rational number <tt class=3D"docutils literal">x</tt>.</li>
+</ul>
+<p>We are using here a powerful strategy for designing programs: <em>wishfu=
+l
+thinking</em>. We haven't yet said how a rational number is represented, or=
+ how the
+functions <tt class=3D"docutils literal">numer</tt>, <tt class=3D"docutils =
+literal">denom</tt>, and <tt class=3D"docutils literal">rational</tt> shoul=
+d be implemented. Even
+so, if we did define these three functions, we could then add, multiply, pr=
+int,
+and test equality of rational numbers:</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">add_rationals</span>=
+<span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">,</sp=
+an> <span class=3D"n">y</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"n">nx</span=
+><span class=3D"p">,</span> <span class=3D"n">dx</span> <span class=3D"o">=
+=3D</span> <span class=3D"n">numer</span><span class=3D"p">(</span><span cl=
+ass=3D"n">x</span><span class=3D"p">),</span> <span class=3D"n">denom</span=
+><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">)</s=
+pan>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"n">ny</span=
+><span class=3D"p">,</span> <span class=3D"n">dy</span> <span class=3D"o">=
+=3D</span> <span class=3D"n">numer</span><span class=3D"p">(</span><span cl=
+ass=3D"n">y</span><span class=3D"p">),</span> <span class=3D"n">denom</span=
+><span class=3D"p">(</span><span class=3D"n">y</span><span class=3D"p">)</s=
+pan>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">rational</span><span class=3D"p">(</span><span clas=
+s=3D"n">nx</span> <span class=3D"o">*</span> <span class=3D"n">dy</span> <s=
+pan class=3D"o">+</span> <span class=3D"n">ny</span> <span class=3D"o">*</s=
+pan> <span class=3D"n">dx</span><span class=3D"p">,</span> <span class=3D"n=
+">dx</span> <span class=3D"o">*</span> <span class=3D"n">dy</span><span cla=
+ss=3D"p">)</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">mul_rationals</span>=
+<span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">,</sp=
+an> <span class=3D"n">y</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">rational</span><span class=3D"p">(</span><span clas=
+s=3D"n">numer</span><span class=3D"p">(</span><span class=3D"n">x</span><sp=
+an class=3D"p">)</span> <span class=3D"o">*</span> <span class=3D"n">numer<=
+/span><span class=3D"p">(</span><span class=3D"n">y</span><span class=3D"p"=
+>),</span> <span class=3D"n">denom</span><span class=3D"p">(</span><span cl=
+ass=3D"n">x</span><span class=3D"p">)</span> <span class=3D"o">*</span> <sp=
+an class=3D"n">denom</span><span class=3D"p">(</span><span class=3D"n">y</s=
+pan><span class=3D"p">))</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">print_rational</span=
+><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">):</=
+span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"nb">print</=
+span><span class=3D"p">(</span><span class=3D"n">numer</span><span class=3D=
+"p">(</span><span class=3D"n">x</span><span class=3D"p">),</span> <span cla=
+ss=3D"s1">'/'</span><span class=3D"p">,</span> <span class=3D"n">denom</spa=
+n><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">))<=
+/span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">rationals_are_equal<=
+/span><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p"=
+>,</span> <span class=3D"n">y</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">numer</span><span class=3D"p">(</span><span class=
+=3D"n">x</span><span class=3D"p">)</span> <span class=3D"o">*</span> <span =
+class=3D"n">denom</span><span class=3D"p">(</span><span class=3D"n">y</span=
+><span class=3D"p">)</span> <span class=3D"o">=3D=3D</span> <span class=3D"=
+n">numer</span><span class=3D"p">(</span><span class=3D"n">y</span><span cl=
+ass=3D"p">)</span> <span class=3D"o">*</span> <span class=3D"n">denom</span=
+><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">)</s=
+pan>
+</pre></div>
+
+<p>Now we have the operations on rational numbers defined in terms of the s=
+elector
+functions <tt class=3D"docutils literal">numer</tt> and <tt class=3D"docuti=
+ls literal">denom</tt>, and the constructor function <tt class=3D"docutils =
+literal">rational</tt>,
+but we haven't yet defined these functions. What we need is some way to glu=
+e
+together a numerator and a denominator into a compound value.</p>
+</div>
+<div class=3D"section" id=3D"pairs">
+<h3>2.2.2&nbsp;&nbsp;&nbsp;Pairs</h3>
+<p>To enable us to implement the concrete level of our data abstraction, Py=
+thon
+provides a compound structure called a <tt class=3D"docutils literal">list<=
+/tt>, which can be constructed by
+placing expressions within square brackets separated by commas. Such an
+expression is called a list literal.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"p">[</span><span class=3D"mi">10</span><span class=3D=
+"p">,</span> <span class=3D"mi">20</span><span class=3D"p">]</span>
+<span class=3D"go">[10, 20]</span>
+</pre></div>
+
+<p>The elements of a list can be accessed in two ways.  The first way is vi=
+a our
+familiar method of multiple assignment, which unpacks a list into its eleme=
+nts
+and binds each element to a different name.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">pair</span> <span class=3D"o">=3D</span> <span cla=
+ss=3D"p">[</span><span class=3D"mi">10</span><span class=3D"p">,</span> <sp=
+an class=3D"mi">20</span><span class=3D"p">]</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">pair</span>
+<span class=3D"go">[10, 20]</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">x</span><span clas=
+s=3D"p">,</span> <span class=3D"n">y</span> <span class=3D"o">=3D</span> <s=
+pan class=3D"n">pair</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">x</span>
+<span class=3D"go">10</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">y</span>
+<span class=3D"go">20</span>
+</pre></div>
+
+<p>A second method for accessing the elements in a list is by the element
+selection operator, also expressed using square brackets. Unlike a list
+literal, a square-brackets expression directly following another expression
+does not evaluate to a <tt class=3D"docutils literal">list</tt> value, but =
+instead selects an element from the
+value of the preceding expression.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">pair</span><span class=3D"p">[</span><span class=
+=3D"mi">0</span><span class=3D"p">]</span>
+<span class=3D"go">10</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">pair</span><span c=
+lass=3D"p">[</span><span class=3D"mi">1</span><span class=3D"p">]</span>
+<span class=3D"go">20</span>
+</pre></div>
+
+<p>Lists in Python (and sequences in most other programming languages) are
+0-indexed, meaning that the index 0 selects the first element, index 1
+selects the second, and so on.  One intuition that supports this indexing
+convention is that the index represents how far an element is offset from t=
+he
+beginning of the list.</p>
+<p>The equivalent function for the element selection operator is called
+<tt class=3D"docutils literal">getitem</tt>, and it also uses 0-indexed pos=
+itions to select elements from a
+list.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"kn">from</span> <span class=3D"nn">operator</span> <s=
+pan class=3D"kn">import</span> <span class=3D"n">getitem</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">getitem</span><spa=
+n class=3D"p">(</span><span class=3D"n">pair</span><span class=3D"p">,</spa=
+n> <span class=3D"mi">0</span><span class=3D"p">)</span>
+<span class=3D"go">10</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">getitem</span><spa=
+n class=3D"p">(</span><span class=3D"n">pair</span><span class=3D"p">,</spa=
+n> <span class=3D"mi">1</span><span class=3D"p">)</span>
+<span class=3D"go">20</span>
+</pre></div>
+
+<p>Two-element lists are not the only method of representing pairs in Pytho=
+n.
+Any way of bundling two values together into one can be considered a pair.
+Lists are a common method to do so. Lists can also contain more than two
+elements, as we will explore later in the chapter.</p>
+<p><strong>Representing Rational Numbers.</strong> We can now represent a r=
+ational number as a
+pair of two integers: a numerator and a denominator.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">rational</span><span=
+ class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">,</span> <=
+span class=3D"n">d</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"p">[</span><span class=3D"n">n</span><span class=3D"p"=
+>,</span> <span class=3D"n">d</span><span class=3D"p">]</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">numer</span><span cl=
+ass=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">x</span><span class=3D"p">[</span><span class=3D"mi=
+">0</span><span class=3D"p">]</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">denom</span><span cl=
+ass=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">x</span><span class=3D"p">[</span><span class=3D"mi=
+">1</span><span class=3D"p">]</span>
+</pre></div>
+
+<p>Together with the arithmetic operations we defined earlier, we can manip=
+ulate
+rational numbers with the functions we have defined.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">half</span> <span class=3D"o">=3D</span> <span cla=
+ss=3D"n">rational</span><span class=3D"p">(</span><span class=3D"mi">1</spa=
+n><span class=3D"p">,</span> <span class=3D"mi">2</span><span class=3D"p">)=
+</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">print_rational</sp=
+an><span class=3D"p">(</span><span class=3D"n">half</span><span class=3D"p"=
+>)</span>
+<span class=3D"go">1 / 2</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">third</span> <span=
+ class=3D"o">=3D</span> <span class=3D"n">rational</span><span class=3D"p">=
+(</span><span class=3D"mi">1</span><span class=3D"p">,</span> <span class=
+=3D"mi">3</span><span class=3D"p">)</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">print_rational</sp=
+an><span class=3D"p">(</span><span class=3D"n">mul_rationals</span><span cl=
+ass=3D"p">(</span><span class=3D"n">half</span><span class=3D"p">,</span> <=
+span class=3D"n">third</span><span class=3D"p">))</span>
+<span class=3D"go">1 / 6</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">print_rational</sp=
+an><span class=3D"p">(</span><span class=3D"n">add_rationals</span><span cl=
+ass=3D"p">(</span><span class=3D"n">third</span><span class=3D"p">,</span> =
+<span class=3D"n">third</span><span class=3D"p">))</span>
+<span class=3D"go">6 / 9</span>
+</pre></div>
+
+<p>As the example above shows, our rational number implementation does not =
+reduce
+rational numbers to lowest terms. We can remedy this flaw by changing the
+implementation of <tt class=3D"docutils literal">rational</tt>. If we have =
+a function for computing the
+greatest common denominator of two integers, we can use it to reduce the
+numerator and the denominator to lowest terms before constructing the pair.=
+  As
+with many useful tools, such a function already exists in the Python Librar=
+y.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"kn">from</span> <span class=3D"nn">fractions</span> <=
+span class=3D"kn">import</span> <span class=3D"n">gcd</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"k">def</span> <span c=
+lass=3D"nf">rational</span><span class=3D"p">(</span><span class=3D"n">n</s=
+pan><span class=3D"p">,</span> <span class=3D"n">d</span><span class=3D"p">=
+):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"n">g</span>=
+ <span class=3D"o">=3D</span> <span class=3D"n">gcd</span><span class=3D"p"=
+>(</span><span class=3D"n">n</span><span class=3D"p">,</span> <span class=
+=3D"n">d</span><span class=3D"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"p">(</span><span class=3D"n">n</span><span class=3D"o"=
+>//</span><span class=3D"n">g</span><span class=3D"p">,</span> <span class=
+=3D"n">d</span><span class=3D"o">//</span><span class=3D"n">g</span><span c=
+lass=3D"p">)</span>
+</pre></div>
+
+<p>The floor division operator, <tt class=3D"docutils literal">//</tt>, exp=
+resses integer division, which rounds
+down the fractional part of the result of division.  Since we know that <tt=
+ class=3D"docutils literal">g</tt>
+divides both <tt class=3D"docutils literal">n</tt> and <tt class=3D"docutil=
+s literal">d</tt> evenly, integer division is exact in this case.
+This revised <tt class=3D"docutils literal">rational</tt> implementation en=
+sures that rationals are expressed
+in lowest terms.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">print_rational</span><span class=3D"p">(</span><sp=
+an class=3D"n">add_rationals</span><span class=3D"p">(</span><span class=3D=
+"n">third</span><span class=3D"p">,</span> <span class=3D"n">third</span><s=
+pan class=3D"p">))</span>
+<span class=3D"go">2 / 3</span>
+</pre></div>
+
+<p>This improvement was accomplished by changing the constructor without ch=
+anging
+any of the functions that implement the actual arithmetic operations.</p>
+</div>
+<div class=3D"section" id=3D"abstraction-barriers">
+<h3>2.2.3&nbsp;&nbsp;&nbsp;Abstraction Barriers</h3>
+<p>Before continuing with more examples of compound data and data abstracti=
+on, let
+us consider some of the issues raised by the rational number example. We
+defined operations in terms of a constructor <tt class=3D"docutils literal"=
+>rational</tt> and selectors
+<tt class=3D"docutils literal">numer</tt> and <tt class=3D"docutils literal=
+">denom</tt>. In general, the underlying idea of data abstraction is
+to identify a basic set of operations in terms of which all manipulations o=
+f
+values of some kind will be expressed, and then to use only those operation=
+s in
+manipulating the data. By restricting the use of operations in this way, it=
+ is
+much easier to change the representation of abstract data without changing =
+the
+behavior of a program.</p>
+<p>For rational numbers, different parts of the program manipulate rational
+numbers using different operations, as described in this table.</p>
+<table border=3D"1" class=3D"docutils">
+<colgroup>
+<col width=3D"35%">
+<col width=3D"19%">
+<col width=3D"47%">
+</colgroup>
+<thead valign=3D"bottom">
+<tr><th class=3D"head"><strong>Parts of the program that...</strong></th>
+<th class=3D"head"><strong>Treat rationals as...</strong></th>
+<th class=3D"head"><strong>Using only...</strong></th>
+</tr>
+</thead>
+<tbody valign=3D"top">
+<tr><td>Use rational numbers to perform computation</td>
+<td>whole data values</td>
+<td><tt class=3D"docutils literal">add_rational, mul_rational, rationals_ar=
+e_equal, print_rational</tt></td>
+</tr>
+<tr><td>Create rationals or implement rational operations</td>
+<td>numerators and denominators</td>
+<td><tt class=3D"docutils literal">rational, numer, denom</tt></td>
+</tr>
+<tr><td>Implement selectors and constructor for rationals</td>
+<td>two-element lists</td>
+<td>list literals and element selection</td>
+</tr>
+</tbody>
+</table>
+<p>In each layer above, the functions in the final column enforce an abstra=
+ction
+barrier. These functions are called by a higher level and implemented using=
+ a
+lower level of abstraction.</p>
+<p>An abstraction barrier violation occurs whenever a part of the program t=
+hat
+can use a higher level function instead uses a function in a lower level. F=
+or
+example, a function that computes the square of a rational number is best
+implemented in terms of <tt class=3D"docutils literal">mul_rational</tt>, w=
+hich does not assume anything about
+the implementation of a rational number.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">square_rational</spa=
+n><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">):<=
+/span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">mul_rational</span><span class=3D"p">(</span><span =
+class=3D"n">x</span><span class=3D"p">,</span> <span class=3D"n">x</span><s=
+pan class=3D"p">)</span>
+</pre></div>
+
+<p>Referring directly to numerators and denominators would violate one abst=
+raction
+barrier.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">square_rational_viol=
+ating_once</span><span class=3D"p">(</span><span class=3D"n">x</span><span =
+class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">rational</span><span class=3D"p">(</span><span clas=
+s=3D"n">numer</span><span class=3D"p">(</span><span class=3D"n">x</span><sp=
+an class=3D"p">)</span> <span class=3D"o">*</span> <span class=3D"n">numer<=
+/span><span class=3D"p">(</span><span class=3D"n">x</span><span class=3D"p"=
+>),</span> <span class=3D"n">denom</span><span class=3D"p">(</span><span cl=
+ass=3D"n">x</span><span class=3D"p">)</span> <span class=3D"o">*</span> <sp=
+an class=3D"n">denom</span><span class=3D"p">(</span><span class=3D"n">x</s=
+pan><span class=3D"p">))</span>
+</pre></div>
+
+<p>Assuming that rationals are represented as two-element lists would viola=
+te two
+abstraction barriers.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">square_rational_viol=
+ating_twice</span><span class=3D"p">(</span><span class=3D"n">x</span><span=
+ class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"p">[</span><span class=3D"n">x</span><span class=3D"p"=
+>[</span><span class=3D"mi">0</span><span class=3D"p">]</span> <span class=
+=3D"o">*</span> <span class=3D"n">x</span><span class=3D"p">[</span><span c=
+lass=3D"mi">0</span><span class=3D"p">],</span> <span class=3D"n">x</span><=
+span class=3D"p">[</span><span class=3D"mi">1</span><span class=3D"p">]</sp=
+an> <span class=3D"o">*</span> <span class=3D"n">x</span><span class=3D"p">=
+[</span><span class=3D"mi">1</span><span class=3D"p">]]</span>
+</pre></div>
+
+<p>Abstraction barriers make programs easier to maintain and to modify. The=
+ fewer
+functions that depend on a particular representation, the fewer changes are
+required when one wants to change that representation. All of these
+implementations of <tt class=3D"docutils literal">square_rational</tt> have=
+ the correct behavior, but only the
+first is robust to future changes. The <tt class=3D"docutils literal">squar=
+e_rational</tt> function would not
+require updating even if we altered the representation of rational numbers.=
+ By
+contrast, <tt class=3D"docutils literal">square_rational_violating_once</tt=
+> would need to be changed whenever
+the selector or constructor signatures changed, and
+<tt class=3D"docutils literal">square_rational_violating_twice</tt> would r=
+equire updating whenever the
+implementation of rational numbers changed.</p>
+</div>
+<div class=3D"section" id=3D"the-properties-of-data">
+<h3>2.2.4&nbsp;&nbsp;&nbsp;The Properties of Data</h3>
+<p>Abstraction barriers shape the way in which we think about data. A valid
+representation of a rational number is not restricted to any particular
+implementation (such as a two-element list); it is a value returned by
+<tt class=3D"docutils literal">rational</tt> that can be passed to <tt clas=
+s=3D"docutils literal">numer</tt>, and <tt class=3D"docutils literal">denom=
+</tt>.
+In addition, the appropriate relationship must hold among the constructor a=
+nd
+selectors. That is, if we construct a rational number <tt class=3D"docutils=
+ literal">x</tt> from integers <tt class=3D"docutils literal">n</tt>
+and <tt class=3D"docutils literal">d</tt>, then it should be the case that =
+<tt class=3D"docutils literal"><span class=3D"pre">numer(x)/denom(x)</span>=
+</tt> is equal to
+<tt class=3D"docutils literal">n/d</tt>.</p>
+<p>In general, we can express abstract data using a collection of selectors=
+ and
+constructors, together with some behavior conditions.  As long as the behav=
+ior
+conditions are met (such as the division property above), the selectors and
+constructors constitute a valid representation of a kind of data. The
+implementation details below an abstraction barrier may change, but if the
+behavior does not, then the data abstraction remains valid, and any program
+written using this data abstraction will remain correct.</p>
+<p>This point of view can be applied broadly, including to the pair values
+that we used to implement rational numbers. We never actually said much abo=
+ut
+what a pair was, only that the language supplied the means to create and
+manipulate lists with two elements. The behavior we require to implement
+a pair is that it glues two values together. Stated as a behavior condition=
+,</p>
+<ul class=3D"simple">
+<li>If a pair <tt class=3D"docutils literal">p</tt> was constructed from va=
+lues <tt class=3D"docutils literal">x</tt> and <tt class=3D"docutils litera=
+l">y</tt>, then
+<tt class=3D"docutils literal">select(p, 0)</tt> returns <tt class=3D"docut=
+ils literal">x</tt>, and <tt class=3D"docutils literal">select(p, 1)</tt> r=
+eturns
+<tt class=3D"docutils literal">y</tt>.</li>
+</ul>
+<p>We don't actually need the <tt class=3D"docutils literal">list</tt> type=
+ to create pairs. Instead, we can
+implement two functions <tt class=3D"docutils literal">pair</tt> and <tt cl=
+ass=3D"docutils literal">select</tt> that fulfill this description
+just as well as a two-element list.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">pair</span><span cla=
+ss=3D"p">(</span><span class=3D"n">x</span><span class=3D"p">,</span> <span=
+ class=3D"n">y</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"sd">"""Retu=
+rn a function that represents a pair."""</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">def</spa=
+n> <span class=3D"nf">get</span><span class=3D"p">(</span><span class=3D"n"=
+>index</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">if</=
+span> <span class=3D"n">index</span> <span class=3D"o">=3D=3D</span> <span =
+class=3D"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>            <span class=3D"k">=
+return</span> <span class=3D"n">x</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">elif=
+</span> <span class=3D"n">index</span> <span class=3D"o">=3D=3D</span> <spa=
+n class=3D"mi">1</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>            <span class=3D"k">=
+return</span> <span class=3D"n">y</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">get</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">select</span><span c=
+lass=3D"p">(</span><span class=3D"n">p</span><span class=3D"p">,</span> <sp=
+an class=3D"n">i</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"sd">"""Retu=
+rn the element at index i of pair p."""</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">p</span><span class=3D"p">(</span><span class=3D"n"=
+>i</span><span class=3D"p">)</span>
+</pre></div>
+
+<p>With this implementation, we can create and manipulate pairs.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">p</span> <span class=3D"o">=3D</span> <span class=
+=3D"n">pair</span><span class=3D"p">(</span><span class=3D"mi">20</span><sp=
+an class=3D"p">,</span> <span class=3D"mi">14</span><span class=3D"p">)</sp=
+an>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">select</span><span=
+ class=3D"p">(</span><span class=3D"n">p</span><span class=3D"p">,</span> <=
+span class=3D"mi">0</span><span class=3D"p">)</span>
+<span class=3D"go">20</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">select</span><span=
+ class=3D"p">(</span><span class=3D"n">p</span><span class=3D"p">,</span> <=
+span class=3D"mi">1</span><span class=3D"p">)</span>
+<span class=3D"go">14</span>
+</pre></div>
+
+<p>This use of higher-order functions corresponds to nothing like our intui=
+tive
+notion of what data should be. Nevertheless, these functions suffice to
+represent pairs in our programs. Functions are sufficient to represent comp=
+ound
+data.</p>
+<p>The point of exhibiting the functional representation of a pair is not t=
+hat
+Python actually works this way (lists are implemented more directly, for
+efficiency reasons) but that it could work this way. The functional
+representation, although obscure, is a perfectly adequate way to represent
+pairs, since it fulfills the only conditions that pairs need to fulfill. Th=
+e
+practice of data abstraction allows us to switch among representations easi=
+ly.</p>
+</div>
+</div>
+  <p><i>Continue</i>:
+  	<a href=3D"https://www.composingprograms.com/pages/23-sequences.html">
+  		2.3 Sequences
+  	</a>
+      </p></div>
+    </section>
+
+    <div class=3D"wrap">
+      <footer id=3D"contentinfo" class=3D"body">
+          Composing Programs by <a href=3D"http://www.denero.org/">John
+          DeNero</a>, based on the textbook <a href=3D"http://mitpress.mit.=
+edu/sicp/">Structure and
+          Interpretation of Computer Programs</a> by Harold Abelson and
+          Gerald Jay Sussman, is licensed under a <a rel=3D"license" href=
+=3D"http://creativecommons.org/licenses/by-sa/3.0/">Creative
+          Commons Attribution-ShareAlike 3.0 Unported License</a>.
+      </footer><!-- /#contentinfo -->
+    </div>
+  </div>
+
+</body></html>
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/coding-js/coding.css
+
+@charset "utf-8";
+
+.output_displayed_text { color: blue; }
+
+.output_error { color: red; }
+
+.p-link { text-decoration: underline; text-align: right; }
+
+.p-link:hover { cursor: pointer; }
+
+.output { font-family: monospace; font-style: italic; padding: 0pt 4pt; col=
+or: rgb(68, 68, 68); }
+
+.CodeMirror-scroll { height: auto; width: auto; overflow: auto hidden; }
+
+.CodeMirror-scroll:hover:not(.static):not(.CodeMirror-focused) { background=
+: rgba(0, 0, 0, 0.05); }
+
+.CodeMirror-scroll:hover.static:not(.CodeMirror-focused) { background-color=
+: rgba(0, 0, 0, 0.01); }
+
+.CodeMirror-focused:not(:hover) { background: rgba(0, 0, 0, 0.07); }
+
+.CodeMirror-focused:hover { background: rgba(0, 0, 0, 0.075); }
+
+.CodeMirror-matchingbracket { background: rgba(0, 0, 0, 0.1); }
+
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(95, 95, 95); }
+
+.CodeMirror { line-height: 1.3em; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/tutor/css/codemirror.css
+
+@charset "utf-8";
+
+.CodeMirror { line-height: 1.2em; font-family: monospace; position: relativ=
+e; overflow: hidden; }
+
+.CodeMirror-scroll { overflow: auto; height: 300px; position: relative; out=
+line: none; }
+
+.CodeMirror-scrollbar { position: absolute; right: 0px; top: 0px; overflow:=
+ hidden scroll; z-index: 5; }
+
+.CodeMirror-scrollbar-inner { width: 1px; }
+
+.CodeMirror-scrollbar.cm-sb-overlap { position: absolute; z-index: 1; float=
+: none; right: 0px; min-width: 12px; }
+
+.CodeMirror-scrollbar.cm-sb-nonoverlap { min-width: 12px; }
+
+.CodeMirror-scrollbar.cm-sb-ie7 { min-width: 18px; }
+
+.CodeMirror-gutter { position: absolute; left: 0px; top: 0px; z-index: 10; =
+background-color: rgb(247, 247, 247); border-right: 1px solid rgb(238, 238,=
+ 238); min-width: 2em; height: 100%; }
+
+.CodeMirror-gutter-text { color: rgb(170, 170, 170); text-align: right; pad=
+ding: 0.4em 0.2em 0.4em 0.4em; cursor: default; white-space: pre !important=
+; }
+
+.CodeMirror-lines { padding: 0.4em; white-space: pre; cursor: text; }
+
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: transp=
+arent; font-family: inherit; font-size: inherit; padding: 0px; margin: 0px;=
+ white-space: pre; overflow-wrap: normal; line-height: inherit; color: inhe=
+rit; }
+
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; wo=
+rd-break: normal; }
+
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+
+.CodeMirror textarea { outline: none !important; }
+
+.CodeMirror pre.CodeMirror-cursor { z-index: 10; position: absolute; visibi=
+lity: hidden; border-left: 1px solid black; border-right: none; width: 0px;=
+ }
+
+.cm-keymap-fat-cursor pre.CodeMirror-cursor { width: auto; border: 0px; bac=
+kground: rgba(0, 200, 0, 0.4); }
+
+.cm-keymap-fat-cursor pre.CodeMirror-cursor:not(#nonsense_id) { }
+
+.CodeMirror pre.CodeMirror-cursor.CodeMirror-overwrite { }
+
+.CodeMirror-focused pre.CodeMirror-cursor { visibility: visible; }
+
+div.CodeMirror-selected { background: rgb(217, 217, 217); }
+
+.CodeMirror-focused div.CodeMirror-selected { background: rgb(215, 212, 240=
+); }
+
+.CodeMirror-searching { background: rgba(255, 255, 0, 0.4); }
+
+.cm-s-default span.cm-keyword { color: rgb(119, 0, 136); }
+
+.cm-s-default span.cm-atom { color: rgb(34, 17, 153); }
+
+.cm-s-default span.cm-number { color: rgb(17, 102, 68); }
+
+.cm-s-default span.cm-def { color: rgb(0, 0, 255); }
+
+.cm-s-default span.cm-variable { color: black; }
+
+.cm-s-default span.cm-variable-2 { color: rgb(0, 85, 170); }
+
+.cm-s-default span.cm-variable-3 { color: rgb(0, 136, 85); }
+
+.cm-s-default span.cm-property { color: black; }
+
+.cm-s-default span.cm-operator { color: black; }
+
+.cm-s-default span.cm-comment { color: rgb(170, 85, 0); }
+
+.cm-s-default span.cm-string { color: rgb(170, 17, 17); }
+
+.cm-s-default span.cm-string-2 { color: rgb(255, 85, 0); }
+
+.cm-s-default span.cm-meta { color: rgb(85, 85, 85); }
+
+.cm-s-default span.cm-error { color: rgb(255, 0, 0); }
+
+.cm-s-default span.cm-qualifier { color: rgb(85, 85, 85); }
+
+.cm-s-default span.cm-builtin { color: rgb(51, 0, 170); }
+
+.cm-s-default span.cm-bracket { color: rgb(204, 204, 119); }
+
+.cm-s-default span.cm-tag { color: rgb(17, 119, 0); }
+
+.cm-s-default span.cm-attribute { color: rgb(0, 0, 204); }
+
+.cm-s-default span.cm-header { color: blue; }
+
+.cm-s-default span.cm-quote { color: rgb(0, 153, 0); }
+
+.cm-s-default span.cm-hr { color: rgb(153, 153, 153); }
+
+.cm-s-default span.cm-link { color: rgb(0, 0, 204); }
+
+span.cm-header, span.cm-strong { font-weight: bold; }
+
+span.cm-em { font-style: italic; }
+
+span.cm-emstrong { font-style: italic; font-weight: bold; }
+
+span.cm-link { text-decoration: underline; }
+
+span.cm-invalidchar { color: rgb(255, 0, 0); }
+
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34)=
+; }
+
+@media print {
+  .CodeMirror pre.CodeMirror-cursor { visibility: hidden; }
+}
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/tutor/css/ui-lightness/jquery-ui-1.8.21.custom.css
+
+@charset "utf-8";
+
+.ui-helper-hidden { display: none; }
+
+.ui-helper-hidden-accessible { clip: rect(1px, 1px, 1px, 1px); position: ab=
+solute !important; }
+
+.ui-helper-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; li=
+ne-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; disp=
+lay: table; }
+
+.ui-helper-clearfix::after { clear: both; }
+
+.ui-helper-clearfix { zoom: 1; }
+
+.ui-helper-zfix { width: 100%; height: 100%; top: 0px; left: 0px; position:=
+ absolute; opacity: 0; }
+
+.ui-state-disabled { cursor: default !important; }
+
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; backgro=
+und-repeat: no-repeat; }
+
+.ui-widget-overlay { position: absolute; top: 0px; left: 0px; width: 100%; =
+height: 100%; }
+
+.ui-widget { font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-seri=
+f; font-size: 1.1em; }
+
+.ui-widget .ui-widget { font-size: 1em; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button=
+ { font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif; font-si=
+ze: 1em; }
+
+.ui-widget-content { border: 1px solid rgb(204, 204, 204); background: url(=
+"images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x rgb(23=
+8, 238, 238); color: rgb(51, 51, 51); }
+
+.ui-widget-content a { color: rgb(51, 51, 51); }
+
+.ui-widget-header { border: 1px solid rgb(231, 143, 8); background: url("im=
+ages/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x rgb(246, 168=
+, 40); color: rgb(255, 255, 255); font-weight: bold; }
+
+.ui-widget-header a { color: rgb(255, 255, 255); }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header =
+.ui-state-default { border: 1px solid rgb(204, 204, 204); background: url("=
+images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x rgb(246, 246, 24=
+6); font-weight: bold; color: rgb(28, 148, 196); }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited =
+{ color: rgb(28, 148, 196); text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u=
+i-state-active { border: 1px solid rgb(251, 216, 80); background: url("imag=
+es/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x rgb(255, 255, 255); f=
+ont-weight: bold; color: rgb(235, 143, 0); }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { c=
+olor: rgb(235, 143, 0); text-decoration: none; }
+
+.ui-widget :active { outline: none; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-hea=
+der .ui-state-highlight { border: 1px solid rgb(254, 210, 47); background: =
+url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x rgb=
+(255, 228, 92); color: rgb(54, 54, 54); }
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget=
+-header .ui-state-highlight a { color: rgb(54, 54, 54); }
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-=
+state-error { border: 1px solid rgb(205, 10, 10); background: url("images/u=
+i-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat rgb(184, 25, 0); =
+color: rgb(255, 255, 255); }
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header =
+.ui-state-error a { color: rgb(255, 255, 255); }
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-h=
+eader .ui-state-error-text { color: rgb(255, 255, 255); }
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-h=
+eader .ui-priority-primary { font-weight: bold; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widg=
+et-header .ui-priority-secondary { opacity: 0.7; font-weight: normal; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-heade=
+r .ui-state-disabled { opacity: 0.35; background-image: none; }
+
+.ui-icon { width: 16px; height: 16px; background-image: url("images/ui-icon=
+s_222222_256x240.png"); }
+
+.ui-widget-content .ui-icon { background-image: url("images/ui-icons_222222=
+_256x240.png"); }
+
+.ui-widget-header .ui-icon { background-image: url("images/ui-icons_ffffff_=
+256x240.png"); }
+
+.ui-state-default .ui-icon { background-image: url("images/ui-icons_ef8c08_=
+256x240.png"); }
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon { background-image: url(=
+"images/ui-icons_ef8c08_256x240.png"); }
+
+.ui-state-active .ui-icon { background-image: url("images/ui-icons_ef8c08_2=
+56x240.png"); }
+
+.ui-state-highlight .ui-icon { background-image: url("images/ui-icons_228ef=
+1_256x240.png"); }
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon { background-image:=
+ url("images/ui-icons_ffd27a_256x240.png"); }
+
+.ui-icon-carat-1-n { background-position: 0px 0px; }
+
+.ui-icon-carat-1-ne { background-position: -16px 0px; }
+
+.ui-icon-carat-1-e { background-position: -32px 0px; }
+
+.ui-icon-carat-1-se { background-position: -48px 0px; }
+
+.ui-icon-carat-1-s { background-position: -64px 0px; }
+
+.ui-icon-carat-1-sw { background-position: -80px 0px; }
+
+.ui-icon-carat-1-w { background-position: -96px 0px; }
+
+.ui-icon-carat-1-nw { background-position: -112px 0px; }
+
+.ui-icon-carat-2-n-s { background-position: -128px 0px; }
+
+.ui-icon-carat-2-e-w { background-position: -144px 0px; }
+
+.ui-icon-triangle-1-n { background-position: 0px -16px; }
+
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+
+.ui-icon-arrow-1-n { background-position: 0px -32px; }
+
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+
+.ui-icon-arrowthick-1-n { background-position: 0px -48px; }
+
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+
+.ui-icon-arrowreturnthick-1-w { background-position: 0px -64px; }
+
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+
+.ui-icon-arrow-4 { background-position: 0px -80px; }
+
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+
+.ui-icon-extlink { background-position: -32px -80px; }
+
+.ui-icon-newwin { background-position: -48px -80px; }
+
+.ui-icon-refresh { background-position: -64px -80px; }
+
+.ui-icon-shuffle { background-position: -80px -80px; }
+
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+
+.ui-icon-folder-collapsed { background-position: 0px -96px; }
+
+.ui-icon-folder-open { background-position: -16px -96px; }
+
+.ui-icon-document { background-position: -32px -96px; }
+
+.ui-icon-document-b { background-position: -48px -96px; }
+
+.ui-icon-note { background-position: -64px -96px; }
+
+.ui-icon-mail-closed { background-position: -80px -96px; }
+
+.ui-icon-mail-open { background-position: -96px -96px; }
+
+.ui-icon-suitcase { background-position: -112px -96px; }
+
+.ui-icon-comment { background-position: -128px -96px; }
+
+.ui-icon-person { background-position: -144px -96px; }
+
+.ui-icon-print { background-position: -160px -96px; }
+
+.ui-icon-trash { background-position: -176px -96px; }
+
+.ui-icon-locked { background-position: -192px -96px; }
+
+.ui-icon-unlocked { background-position: -208px -96px; }
+
+.ui-icon-bookmark { background-position: -224px -96px; }
+
+.ui-icon-tag { background-position: -240px -96px; }
+
+.ui-icon-home { background-position: 0px -112px; }
+
+.ui-icon-flag { background-position: -16px -112px; }
+
+.ui-icon-calendar { background-position: -32px -112px; }
+
+.ui-icon-cart { background-position: -48px -112px; }
+
+.ui-icon-pencil { background-position: -64px -112px; }
+
+.ui-icon-clock { background-position: -80px -112px; }
+
+.ui-icon-disk { background-position: -96px -112px; }
+
+.ui-icon-calculator { background-position: -112px -112px; }
+
+.ui-icon-zoomin { background-position: -128px -112px; }
+
+.ui-icon-zoomout { background-position: -144px -112px; }
+
+.ui-icon-search { background-position: -160px -112px; }
+
+.ui-icon-wrench { background-position: -176px -112px; }
+
+.ui-icon-gear { background-position: -192px -112px; }
+
+.ui-icon-heart { background-position: -208px -112px; }
+
+.ui-icon-star { background-position: -224px -112px; }
+
+.ui-icon-link { background-position: -240px -112px; }
+
+.ui-icon-cancel { background-position: 0px -128px; }
+
+.ui-icon-plus { background-position: -16px -128px; }
+
+.ui-icon-plusthick { background-position: -32px -128px; }
+
+.ui-icon-minus { background-position: -48px -128px; }
+
+.ui-icon-minusthick { background-position: -64px -128px; }
+
+.ui-icon-close { background-position: -80px -128px; }
+
+.ui-icon-closethick { background-position: -96px -128px; }
+
+.ui-icon-key { background-position: -112px -128px; }
+
+.ui-icon-lightbulb { background-position: -128px -128px; }
+
+.ui-icon-scissors { background-position: -144px -128px; }
+
+.ui-icon-clipboard { background-position: -160px -128px; }
+
+.ui-icon-copy { background-position: -176px -128px; }
+
+.ui-icon-contact { background-position: -192px -128px; }
+
+.ui-icon-image { background-position: -208px -128px; }
+
+.ui-icon-video { background-position: -224px -128px; }
+
+.ui-icon-script { background-position: -240px -128px; }
+
+.ui-icon-alert { background-position: 0px -144px; }
+
+.ui-icon-info { background-position: -16px -144px; }
+
+.ui-icon-notice { background-position: -32px -144px; }
+
+.ui-icon-help { background-position: -48px -144px; }
+
+.ui-icon-check { background-position: -64px -144px; }
+
+.ui-icon-bullet { background-position: -80px -144px; }
+
+.ui-icon-radio-off { background-position: -96px -144px; }
+
+.ui-icon-radio-on { background-position: -112px -144px; }
+
+.ui-icon-pin-w { background-position: -128px -144px; }
+
+.ui-icon-pin-s { background-position: -144px -144px; }
+
+.ui-icon-play { background-position: 0px -160px; }
+
+.ui-icon-pause { background-position: -16px -160px; }
+
+.ui-icon-seek-next { background-position: -32px -160px; }
+
+.ui-icon-seek-prev { background-position: -48px -160px; }
+
+.ui-icon-seek-end { background-position: -64px -160px; }
+
+.ui-icon-seek-start { background-position: -80px -160px; }
+
+.ui-icon-seek-first { background-position: -80px -160px; }
+
+.ui-icon-stop { background-position: -96px -160px; }
+
+.ui-icon-eject { background-position: -112px -160px; }
+
+.ui-icon-volume-off { background-position: -128px -160px; }
+
+.ui-icon-volume-on { background-position: -144px -160px; }
+
+.ui-icon-power { background-position: 0px -176px; }
+
+.ui-icon-signal-diag { background-position: -16px -176px; }
+
+.ui-icon-signal { background-position: -32px -176px; }
+
+.ui-icon-battery-0 { background-position: -48px -176px; }
+
+.ui-icon-battery-1 { background-position: -64px -176px; }
+
+.ui-icon-battery-2 { background-position: -80px -176px; }
+
+.ui-icon-battery-3 { background-position: -96px -176px; }
+
+.ui-icon-circle-plus { background-position: 0px -192px; }
+
+.ui-icon-circle-minus { background-position: -16px -192px; }
+
+.ui-icon-circle-close { background-position: -32px -192px; }
+
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+
+.ui-icon-circle-check { background-position: -208px -192px; }
+
+.ui-icon-circlesmall-plus { background-position: 0px -208px; }
+
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+
+.ui-icon-grip-dotted-vertical { background-position: 0px -224px; }
+
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { border-top=
+-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { border-to=
+p-right-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { border-=
+bottom-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { border=
+-bottom-right-radius: 4px; }
+
+.ui-widget-overlay { background: url("images/ui-bg_diagonals-thick_20_66666=
+6_40x40.png") 50% 50% repeat rgb(102, 102, 102); opacity: 0.5; }
+
+.ui-widget-shadow { margin: -5px 0px 0px -5px; padding: 5px; background: ur=
+l("images/ui-bg_flat_10_000000_40x100.png") 50% 50% repeat-x rgb(0, 0, 0); =
+opacity: 0.2; border-radius: 5px; }
+
+.ui-slider { position: relative; text-align: left; }
+
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em=
+; height: 1.2em; cursor: default; }
+
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: 0.=
+7em; display: block; border: 0px; background-position: 0px 0px; }
+
+.ui-slider-horizontal { height: 0.8em; }
+
+.ui-slider-horizontal .ui-slider-handle { top: -0.3em; margin-left: -0.6em;=
+ }
+
+.ui-slider-horizontal .ui-slider-range { top: 0px; height: 100%; }
+
+.ui-slider-horizontal .ui-slider-range-min { left: 0px; }
+
+.ui-slider-horizontal .ui-slider-range-max { right: 0px; }
+
+.ui-slider-vertical { width: 0.8em; height: 100px; }
+
+.ui-slider-vertical .ui-slider-handle { left: -0.3em; margin-left: 0px; mar=
+gin-bottom: -0.6em; }
+
+.ui-slider-vertical .ui-slider-range { left: 0px; width: 100%; }
+
+.ui-slider-vertical .ui-slider-range-min { bottom: 0px; }
+
+.ui-slider-vertical .ui-slider-range-max { top: 0px; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/tutor/css/pytutor.css
+
+@charset "utf-8";
+
+div.ExecutionVisualizer { }
+
+div.ExecutionVisualizer table.visualizer { font-family: verdana, arial, hel=
+vetica, sans-serif; font-size: 10pt; margin-bottom: 10px; }
+
+div.ExecutionVisualizer table.visualizer td.vizLayoutTd { vertical-align: t=
+op; }
+
+div.ExecutionVisualizer td#stack_td, div.ExecutionVisualizer td#heap_td { v=
+ertical-align: top; font-size: 10pt; }
+
+div.ExecutionVisualizer #dataViz { margin-left: 25px; }
+
+div.ExecutionVisualizer div#codeDisplayDiv { margin-left: 0px; }
+
+div.ExecutionVisualizer div#pyCodeOutputDiv { max-height: 450px; overflow: =
+auto; margin-left: auto; margin-right: auto; }
+
+div.ExecutionVisualizer table#pyCodeOutput { font-family: "Andale mono", mo=
+nospace; font-size: 11pt; line-height: 1.1em; border-collapse: separate; bo=
+rder-spacing: 0px; border-top: 1px solid rgb(187, 187, 187); padding-top: 3=
+px; border-bottom: 1px solid rgb(187, 187, 187); margin: 6px auto; white-sp=
+ace: nowrap; }
+
+div.ExecutionVisualizer table#pyCodeOutput td { white-space: nowrap; vertic=
+al-align: middle; }
+
+div.ExecutionVisualizer #leftCodeGutterSVG { width: 18px; height: 0px; }
+
+div.ExecutionVisualizer #prevLegendArrowSVG, div.ExecutionVisualizer #curLe=
+gendArrowSVG { width: 18px; height: 10px; }
+
+div.ExecutionVisualizer .arrow { font-size: 16pt; }
+
+div.ExecutionVisualizer table#pyCodeOutput .lineNo { color: rgb(170, 170, 1=
+70); padding: 0.2em 0.5em 0.2em 0.3em; text-align: right; }
+
+div.ExecutionVisualizer table#pyCodeOutput .cod { margin-left: 3px; padding=
+-left: 7px; text-align: left; }
+
+div.ExecutionVisualizer div#progOutputs { margin-top: 8px; }
+
+div.ExecutionVisualizer div#legendDiv { margin-top: 10px; padding: 0px; tex=
+t-align: left; color: rgb(102, 102, 102); font-size: 9pt; }
+
+div.ExecutionVisualizer div#editCodeLinkDiv { text-align: center; margin: 8=
+px auto; }
+
+div.ExecutionVisualizer div#annotateLinkDiv { margin-top: 0px; margin-botto=
+m: 12px; }
+
+div.ExecutionVisualizer div#stepAnnotationDiv { margin-bottom: 12px; }
+
+div.ExecutionVisualizer textarea#stepAnnotationEditor, div.ExecutionVisuali=
+zer textarea#vizTitleEditor, div.ExecutionVisualizer textarea#vizDescriptio=
+nEditor { border: 1px solid rgb(153, 153, 153); padding: 4px; overflow: aut=
+o; resize: none; }
+
+div.ExecutionVisualizer #errorOutput { color: rgb(233, 63, 52); font-size: =
+12pt; padding: 2px; line-height: 1.5em; margin-bottom: 4px; }
+
+div.ExecutionVisualizer #vcrControls { margin: 15px auto; text-align: cente=
+r; }
+
+div.ExecutionVisualizer #vcrControls button { margin-left: 2px; margin-righ=
+t: 2px; }
+
+div.ExecutionVisualizer #vcrControls #curInstr { margin-left: 4px; margin-r=
+ight: 4px; }
+
+div.ExecutionVisualizer #pyStdout { border: 1px solid rgb(153, 153, 153); f=
+ont-size: 12pt; padding: 4px; font-family: "Andale mono", monospace; overfl=
+ow: auto; resize: none; }
+
+div.ExecutionVisualizer .vizFrame { margin-bottom: 20px; padding-left: 8px;=
+ border-left: 2px solid rgb(204, 204, 204); }
+
+div.ExecutionVisualizer .nullObj { }
+
+div.ExecutionVisualizer .stringObj, div.ExecutionVisualizer .customObj, div=
+.ExecutionVisualizer .funcObj { font-family: "Andale mono", monospace; whit=
+e-space: nowrap; }
+
+div.ExecutionVisualizer .retval { font-size: 9pt; }
+
+div.ExecutionVisualizer .stackFrame .retval { color: rgb(233, 63, 52); }
+
+div.ExecutionVisualizer table.listTbl, div.ExecutionVisualizer table.tupleT=
+bl, div.ExecutionVisualizer table.setTbl { background-color: rgb(255, 255, =
+198); }
+
+div.ExecutionVisualizer table.listTbl { border: 0px solid black; border-spa=
+cing: 0px; }
+
+div.ExecutionVisualizer table.listTbl td.listHeader, div.ExecutionVisualize=
+r table.tupleTbl td.tupleHeader { padding-left: 4px; padding-top: 2px; padd=
+ing-bottom: 3px; font-size: 8pt; color: rgb(119, 119, 119); text-align: lef=
+t; border-left: 1px solid rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.tupleTbl { border-spacing: 0px; color: black;=
+ border-bottom: 1px solid rgb(85, 85, 85); border-top: 1px solid rgb(85, 85=
+, 85); border-right: 1px solid rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.listTbl td.listElt { border-bottom: 1px solid=
+ rgb(85, 85, 85); border-left: 1px solid rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.tupleTbl td.tupleElt { border-left: 1px solid=
+ rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.customObjTbl { background-color: white; color=
+: black; border: 1px solid black; }
+
+div.ExecutionVisualizer table.customObjTbl td.customObjElt { padding: 5px; =
+}
+
+div.ExecutionVisualizer table.listTbl td.listElt, div.ExecutionVisualizer t=
+able.tupleTbl td.tupleElt { padding: 0px 10px 8px; vertical-align: bottom; =
+}
+
+div.ExecutionVisualizer table.setTbl { border: 1px solid rgb(85, 85, 85); b=
+order-spacing: 0px; text-align: center; }
+
+div.ExecutionVisualizer table.setTbl td.setElt { padding: 8px; }
+
+div.ExecutionVisualizer table.dictTbl, div.ExecutionVisualizer table.instTb=
+l, div.ExecutionVisualizer table.classTbl { border-spacing: 1px; }
+
+div.ExecutionVisualizer table.dictTbl td.dictKey, div.ExecutionVisualizer t=
+able.instTbl td.instKey, div.ExecutionVisualizer table.classTbl td.classKey=
+ { background-color: rgb(250, 235, 191); }
+
+div.ExecutionVisualizer table.dictTbl td.dictVal, div.ExecutionVisualizer t=
+able.instTbl td.instVal, div.ExecutionVisualizer table.classTbl td.classVal=
+ { background-color: rgb(255, 255, 198); }
+
+div.ExecutionVisualizer table.dictTbl td.dictKey, div.ExecutionVisualizer t=
+able.instTbl td.instKey, div.ExecutionVisualizer table.classTbl td.classKey=
+ { padding: 12px 4px 5px 10px; text-align: right; }
+
+div.ExecutionVisualizer table.dictTbl td.dictVal, div.ExecutionVisualizer t=
+able.instTbl td.instVal, div.ExecutionVisualizer table.classTbl td.classVal=
+ { padding: 12px 10px 5px 4px; }
+
+div.ExecutionVisualizer table.classTbl td, div.ExecutionVisualizer table.in=
+stTbl td { border-bottom: 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer table.classTbl td.classVal, div.ExecutionVisualizer=
+ table.instTbl td.instVal { border-left: 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer table.classTbl { border-collapse: collapse; border:=
+ 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer td.listElt table.dictTbl, div.ExecutionVisualizer t=
+d.tupleElt table.dictTbl, div.ExecutionVisualizer td.dictVal table.dictTbl,=
+ div.ExecutionVisualizer td.instVal table.dictTbl, div.ExecutionVisualizer =
+td.classVal table.dictTbl { border: 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer .objectIdLabel { font-size: 8pt; color: rgb(68, 68,=
+ 68); margin-bottom: 2px; }
+
+div.ExecutionVisualizer .typeLabel { font-size: 8pt; color: rgb(85, 85, 85)=
+; margin-bottom: 2px; }
+
+div.ExecutionVisualizer div#stack, div.ExecutionVisualizer div#globals_area=
+ { padding-left: 10px; padding-right: 30px; }
+
+div.ExecutionVisualizer div.stackFrame, div.ExecutionVisualizer div.zombieS=
+tackFrame { background-color: rgb(255, 255, 255); margin-bottom: 15px; padd=
+ing: 2px 6px 4px; font-size: 10pt; white-space: nowrap; }
+
+div.ExecutionVisualizer div.zombieStackFrame { border-left: 1px dotted rgb(=
+170, 170, 170); color: rgb(128, 128, 128); }
+
+div.ExecutionVisualizer div.highlightedStackFrame { background-color: rgb(2=
+15, 231, 251); }
+
+div.ExecutionVisualizer div.stackFrame, div.ExecutionVisualizer div.highlig=
+htedStackFrame { border-left: 1px solid rgb(166, 179, 182); }
+
+div.ExecutionVisualizer div.stackFrameHeader { font-family: "Andale mono", =
+monospace; font-size: 10pt; margin-top: 4px; margin-bottom: 3px; white-spac=
+e: nowrap; }
+
+div.ExecutionVisualizer td.stackFrameVar { text-align: right; padding-right=
+: 8px; padding-top: 3px; padding-bottom: 3px; }
+
+div.ExecutionVisualizer td.stackFrameValue { text-align: left; border-botto=
+m: 1px solid rgb(170, 170, 170); border-left: 1px solid rgb(170, 170, 170);=
+ vertical-align: middle; padding-top: 3px; padding-left: 3px; padding-botto=
+m: 3px; }
+
+div.ExecutionVisualizer .stackFrameVarTable tr { }
+
+div.ExecutionVisualizer .stackFrameVarTable { text-align: right; padding-to=
+p: 3px; margin-left: auto; margin-right: 0px; border-collapse: separate; bo=
+rder-spacing: 2px; }
+
+div.ExecutionVisualizer div#heap { float: left; padding-left: 30px; }
+
+div.ExecutionVisualizer td.toplevelHeapObject { padding: 4px 8px; }
+
+div.ExecutionVisualizer table.heapRow { margin-bottom: 10px; }
+
+div.ExecutionVisualizer div.heapObject { padding-left: 2px; }
+
+div.ExecutionVisualizer div.heapPrimitive { padding-left: 4px; }
+
+div.ExecutionVisualizer div#stackHeader { margin-bottom: 15px; text-align: =
+right; }
+
+div.ExecutionVisualizer div#heapHeader { margin-bottom: 15px; }
+
+div.ExecutionVisualizer div#stackHeader, div.ExecutionVisualizer div#heapHe=
+ader { color: rgb(51, 51, 51); font-size: 10pt; }
+
+div.ExecutionVisualizer #executionSlider { margin: 15px auto 5px; width: 95=
+%; }
+
+div.ExecutionVisualizer #executionSliderCaption { font-size: 8pt; color: rg=
+b(102, 102, 102); margin-top: 15px; }
+
+div.ExecutionVisualizer #executionSliderFooter { margin-top: -7px; }
+
+div.ExecutionVisualizer .ui-slider .ui-slider-handle { border: 1px solid rg=
+b(153, 153, 153); }
+
+textarea.bubbleInputText { border: 1px solid rgb(204, 204, 204); outline: n=
+one; overflow: auto; resize: none; width: 225px; max-width: 225px; height: =
+35px; max-height: 35px; }
+
+.ui-tooltip-pgbootstrap, textarea.bubbleInputText { font-family: verdana, a=
+rial, helvetica, sans-serif; font-size: 9pt; line-height: 1.3em; }
+
+.ui-tooltip-pgbootstrap { color: rgb(51, 51, 51); background-color: rgb(255=
+, 255, 255); max-width: 250px; min-width: 10px; border: 2px solid rgb(66, 1=
+32, 211); cursor: pointer; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.=
+2) 2px 2px 3px 0px; background-clip: padding-box; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-titlebar { font-size: 18px; line-height=
+: 22px; border-bottom: 1px solid rgb(204, 204, 204); background-color: tran=
+sparent; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-content { padding: 5px 8px; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-titlebar .ui-state-default { right: 9px=
+; top: 49%; border-style: none; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-icon { background: white; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-icon .ui-icon { width: auto; height: au=
+to; float: right; font-size: 20px; font-weight: bold; line-height: 18px; co=
+lor: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px 0px; opacity: 0.=
+2; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-icon .ui-icon:hover { color: rgb(0, 0, =
+0); text-decoration: none; cursor: pointer; opacity: 0.4; }
+
+.ui-tooltip-pgbootstrap { border-radius: 5px; }
+
+.ui-tooltip-pgbootstrap-stub { border: 1px solid rgb(153, 153, 153); }
+
+.ui-tooltip-pgbootstrap-stub .ui-tooltip-content { padding: 6px 9px; }
+
+div.ExecutionVisualizer .annotationText, div.ExecutionVisualizer .vizDescri=
+ptionText { font-family: verdana, arial, helvetica, sans-serif; font-size: =
+11pt; line-height: 1.5em; }
+
+div.ExecutionVisualizer .vizTitleText { font-family: verdana, arial, helvet=
+ica, sans-serif; font-size: 16pt; margin-bottom: 12pt; }
+
+div.ExecutionVisualizer div#vizHeader { margin-bottom: 10px; width: 700px; =
+max-width: 700px; }
+
+div.ExecutionVisualizer .highlight-prev { background-color: rgb(240, 240, 2=
+34); }
+
+div.ExecutionVisualizer .highlight-curr { background-color: rgb(255, 255, 1=
+02); }
+
+div.ExecutionVisualizer .highlight-legend { padding: 2px; }
+
+.ui-resizable-e { background-color: rgb(221, 221, 221); width: 1px; border:=
+ 3px solid white; }
+
+.ui-resizable-e:hover { border-color: rgb(221, 221, 221); }
+
+div.ExecutionVisualizer .pycrazy-highlight-prev { background-color: rgb(238=
+, 238, 238); }
+
+div.ExecutionVisualizer .pycrazy-highlight-cur { background-color: rgb(255,=
+ 255, 102); }
+
+div.ExecutionVisualizer .pycrazy-highlight-prev-and-cur { background-color:=
+ rgb(255, 255, 102); text-decoration: none; border-bottom: 1px solid rgb(15=
+3, 153, 153); }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/css/pygment.css
+
+@charset "utf-8";
+
+.hll { background-color: rgb(238, 238, 238); }
+
+.c { color: rgb(64, 128, 144); font-style: italic; }
+
+.err { border: 1px solid rgb(255, 0, 0); }
+
+.k { color: rgb(0, 112, 32); font-weight: bold; }
+
+.o { color: rgb(102, 102, 102); }
+
+.cm { color: rgb(64, 128, 144); font-style: italic; }
+
+.cp { color: rgb(0, 112, 32); }
+
+.c1 { color: rgb(64, 128, 144); font-style: italic; }
+
+.cs { background-color: rgb(255, 240, 240); color: rgb(64, 128, 144); }
+
+.gd { color: rgb(160, 0, 0); }
+
+.ge { font-style: italic; }
+
+.gr { color: rgb(255, 0, 0); }
+
+.gh { color: rgb(0, 0, 128); font-weight: bold; }
+
+.gi { color: rgb(0, 160, 0); }
+
+.go { color: rgb(48, 48, 48); }
+
+.gp { color: rgb(198, 93, 9); font-weight: bold; }
+
+.gs { font-weight: bold; }
+
+.gu { color: rgb(128, 0, 128); font-weight: bold; }
+
+.gt { color: rgb(0, 64, 208); }
+
+.kc { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kd { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kn { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kp { color: rgb(0, 112, 32); }
+
+.kr { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kt { color: rgb(144, 32, 0); }
+
+.m { color: rgb(32, 128, 80); }
+
+.s { color: rgb(64, 112, 160); }
+
+.na { color: rgb(64, 112, 160); }
+
+.nb { color: rgb(0, 112, 32); }
+
+.nc { color: rgb(14, 132, 181); font-weight: bold; }
+
+.no { color: rgb(96, 173, 213); }
+
+.nd { color: rgb(85, 85, 85); font-weight: bold; }
+
+.ni { color: rgb(213, 85, 55); font-weight: bold; }
+
+.ne { color: rgb(0, 112, 32); }
+
+.nf { color: rgb(6, 40, 126); }
+
+.nl { color: rgb(0, 32, 112); font-weight: bold; }
+
+.nn { color: rgb(14, 132, 181); font-weight: bold; }
+
+.nt { color: rgb(6, 40, 115); font-weight: bold; }
+
+.nv { color: rgb(187, 96, 213); }
+
+.ow { color: rgb(0, 112, 32); font-weight: bold; }
+
+.w { color: rgb(187, 187, 187); }
+
+.mf { color: rgb(32, 128, 80); }
+
+.mh { color: rgb(32, 128, 80); }
+
+.mi { color: rgb(32, 128, 80); }
+
+.mo { color: rgb(32, 128, 80); }
+
+.sb { color: rgb(64, 112, 160); }
+
+.sc { color: rgb(64, 112, 160); }
+
+.sd { color: rgb(64, 112, 160); font-style: italic; }
+
+.s2 { color: rgb(64, 112, 160); }
+
+.se { color: rgb(64, 112, 160); font-weight: bold; }
+
+.sh { color: rgb(64, 112, 160); }
+
+.si { color: rgb(112, 160, 208); font-style: italic; }
+
+.sx { color: rgb(198, 93, 9); }
+
+.sr { color: rgb(35, 83, 136); }
+
+.s1 { color: rgb(64, 112, 160); }
+
+.ss { color: rgb(81, 121, 24); }
+
+.bp { color: rgb(0, 112, 32); }
+
+.vc { color: rgb(187, 96, 213); }
+
+.vg { color: rgb(187, 96, 213); }
+
+.vi { color: rgb(187, 96, 213); }
+
+.il { color: rgb(32, 128, 80); }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/css/cp.css
+
+@charset "utf-8";
+
+@import url("pygment.css");
+
+html { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-we=
+ight: 400; color: rgb(72, 72, 72); line-height: 1.3; }
+
+p { margin: 0px 0px 10px; }
+
+.subHeader { font-size: 21px; font-weight: 200; line-height: 30px; margin-b=
+ottom: 10px; }
+
+em { font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: 700; line-heigh=
+t: 20px; color: inherit; text-rendering: optimizelegibility; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: 4=
+00; color: rgb(123, 123, 123); }
+
+h1, h2, h3 { line-height: 40px; vertical-align: top; }
+
+h1 { font-size: 24px; }
+
+h2 { font-size: 20px; }
+
+h3 { font-size: 18px; }
+
+h4 { font-size: 16px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 14px; }
+
+h1 small { font-size: 20px; }
+
+h2 small { font-size: 16px; }
+
+h3 small { font-size: 14px; }
+
+h4 small { font-size: 14px; }
+
+ul, ol { margin: 0px 0px 10px 25px; padding: 0px; }
+
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0px; }
+
+li { line-height: 20px; }
+
+a { color: rgb(192, 91, 77); text-decoration: none; }
+
+a:hover, a:focus { color: rgb(165, 71, 58); text-decoration: underline; }
+
+a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px;=
+ }
+
+.center { text-align: center; }
+
+html { background: rgb(255, 255, 255); }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.container { }
+
+.wrap { width: 960px; padding-left: 20px; padding-right: 20px; }
+
+.skinnyWrap { width: 690px; margin-left: auto; margin-right: auto; padding-=
+left: 20px; padding-right: 20px; }
+
+hr { height: 0px; border-top: 1px solid rgb(204, 204, 204); border-bottom: =
+1px solid rgb(238, 238, 238); }
+
+ul, li { margin-left: 20px; }
+
+.nav-main { background: rgb(34, 34, 34); color: rgb(250, 250, 250); top: 0p=
+x; height: 40px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px; width: 100%; z=
+-index: 100; }
+
+.nav-main::before, .nav-main::after { content: " "; display: table; }
+
+.nav-main::after { clear: both; }
+
+.nav-main a { color: rgb(233, 233, 233); text-decoration: none; }
+
+.nav-main .nav-site { margin: 0px; padding-left: 50px; }
+
+.nav-main .nav-site li { margin: 0px; }
+
+.nav-main .nav-site a { padding: 0px 8px; text-transform: uppercase; letter=
+-spacing: 1px; line-height: 40px; display: inline-block; height: 40px; colo=
+r: rgb(170, 170, 170); }
+
+.nav-main .nav-site a:hover { color: rgb(250, 250, 250); background: rgb(85=
+, 85, 85); }
+
+.nav-main .nav-home { color: rgb(250, 250, 250); font-size: 20px; line-heig=
+ht: 38px; }
+
+.nav-main .nav-logo { color: rgb(221, 221, 221); vertical-align: middle; te=
+xt-transform: uppercase; }
+
+.nav-main .nav-logo-compose { color: rgb(0, 216, 255); vertical-align: top;=
+ }
+
+.nav-main ul { display: inline; }
+
+.nav-main li { display: inline; }
+
+.hero { height: 300px; background: rgb(45, 45, 45); padding-top: 50px; colo=
+r: rgb(233, 233, 233); font-weight: 300; }
+
+.hero .text { font-size: 64px; text-align: center; }
+
+.hero .minitext { font-size: 16px; text-align: center; text-transform: uppe=
+rcase; }
+
+.hero strong { color: rgb(97, 218, 251); font-weight: 400; }
+
+.nav-docs { color: rgb(45, 45, 45); font-size: 12px; float: left; top: 100p=
+x; width: 180px; }
+
+.nav-docs ul { list-style: none; margin: 0px; }
+
+.nav-docs ul ul { margin-left: 10px; }
+
+.nav-docs li { margin: 0px; list-style-type: none; }
+
+.nav-docs h3 { font-size: 12px; line-height: 20px; }
+
+.nav-docs a { color: rgb(102, 102, 102); display: block; }
+
+.nav-docs a:hover { text-decoration: none; color: rgb(204, 122, 111); }
+
+.nav-docs a.active { color: rgb(204, 122, 111); }
+
+.nav-docs .nav-docs-section { border-bottom: 1px solid rgb(204, 204, 204); =
+border-top: 1px solid rgb(238, 238, 238); padding: 12px 0px; }
+
+.nav-docs .nav-docs-section:first-child { padding-top: 0px; border-top: 0px=
+; }
+
+.nav-docs .nav-docs-section:last-child { padding-bottom: 0px; border-bottom=
+: 0px; }
+
+.home-section { margin: 50px 0px; }
+
+.home-divider { border-top-color: rgb(187, 187, 187); margin: 0px auto; wid=
+th: 400px; }
+
+footer { font-size: 11px; margin-top: 36px; margin-bottom: 18px; border-top=
+: 1px solid rgb(170, 170, 170); padding-top: 4px; overflow: auto; }
+
+section.black content { padding-bottom: 18px; }
+
+.documentationContent { padding-top: 10px; }
+
+.documentationContent::before, .documentationContent::after { content: " ";=
+ display: table; }
+
+.documentationContent::after { clear: both; }
+
+.documentationContent .subHeader { font-size: 24px; }
+
+.documentationContent h2 { margin-top: 0px; }
+
+.documentationContent blockquote { padding: 15px 30px 15px 15px; margin: 20=
+px 0px; background-color: rgba(204, 122, 111, 0.1); border-left: 5px solid =
+rgba(191, 87, 73, 0.2); }
+
+.documentationContent blockquote h4 { margin-top: 0px; }
+
+.documentationContent blockquote p:last-child { margin-bottom: 0px; }
+
+.documentationContent blockquote p:first-child { margin-top: 0px; text-rend=
+ering: optimizelegibility; }
+
+.docs-prevnext { padding-top: 40px; padding-bottom: 40px; }
+
+.row { padding-bottom: 4px; }
+
+.row .span4 { width: 33.33%; display: table-cell; }
+
+.row .span8 { width: 66.66%; display: table-cell; }
+
+.row .span6 { width: 50%; display: table-cell; }
+
+p { margin: 10px 0px; }
+
+pre { margin: 0px; }
+
+.highlight { padding: 10px 0px; margin: 0px; }
+
+figure { text-align: center; }
+
+.inner-content { float: right; width: 720px; }
+
+.nosidebar .inner-content { float: none; margin: 0px auto; }
+
+.post-list-item + .post-list-item { margin-top: 60px; }
+
+div.CodeMirror pre, div.CodeMirror-linenumber, code { font-family: source-c=
+ode-pro, Menlo, "Courier New", Consolas, monospace; font-size: 13px; line-h=
+eight: 20px; }
+
+div.CodeMirror-linenumber::after { content: "."; }
+
+.CodeMirror, div.CodeMirror-gutters, div.highlight { border: none; }
+
+small code, li code, p code { color: rgb(85, 85, 85); background-color: rgb=
+a(0, 0, 0, 0.04); padding: 1px 3px; }
+
+.cm-s-default span.cm-string-2 { color: inherit; }
+
+.playground { }
+
+.playground::before, .playground::after { content: " "; display: table; }
+
+.playground::after { clear: both; }
+
+.playground::before { border-radius: 3px 3px 0px 0px; padding: 3px 7px; fon=
+t-size: 12px; font-weight: 700; color: rgb(194, 192, 188); background-color=
+: rgb(241, 237, 228); content: "Live editor"; border-bottom: none !importan=
+t; }
+
+.playground::before, .playgroundCode, .playgroundPreview { border: 1px soli=
+d rgba(16, 16, 16, 0.1); }
+
+.playgroundCode { border-radius: 0px 3px 3px; float: left; overflow: hidden=
+; width: 600px; }
+
+.playgroundPreview { background-color: rgb(255, 255, 255); border-radius: 3=
+px; float: right; padding: 15px 20px; width: 280px; }
+
+.MarkdownEditor textarea { width: 100%; height: 100px; }
+
+.hll { background-color: rgb(247, 235, 198); border-left: 5px solid rgb(247=
+, 216, 124); display: block; margin-left: -14px; margin-right: -14px; paddi=
+ng-left: 9px; }
+
+.downloadCenter { text-align: center; margin-top: 20px; margin-bottom: 25px=
+; }
+
+.downloadSection:hover { text-decoration: none !important; }
+
+@media screen and (max-width: 960px) {
+  .nav-main { position: static; }
+  .container { padding-top: 0px; }
+}
+
+.post { margin-bottom: 30px; }
+
+p.attribution { text-align: right; }
+
+.vizLayoutDiv { margin-top: 10px; }
+
+.literal { font-weight: 500; color: rgb(0, 0, 0); }
+
+table.docutils { margin: 30px 0px; border: 0px; border-collapse: collapse; =
+table-layout: auto; }
+
+table.docutils th, table.docutils td { border: inherit; padding: 8px; }
+
+table.docutils th { white-space: nowrap; text-align: left; background-color=
+: rgb(221, 221, 221); }
+
+table.docutils tr:nth-child(2n) { background-color: rgb(221, 221, 221); bor=
+der: inherit; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f9048713-a859-4f0a-92bb-7dab95175162@mhtml.blink
+
+@charset "utf-8";
+
+.MJXp-script { font-size: 0.8em; }
+
+.MJXp-right { transform-origin: right center; }
+
+.MJXp-bold { font-weight: bold; }
+
+.MJXp-italic { font-style: italic; }
+
+.MJXp-scr { font-family: MathJax_Script, "Times New Roman", Times, STIXGene=
+ral, serif; }
+
+.MJXp-frak { font-family: MathJax_Fraktur, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-sf { font-family: MathJax_SansSerif, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-cal { font-family: MathJax_Caligraphic, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-mono { font-family: MathJax_Typewriter, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-largeop { font-size: 150%; }
+
+.MJXp-largeop.MJXp-int { vertical-align: -0.2em; }
+
+.MJXp-math { display: inline-block; line-height: 1.2; text-indent: 0px; fon=
+t-family: "Times New Roman", Times, STIXGeneral, serif; white-space: nowrap=
+; border-collapse: collapse; }
+
+.MJXp-display { display: block; text-align: center; margin: 1em 0px; }
+
+.MJXp-math span { display: inline-block; }
+
+.MJXp-box { display: block !important; text-align: center; }
+
+.MJXp-box::after { content: " "; }
+
+.MJXp-rule { display: block !important; margin-top: 0.1em; }
+
+.MJXp-char { display: block !important; }
+
+.MJXp-mo { margin: 0px 0.15em; }
+
+.MJXp-mfrac { margin: 0px 0.125em; vertical-align: 0.25em; }
+
+.MJXp-denom { display: inline-table !important; width: 100%; }
+
+.MJXp-denom > * { display: table-row !important; }
+
+.MJXp-surd { vertical-align: top; }
+
+.MJXp-surd > * { display: block !important; }
+
+.MJXp-script-box > * { display: table !important; height: 50%; }
+
+.MJXp-script-box > * > * { display: table-cell !important; vertical-align: =
+top; }
+
+.MJXp-script-box > :last-child > * { vertical-align: bottom; }
+
+.MJXp-script-box > * > * > * { display: block !important; }
+
+.MJXp-mphantom { visibility: hidden; }
+
+.MJXp-munderover { display: inline-table !important; }
+
+.MJXp-over { display: inline-block !important; text-align: center; }
+
+.MJXp-over > * { display: block !important; }
+
+.MJXp-munderover > * { display: table-row !important; }
+
+.MJXp-mtable { vertical-align: 0.25em; margin: 0px 0.125em; }
+
+.MJXp-mtable > * { display: inline-table !important; vertical-align: middle=
+; }
+
+.MJXp-mtr { display: table-row !important; }
+
+.MJXp-mtd { text-align: center; padding: 0.5em 0px 0px 0.5em; display: tabl=
+e-cell !important; }
+
+.MJXp-mtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-mlabeledtr { display: table-row !important; }
+
+.MJXp-mlabeledtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mlabeledtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-merror { background-color: rgb(255, 255, 136); color: rgb(204, 0, 0);=
+ border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; fo=
+nt-size: 90%; }
+
+.MJXp-scale0 { transform: scaleX(0); }
+
+.MJXp-scale1 { transform: scaleX(0.1); }
+
+.MJXp-scale2 { transform: scaleX(0.2); }
+
+.MJXp-scale3 { transform: scaleX(0.3); }
+
+.MJXp-scale4 { transform: scaleX(0.4); }
+
+.MJXp-scale5 { transform: scaleX(0.5); }
+
+.MJXp-scale6 { transform: scaleX(0.6); }
+
+.MJXp-scale7 { transform: scaleX(0.7); }
+
+.MJXp-scale8 { transform: scaleX(0.8); }
+
+.MJXp-scale9 { transform: scaleX(0.9); }
+
+.MathJax_PHTML .noError { font-size: 90%; text-align: left; color: black; p=
+adding: 1px 3px; border: 1px solid; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-95cf89bd-1e0f-48c6-a35c-413b3d8865ab@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview { color: rgb(136, 136, 136); }
+
+#MathJax_Message { position: fixed; left: 1em; bottom: 1.5em; background-co=
+lor: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px;=
+ padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto;=
+ white-space: nowrap; }
+
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; =
+z-index: 101; border: 0px; margin: 0px; padding: 0px; }
+
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-96971e45-0665-4da8-a144-0852a0d599fe@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_Zoom { position: absolute; background-color: rgb(240, 240, 240); o=
+verflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px so=
+lid black; margin: 0px; font-weight: normal; font-style: normal; text-align=
+: left; text-indent: 0px; text-transform: none; line-height: normal; letter=
+-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space:=
+ nowrap; float: none; box-sizing: content-box; box-shadow: rgb(170, 170, 17=
+0) 5px 5px 15px; }
+
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 30=
+0; display: inline-block; width: 100%; height: 100%; border: 0px; padding: =
+0px; margin: 0px; background-color: white; opacity: 0; }
+
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px=
+; width: 0px; }
+
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: =
+302; display: inline-block; border: 0px; padding: 0px; margin: 0px; backgro=
+und-color: white; opacity: 0; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-5a73bf90-5371-4153-a2ed-3a803d0b3a0a@mhtml.blink
+
+@charset "utf-8";
+
+.MJX_Assistive_MathML { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px)=
+; user-select: none; position: absolute !important; padding: 1px 0px 0px !i=
+mportant; border: 0px !important; height: 1px !important; width: 1px !impor=
+tant; overflow: hidden !important; display: block !important; }
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block { width: 100% !important; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8aa115a6-d5e2-442e-bd32-bf3a2148dd01@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview .MJXf-math { color: inherit !important; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-173c9111-53c8-413a-bfd3-d7331eccaa3d@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: cente=
+r; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 22=
+1); color: black; cursor: default; font-family: message-box; font-size: 120=
+%; font-style: normal; text-indent: 0px; text-transform: none; line-height:=
+ normal; letter-spacing: normal; word-spacing: normal; overflow-wrap: norma=
+l; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; box=
+-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+#MathJax_About.MathJax_MousePost { outline: none; }
+
+.MathJax_Menu { position: absolute; background-color: white; color: black; =
+width: auto; padding: 2px; border: 1px solid rgb(204, 204, 204); margin: 0p=
+x; cursor: default; font-style: ; font-variant: normal; font-weight: ; font=
+-stretch: ; font-size: ; font-family: ; font-optical-sizing: ; font-size-ad=
+just: ; font-kerning: ; font-feature-settings: ; font-variation-settings: ;=
+ text-align: left; text-indent: 0px; text-transform: none; line-height: nor=
+mal; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; w=
+hite-space: nowrap; float: none; z-index: 201; box-shadow: rgb(128, 128, 12=
+8) 0px 10px 20px; }
+
+.MathJax_MenuItem { padding: 2px 2em; background: transparent; }
+
+.MathJax_MenuArrow { position: absolute; right: 0.5em; padding-top: 0.25em;=
+ color: rgb(102, 102, 102); font-size: 0.75em; }
+
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+
+.MathJax_MenuArrow.RTL { left: 0.5em; right: auto; }
+
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuCheck.RTL { right: 0.7em; left: auto; }
+
+.MathJax_MenuRadioCheck { position: absolute; left: 1em; }
+
+.MathJax_MenuRadioCheck.RTL { right: 1em; left: auto; }
+
+.MathJax_MenuLabel { padding: 2px 2em 4px 1.33em; font-style: italic; }
+
+.MathJax_MenuRule { border-top: 1px solid rgb(204, 204, 204); margin: 4px 1=
+px 0px; }
+
+.MathJax_MenuDisabled { color: graytext; }
+
+.MathJax_MenuActive { background-color: highlight; color: highlighttext; }
+
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus { background-color: r=
+gb(232, 232, 232); }
+
+.MathJax_ContextMenu:focus { outline: none; }
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus { outline: none; }
+
+#MathJax_AboutClose { top: 0.2em; right: 0.2em; }
+
+.MathJax_Menu .MathJax_MenuClose { top: -10px; left: -10px; }
+
+.MathJax_MenuClose { position: absolute; cursor: pointer; display: inline-b=
+lock; border: 2px solid rgb(170, 170, 170); border-radius: 18px; font-famil=
+y: "Courier New", Courier; font-size: 24px; color: rgb(240, 240, 240); }
+
+.MathJax_MenuClose span { display: block; background-color: rgb(170, 170, 1=
+70); border: 1.5px solid; border-radius: 18px; line-height: 0; padding: 8px=
+ 0px 6px; }
+
+.MathJax_MenuClose:hover { color: white !important; border: 2px solid rgb(2=
+04, 204, 204) !important; }
+
+.MathJax_MenuClose:hover span { background-color: rgb(204, 204, 204) !impor=
+tant; }
+
+.MathJax_MenuClose:hover:focus { outline: none; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-4b4a9154-116e-4ec3-b2eb-8eaa647cb52a@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Hover_Frame { border-radius: 0.25em; box-shadow: rgb(136, 51, 170)=
+ 0px 0px 15px; display: inline-block; position: absolute; border: 1px solid=
+ rgb(170, 102, 221) !important; }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow { position: absolute; cursor: poi=
+nter; display: inline-block; border: 2px solid rgb(170, 170, 170); border-r=
+adius: 4px; font-family: "Courier New", Courier; font-size: 9px; color: rgb=
+(240, 240, 240); }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span { display: block; background=
+-color: rgb(170, 170, 170); border: 1px solid; border-radius: 3px; line-hei=
+ght: 0; padding: 4px; }
+
+.MathJax_Hover_Arrow:hover { color: white !important; border: 2px solid rgb=
+(204, 204, 204) !important; }
+
+.MathJax_Hover_Arrow:hover span { background-color: rgb(204, 204, 204) !imp=
+ortant; }
+------MultipartBoundary--GDbEWI32qxMOBBxGQSPnvlcx3Mjbmz5FQmLu584lXe------

@@ -1,0 +1,3437 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.composingprograms.com/pages/17-recursive-functions.html
+Subject: 1.7 Recursive Functions
+Date: Fri, 25 Apr 2025 16:45:28 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----"
+
+
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-A7237130F5148101F3F95DB0E3F6E240@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/pages/17-recursive-functions.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-b8de6a4a-a040-4641-b172-04c9fd143dea@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-4ba0471e-850b-40f5=
+-abf5-622c57aa3888@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
+" href=3D"cid:css-b2c04515-dc3f-431c-a368-a48a23990e24@mhtml.blink" /><link=
+ rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-026f4a0c-1d26-47d7-ad=
+66-2023d8df9a43@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" h=
+ref=3D"cid:css-08c369d9-e1b0-4dbe-b36f-1eb3da8a3309@mhtml.blink" /><link re=
+l=3D"stylesheet" type=3D"text/css" href=3D"cid:css-c9fb3ff8-e1c7-46ed-a709-=
+291fa78f7c8c@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-4cb9407c-0cf5-412e-8d3a-aae0ef13cd38@mhtml.blink" /><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-217f8335-9405-416a-abc1-c=
+13e758ce944@mhtml.blink" />
+  <title>1.7 Recursive Functions</title>
+ =20
+
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/css/cp.css">
+
+  <!-- Stylesheets -->
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/tutor/css/pytutor.css">
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/tutor/css/ui-lightness/jquery-ui-1.8.21.custom.css">
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/tutor/css/codemirror.css">
+  <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://www.composingp=
+rograms.com/theme/coding-js/coding.css">
+
+  <!-- jQuery -->
+ =20
+ =20
+ =20
+ =20
+
+  <!-- codemirror.net online code editor -->
+ =20
+ =20
+
+  <!-- d3 -->
+ =20
+
+  <!-- Online Python Tutor -->
+ =20
+
+  <!-- Coding.js -->
+ =20
+ =20
+
+  <!-- Composing Programs -->
+ =20
+
+ =20
+   =20
+
+</head>
+
+<body id=3D"index" class=3D"home"><div style=3D"visibility: hidden; overflo=
+w: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding:=
+ 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-tr=
+ansform: none; line-height: normal; letter-spacing: normal; word-spacing: n=
+ormal;"><div id=3D"MathJax_Hidden"></div></div><div id=3D"MathJax_Message" =
+style=3D"display: none;"></div>
+  <div class=3D"container">
+
+    <div class=3D"nav-main">
+      <div class=3D"wrap">
+        <a class=3D"nav-home" href=3D"https://www.composingprograms.com/">
+          <span class=3D"nav-logo">c<span class=3D"nav-logo-compose">=E2=9A=
+=AC</span>mp<span class=3D"nav-logo-compose">=E2=9A=AC</span>sing pr<span c=
+lass=3D"nav-logo-compose">=E2=9A=AC</span>grams</span>
+        </a>
+        <ul class=3D"nav-site">
+          <li><a href=3D"https://www.composingprograms.com/">Text</a></li>
+          <li><a href=3D"https://www.composingprograms.com/projects.html">P=
+rojects</a></li>
+          <li><a href=3D"https://www.composingprograms.com/tutor.html">Tuto=
+r</a></li>
+          <li><a href=3D"https://www.composingprograms.com/about.html">Abou=
+t</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class=3D"content wrap documentationContent">
+      <div class=3D"nav-docs">
+	<h3><font _mstmutation=3D"1">Chapter 1</font><a id=3D"hide_contents">Hide =
+contents</a> </h3>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/11-getting-starte=
+d.html">1.1 Getting Started</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/11-getting-start=
+ed.html#programming-in-python">1.1.1 Programming in Python</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/11-getting-=
+started.html#installing-python-3">1.1.2 Installing Python 3</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/11-getting-=
+started.html#interactive-sessions">1.1.3 Interactive Sessions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/11-getting-=
+started.html#first-example">1.1.4 First Example</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/11-getting-=
+started.html#errors">1.1.5 Errors</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/12-elements-of-pr=
+ogramming.html">1.2 Elements of Programming</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/12-elements-of-p=
+rogramming.html#expressions">1.2.1 Expressions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/12-elements=
+-of-programming.html#call-expressions">1.2.2 Call Expressions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/12-elements=
+-of-programming.html#importing-library-functions">1.2.3 Importing Library F=
+unctions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/12-elements=
+-of-programming.html#names-and-the-environment">1.2.4 Names and the Environ=
+ment</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/12-elements=
+-of-programming.html#evaluating-nested-expressions">1.2.5 Evaluating Nested=
+ Expressions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/12-elements=
+-of-programming.html#the-non-pure-print-function">1.2.6 The Non-Pure Print =
+Function</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/13-defining-new-f=
+unctions.html">1.3 Defining New Functions</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/13-defining-new-=
+functions.html#environments">1.3.1 Environments</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/13-defining=
+-new-functions.html#calling-user-defined-functions">1.3.2 Calling User-Defi=
+ned Functions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/13-defining=
+-new-functions.html#example-calling-a-user-defined-function">1.3.3 Example:=
+ Calling a User-Defined Function</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/13-defining=
+-new-functions.html#local-names">1.3.4 Local Names</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/13-defining=
+-new-functions.html#choosing-names">1.3.5 Choosing Names</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/13-defining=
+-new-functions.html#functions-as-abstractions">1.3.6 Functions as Abstracti=
+ons</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/13-defining=
+-new-functions.html#operators">1.3.7 Operators</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/14-designing-func=
+tions.html">1.4 Designing Functions</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/14-designing-fun=
+ctions.html#documentation">1.4.1 Documentation</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/14-designin=
+g-functions.html#default-argument-values">1.4.2 Default Argument Values</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/15-control.html">=
+1.5 Control</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/15-control.html#=
+statements">1.5.1 Statements</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/15-control.=
+html#compound-statements">1.5.2 Compound Statements</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/15-control.=
+html#defining-functions-ii-local-assignment">1.5.3 Defining Functions II: L=
+ocal Assignment</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/15-control.=
+html#conditional-statements">1.5.4 Conditional Statements</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/15-control.=
+html#iteration">1.5.5 Iteration</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/15-control.=
+html#testing">1.5.6 Testing</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/16-higher-order-f=
+unctions.html">1.6 Higher-Order Functions</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/16-higher-order-=
+functions.html#functions-as-arguments">1.6.1 Functions as Arguments</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#functions-as-general-methods">1.6.2 Functions as Genera=
+l Methods</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#defining-functions-iii-nested-definitions">1.6.3 Defini=
+ng Functions III: Nested Definitions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#functions-as-returned-values">1.6.4 Functions as Return=
+ed Values</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#example-newton-s-method">1.6.5 Example: Newton's Method=
+</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#currying">1.6.6 Currying</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#lambda-expressions">1.6.7 Lambda Expressions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#abstractions-and-first-class-functions">1.6.8 Abstracti=
+ons and First-Class Functions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/16-higher-o=
+rder-functions.html#function-decorators">1.6.9 Function Decorators</a>
+		</li></div>
+		<div class=3D"nav-docs-section">
+			<h3><a href=3D"https://www.composingprograms.com/pages/17-recursive-func=
+tions.html">1.7 Recursive Functions</a></h3>
+				<li><a href=3D"https://www.composingprograms.com/pages/17-recursive-fun=
+ctions.html#the-anatomy-of-recursive-functions">1.7.1 The Anatomy of Recurs=
+ive Functions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/17-recursiv=
+e-functions.html#mutual-recursion">1.7.2 Mutual Recursion</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/17-recursiv=
+e-functions.html#printing-in-recursive-functions">1.7.3 Printing in Recursi=
+ve Functions</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/17-recursiv=
+e-functions.html#tree-recursion">1.7.4 Tree Recursion</a>
+				</li><li><a href=3D"https://www.composingprograms.com/pages/17-recursiv=
+e-functions.html#example-partitions">1.7.5 Example: Partitions</a>
+		</li></div>
+      </div>
+
+      <div class=3D"inner-content">
+  <div class=3D"section" id=3D"recursive-functions">
+<h2>1.7&nbsp;&nbsp;&nbsp;Recursive Functions</h2>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"aB2_8t2jyvX0" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>A function is called <em>recursive</em> if the b=
+ody of the function calls the function
+itself, either directly or indirectly.  That is, the process of executing t=
+he
+body of a recursive function may in turn require applying that function aga=
+in.
+Recursive functions do not use any special syntax in Python, but they do re=
+quire
+some effort to understand and create.</p>
+<p>We'll begin with an example problem: write a function that sums the digi=
+ts of a
+natural number. When designing recursive functions, we look for ways in whi=
+ch a
+problem can be broken down into simpler problems.  In this case, the operat=
+ors
+<tt class=3D"docutils literal">%</tt> and <tt class=3D"docutils literal">//=
+</tt> can be used to separate a number into two parts: its last digit
+and all but its last digit.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"mi">18117</span> <span class=3D"o">%</span> <span cla=
+ss=3D"mi">10</span>
+<span class=3D"go">7</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"mi">18117</span> <spa=
+n class=3D"o">//</span> <span class=3D"mi">10</span>
+<span class=3D"go">1811</span>
+</pre></div>
+
+<p>The sum of the digits of 18117 is <tt class=3D"docutils literal">1+8+1+1=
++7 =3D 18</tt>.  Just as we can separate
+the number, we can separate this sum into the last digit, 7, and the sum of=
+ all
+but the last digit, <tt class=3D"docutils literal">1+8+1+1 =3D 11</tt>.  Th=
+is separation gives us an algorithm: to
+sum the digits of a number <tt class=3D"docutils literal">n</tt>, add its l=
+ast digit <tt class=3D"docutils literal">n % 10</tt> to the sum of
+the digits of <tt class=3D"docutils literal">n // 10</tt>.  There's one spe=
+cial case: if a number has only one
+digit, then the sum of its digits is itself.  This algorithm can be impleme=
+nted
+as a recursive function.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">sum_digits</span><sp=
+an class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span=
+>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"sd">"""Retu=
+rn the sum of the digits of positive integer n."""</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">&lt;</span> <span class=3D"m=
+i">10</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"n">n</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">else</sp=
+an><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">all_=
+but_last</span><span class=3D"p">,</span> <span class=3D"n">last</span> <sp=
+an class=3D"o">=3D</span> <span class=3D"n">n</span> <span class=3D"o">//</=
+span> <span class=3D"mi">10</span><span class=3D"p">,</span> <span class=3D=
+"n">n</span> <span class=3D"o">%</span> <span class=3D"mi">10</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"n">sum_digits</span><span class=3D"p">(</span><spa=
+n class=3D"n">all_but_last</span><span class=3D"p">)</span> <span class=3D"=
+o">+</span> <span class=3D"n">last</span>
+</pre></div>
+
+<p>This definition of <tt class=3D"docutils literal">sum_digits</tt> is bot=
+h complete and correct, even though the
+<tt class=3D"docutils literal">sum_digits</tt> function is called within it=
+s own body. The problem of summing
+the digits of a number is broken down into two steps: summing all but the l=
+ast
+digit, then adding the last digit.  Both of these steps are simpler than th=
+e
+original problem.  The function is recursive because the first step is the =
+same
+kind of problem as the original problem.  That is, <tt class=3D"docutils li=
+teral">sum_digits</tt> is exactly the
+function we need in order to implement <tt class=3D"docutils literal">sum_d=
+igits</tt>.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">sum_digits</span><span class=3D"p">(</span><span c=
+lass=3D"mi">9</span><span class=3D"p">)</span>
+<span class=3D"go">9</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">sum_digits</span><=
+span class=3D"p">(</span><span class=3D"mi">18117</span><span class=3D"p">)=
+</span>
+<span class=3D"go">18</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">sum_digits</span><=
+span class=3D"p">(</span><span class=3D"mi">9437184</span><span class=3D"p"=
+>)</span>
+<span class=3D"go">36</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">sum_digits</span><=
+span class=3D"p">(</span><span class=3D"mi">1140885540205406461347032884838=
+4</span><span class=3D"p">)</span>
+<span class=3D"go">126</span>
+</pre></div>
+
+<p>We can understand precisely how this recursive function applies successf=
+ully
+using our environment model of computation. No new rules are required.</p>
+<div class=3D"example" data-output=3D"False" data-showallframelabels=3D"Tru=
+e" data-step=3D"-1" id=3D"example_41" style=3D""><div class=3D"ExecutionVis=
+ualizer" style=3D"min-height: 551px;"><div id=3D"vizHeader" style=3D"displa=
+y: none;">       <textarea class=3D"vizTitleText" id=3D"vizTitleEditor" col=
+s=3D"60" rows=3D"1" style=3D"display: none;"></textarea>       <div class=
+=3D"vizTitleText" id=3D"vizTitleViewer"></div>       <textarea class=3D"viz=
+DescriptionText" id=3D"vizDescriptionEditor" cols=3D"75" rows=3D"2" style=
+=3D"display: none;"></textarea>       <div class=3D"vizDescriptionText" id=
+=3D"vizDescriptionViewer"></div>    </div><table border=3D"0" class=3D"visu=
+alizer"><tbody><tr><td class=3D"vizLayoutTd" id=3D"vizLayoutTdFirst"><div i=
+d=3D"codeDisplayDiv" class=3D"ui-resizable">       <div id=3D"pyCodeOutputD=
+iv" style=3D"max-height: 400px;"><table id=3D"pyCodeOutput"><tr><td id=3D"g=
+utterTD" valign=3D"top" rowspan=3D"8"><svg id=3D"leftCodeGutterSVG" style=
+=3D"height: 174px;"><polygon id=3D"prevLineArrow" points=3D"0,0 6,5 0,10" f=
+ill=3D"#c9e6ca" transform=3D"translate(0, 127.71875)"></polygon><polygon id=
+=3D"curLineArrow" points=3D"0,0 6,5 0,10" fill=3D"#e93f34" transform=3D"tra=
+nslate(0, 170.40625)"></polygon></svg></td><td class=3D"lineNo" id=3D"lineN=
+o1">1</td><td class=3D"cod" id=3D"v1__cod1">def&nbsp;sum_digits(n):</td></t=
+r><tr><td class=3D"lineNo" id=3D"lineNo2">2</td><td class=3D"cod" id=3D"v1_=
+_cod2">&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;n&nbsp;&lt;&nbsp;10:</td></tr><tr><t=
+d class=3D"lineNo" id=3D"lineNo3">3</td><td class=3D"cod" id=3D"v1__cod3">&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;n</td></tr><tr><=
+td class=3D"lineNo" id=3D"lineNo4">4</td><td class=3D"cod" id=3D"v1__cod4">=
+&nbsp;&nbsp;&nbsp;&nbsp;else:</td></tr><tr><td class=3D"lineNo" id=3D"lineN=
+o5">5</td><td class=3D"cod" id=3D"v1__cod5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;all_but_last,&nbsp;last&nbsp;=3D&nbsp;n&nbsp;//&nbsp;10,&n=
+bsp;n&nbsp;%&nbsp;10</td></tr><tr><td class=3D"lineNo" id=3D"lineNo6">6</td=
+><td class=3D"cod" id=3D"v1__cod6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;return&nbsp;sum_digits(all_but_last)&nbsp;+&nbsp;last</td></tr><tr>=
+<td class=3D"lineNo" id=3D"lineNo7">7</td><td class=3D"cod" id=3D"v1__cod7"=
+></td></tr><tr><td class=3D"lineNo" id=3D"lineNo8">8</td><td class=3D"cod" =
+id=3D"v1__cod8">sum_digits(738)</td></tr></table></div>       <div id=3D"ed=
+itCodeLinkDiv"><a id=3D"editBtn" href=3D"http://composingprograms.com/tutor=
+.html#code=3Ddef+sum_digits(n)%3A%0A++++if+n+%3C+10%3A%0A++++++++return+n%0=
+A++++else%3A%0A++++++++all_but_last,+last+%3D+n+//+10,+n+%25+10%0A++++++++r=
+eturn+sum_digits(all_but_last)+%2B+last%0A%0Asum_digits(738)">Edit code in =
+Online Python Tutor</a></div>       <div id=3D"executionSlider" class=3D"ui=
+-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" sty=
+le=3D"font-size: 0.9em;"><a class=3D"ui-slider-handle ui-state-default ui-c=
+orner-all" href=3D"https://www.composingprograms.com/pages/17-recursive-fun=
+ctions.html#" style=3D"left: 100%; width: 0.8em; height: 1.4em;"></a></div>=
+       <div id=3D"vcrControls">         <button id=3D"jmpStepBack" ,=3D"" t=
+ype=3D"button">&lt; Back</button>         <span id=3D"curInstr">End</span> =
+        <button id=3D"jmpStepFwd" ,=3D"" type=3D"button" disabled=3D"disabl=
+ed">Forward &gt;</button>       </div>       <div id=3D"errorOutput" style=
+=3D"display: none;"></div>       <div id=3D"legendDiv"><svg id=3D"prevLegen=
+dArrowSVG"><polygon points=3D"0,0 6,5 0,10" fill=3D"#c9e6ca"></polygon></sv=
+g><font _mstmutation=3D"1"> line that has just executed</font><p style=3D"m=
+argin-top: 4px"><svg id=3D"curLegendArrowSVG"><polygon points=3D"0,0 6,5 0,=
+10" fill=3D"#e93f34"></polygon></svg><font _mstmutation=3D"1"> next line to=
+ execute</font></p></div>       <div id=3D"stepAnnotationDiv">         <tex=
+tarea class=3D"annotationText" id=3D"stepAnnotationEditor" cols=3D"60" rows=
+=3D"3" style=3D"display: none;"></textarea>         <div class=3D"annotatio=
+nText" id=3D"stepAnnotationViewer"></div>       </div>       <div id=3D"ann=
+otateLinkDiv"><button id=3D"annotateBtn" type=3D"button" style=3D"display: =
+none;">Annotate this step</button></div>     <div class=3D"ui-resizable-han=
+dle ui-resizable-e" style=3D"z-index: 1000;"></div></div><div id=3D"htmlOut=
+putDiv"></div>     <div id=3D"progOutputs" style=3D"display: none;"><font _=
+mstmutation=3D"1">       Program output:</font><br>       <textarea id=3D"p=
+yStdout" cols=3D"50" rows=3D"10" wrap=3D"off" readonly=3D""></textarea>    =
+ </div></td><td class=3D"vizLayoutTd" id=3D"vizLayoutTdSecond"><div id=3D"d=
+ataViz">       <table id=3D"stackHeapTable">         <tbody><tr>           =
+<td id=3D"stack_td">             <div id=3D"globals_area">             <div=
+ class=3D"stackFrame highlightedStackFrame" id=3D"v1__globals"><div id=3D"v=
+1__globals_header" class=3D"stackFrameHeader">Global</div><table class=3D"s=
+tackFrameVarTable" id=3D"v1__global_table"><tr class=3D"variableTr" id=3D"v=
+1__global__sum_digits_tr"><td class=3D"stackFrameVar">sum_digits</td><td cl=
+ass=3D"stackFrameValue"><div class=3D"stack_pointer" id=3D"v1__global__sum_=
+digits">&nbsp;</div><div class=3D"_jsPlumb_endpoint " style=3D"position: ab=
+solute; height: 6px; width: 6px; left: 1001.04px; top: 1068.07px;"><svg sty=
+le=3D"position:absolute;left:0px;top:0px" width=3D"6" height=3D"6" pointer-=
+events=3D"all" position=3D"absolute" version=3D"1.1" xmlns=3D"http://www.w3=
+.org/1999/xhtml"><circle cx=3D"3" cy=3D"3" r=3D"3" version=3D"1.1" xmlns=3D=
+"http://www.w3.org/1999/xhtml" style=3D"" fill=3D"#005583" stroke=3D"none">=
+</circle></svg></div><svg style=3D"position:absolute;left:966.8322845458985=
+px;top:1020.6562957763671px" width=3D"157.10636596679686" height=3D"72.4999=
+6948242188" pointer-events=3D"none" position=3D"absolute" version=3D"1.1" x=
+mlns=3D"http://www.w3.org/1999/xhtml" class=3D"_jsPlumb_connector "><path d=
+=3D"M 37.20940246582031 50.41664123535156 C 68.55318298339843 26.2499847412=
+10938 68.55318298339843 26.249984741210938 119.89696350097654 22.0833282470=
+70312" pointer-events=3D"all" version=3D"1.1" xmlns=3D"http://www.w3.org/19=
+99/xhtml" style=3D"" fill=3D"none" stroke=3D"#005583" stroke-width=3D"1"></=
+path><path pointer-events=3D"all" version=3D"1.1" xmlns=3D"http://www.w3.or=
+g/1999/xhtml" d=3D"M119.89696350097654,22.083328247070312 L110.213791694728=
+8,26.38288447657688 L114.4150845988685,22.52942655756111 L109.6460302086495=
+9,19.40594769207574 L119.89696350097654,22.083328247070312" class=3D"" stro=
+ke=3D"#005583" fill=3D"#005583"></path></svg></td></tr></table></div></div>=
+             <div id=3D"stack"><div class=3D"zombieStackFrame" id=3D"v1__zo=
+mbie_stack0" data-frame_id=3D"1"><div class=3D"stackFrameHeader">f1: sum_di=
+gits [parent=3DGlobal]</div><table class=3D"stackFrameVarTable"><tr class=
+=3D"variableTr" id=3D"v1__sum_digits_f1_z__n_tr"><td class=3D"stackFrameVar=
+">n</td><td class=3D"stackFrameValue"><span class=3D"numberObj">738</span><=
+/td></tr><tr class=3D"variableTr" id=3D"v1__sum_digits_f1_z__all_but_last_t=
+r"><td class=3D"stackFrameVar">all_but_last</td><td class=3D"stackFrameValu=
+e"><span class=3D"numberObj">73</span></td></tr><tr class=3D"variableTr" id=
+=3D"v1__sum_digits_f1_z__last_tr"><td class=3D"stackFrameVar">last</td><td =
+class=3D"stackFrameValue"><span class=3D"numberObj">8</span></td></tr><tr c=
+lass=3D"variableTr" id=3D"v1__sum_digits_f1_z____return___tr"><td class=3D"=
+stackFrameVar"><span class=3D"retval">Return<br>value</span></td><td class=
+=3D"stackFrameValue"><span class=3D"numberObj">18</span></td></tr></table><=
+/div><div class=3D"zombieStackFrame" id=3D"v1__zombie_stack1" data-frame_id=
+=3D"2"><div class=3D"stackFrameHeader">f2: sum_digits [parent=3DGlobal]</di=
+v><table class=3D"stackFrameVarTable"><tr class=3D"variableTr" id=3D"v1__su=
+m_digits_f2_z__n_tr"><td class=3D"stackFrameVar">n</td><td class=3D"stackFr=
+ameValue"><span class=3D"numberObj">73</span></td></tr><tr class=3D"variabl=
+eTr" id=3D"v1__sum_digits_f2_z__all_but_last_tr"><td class=3D"stackFrameVar=
+">all_but_last</td><td class=3D"stackFrameValue"><span class=3D"numberObj">=
+7</span></td></tr><tr class=3D"variableTr" id=3D"v1__sum_digits_f2_z__last_=
+tr"><td class=3D"stackFrameVar">last</td><td class=3D"stackFrameValue"><spa=
+n class=3D"numberObj">3</span></td></tr><tr class=3D"variableTr" id=3D"v1__=
+sum_digits_f2_z____return___tr"><td class=3D"stackFrameVar"><span class=3D"=
+retval">Return<br>value</span></td><td class=3D"stackFrameValue"><span clas=
+s=3D"numberObj">10</span></td></tr></table></div><div class=3D"zombieStackF=
+rame" id=3D"v1__zombie_stack2" data-frame_id=3D"3"><div class=3D"stackFrame=
+Header">f3: sum_digits [parent=3DGlobal]</div><table class=3D"stackFrameVar=
+Table"><tr class=3D"variableTr" id=3D"v1__sum_digits_f3_z__n_tr"><td class=
+=3D"stackFrameVar">n</td><td class=3D"stackFrameValue"><span class=3D"numbe=
+rObj">7</span></td></tr><tr class=3D"variableTr" id=3D"v1__sum_digits_f3_z_=
+___return___tr"><td class=3D"stackFrameVar"><span class=3D"retval">Return<b=
+r>value</span></td><td class=3D"stackFrameValue"><span class=3D"numberObj">=
+7</span></td></tr></table></div></div>           </td>           <td id=3D"=
+heap_td">             <div id=3D"heap"><table id=3D"heapRow0" class=3D"heap=
+Row"><td class=3D"toplevelHeapObject" id=3D"toplevel_heap_object_1"><div cl=
+ass=3D"heapObject" id=3D"v1__heap_object_1_s13"><div class=3D"funcObj">func=
+ sum_digits(n) [parent=3DGlobal]</div></div><div class=3D"_jsPlumb_endpoint=
+ " style=3D"position: absolute; height: 6px; width: 6px; left: 1083.73px; t=
+op: 1039.74px;"><svg style=3D"position:absolute;left:0px;top:0px" width=3D"=
+6" height=3D"6" pointer-events=3D"all" position=3D"absolute" version=3D"1.1=
+" xmlns=3D"http://www.w3.org/1999/xhtml"><circle cx=3D"3" cy=3D"3" r=3D"3" =
+version=3D"1.1" xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"" fill=3D"n=
+one" stroke=3D"none"></circle></svg></div></td></table></div>           </t=
+d>         </tr>       </tbody></table>     </div></td></tr></tbody></table=
+></div></div>
+<p>When the <tt class=3D"docutils literal">def</tt> statement is executed, =
+the name <tt class=3D"docutils literal">sum_digits</tt> is bound to a
+new function, but the body of that function is not yet executed.  Therefore=
+, the
+circular nature of <tt class=3D"docutils literal">sum_digits</tt> is not a =
+problem yet.  Then, <tt class=3D"docutils literal">sum_digits</tt> is
+called on 738:</p>
+<ol class=3D"arabic simple">
+<li>A local frame for <tt class=3D"docutils literal">sum_digits</tt> with <=
+tt class=3D"docutils literal">n</tt> bound to 738 is created, and the
+body of <tt class=3D"docutils literal">sum_digits</tt> is executed in the e=
+nvironment that starts with that
+frame.</li>
+<li>Since 738 is not less than 10, the assignment statement on line 4 is
+executed, splitting 738 into 73 and 8.</li>
+<li>In the following return statement, <tt class=3D"docutils literal">sum_d=
+igits</tt> is called on 73, the value
+of <tt class=3D"docutils literal">all_but_last</tt> in the current environm=
+ent.</li>
+</ol>
+<ol class=3D"arabic simple" start=3D"3">
+<li>Another local frame for <tt class=3D"docutils literal">sum_digits</tt> =
+is created, this time with <tt class=3D"docutils literal">n</tt> bound
+to 73. The body of <tt class=3D"docutils literal">sum_digits</tt> is again =
+executed in the new environment
+that starts with this frame.</li>
+<li>Since 73 is also not less than 10, 73 is split into 7 and 3 and
+<tt class=3D"docutils literal">sum_digits</tt> is called on 7, the value of=
+ <tt class=3D"docutils literal">all_but_last</tt> evaluated in
+this frame.</li>
+<li>A third local frame for <tt class=3D"docutils literal">sum_digits</tt> =
+is created, with <tt class=3D"docutils literal">n</tt> bound to 7.</li>
+<li>In the environment starting with this frame, it is true that <tt class=
+=3D"docutils literal">n &lt; 10</tt>, and
+therefore 7 is returned.</li>
+<li>In the second local frame, this return value 7 is summed with 3, the va=
+lue of
+<tt class=3D"docutils literal">last</tt>, to return 10.</li>
+<li>In the first local frame, this return value 10 is summed with 8, the va=
+lue of
+<tt class=3D"docutils literal">last</tt>, to return 18.</li>
+</ol>
+<p>This recursive function applies correctly, despite its circular characte=
+r,
+because it is applied twice, but with a different argument each time.  More=
+over,
+the second application was a simpler instance of the digit summing problem =
+than
+the first.  Generate the environment diagram for the call <tt class=3D"docu=
+tils literal">sum_digits(18117)</tt>
+to see that each successive call to <tt class=3D"docutils literal">sum_digi=
+ts</tt> takes a smaller argument than
+the last, until eventually a single-digit input is reached.</p>
+<p>This example also illustrates how functions with simple bodies can evolv=
+e
+complex computational processes by using recursion.</p>
+<div class=3D"section" id=3D"the-anatomy-of-recursive-functions">
+<h3>1.7.1&nbsp;&nbsp;&nbsp;The Anatomy of Recursive Functions</h3>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"a8G7a8ANMwzQ" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>A common pattern can be found in the body of man=
+y recursive functions.  The body
+begins with a <em>base case</em>, a conditional statement that defines the =
+behavior of
+the function for the inputs that are simplest to process.  In the case of
+<tt class=3D"docutils literal">sum_digits</tt>, the base case is any single=
+-digit argument, and we simply return
+that argument. Some recursive functions will have multiple base cases.</p>
+<p>The base cases are then followed by one or more <em>recursive calls</em>=
+.  Recursive
+calls always have a certain character: they simplify the original problem.
+Recursive functions express computation by simplifying problems incremental=
+ly.
+For example, summing the digits of 7 is simpler than summing the digits of =
+73,
+which in turn is simpler than summing the digits of 738.  For each subseque=
+nt
+call, there is less work left to be done.</p>
+<p><font _mstmutation=3D"1">Recursive functions often solve problems in a d=
+ifferent way than the iterative
+approaches that we have used previously. Consider a function <tt class=3D"d=
+ocutils literal" _mstmutation=3D"1">fact</tt> to compute
+<tt class=3D"docutils literal" _mstmutation=3D"1">n</tt> factorial, where f=
+or example <tt class=3D"docutils literal" _mstmutation=3D"1">fact(4)</tt> c=
+omputes </font><span class=3D"rawlatex"><span class=3D"MathJax_Preview" sty=
+le=3D"color: inherit; display: none;"></span><span class=3D"MathJax" id=3D"=
+MathJax-Element-1-Frame" tabindex=3D"0" data-mathml=3D"<math xmlns=3D&quot;=
+http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn><mo>!</mo><mo>=3D</mo><m=
+n>4</mn><mo>&amp;#x22C5;</mo><mn>3</mn><mo>&amp;#x22C5;</mo><mn>2</mn><mo>&=
+amp;#x22C5;</mo><mn>1</mn><mo>=3D</mo><mn>24</mn></math>" role=3D"presentat=
+ion" style=3D"position: relative;"><nobr aria-hidden=3D"true"><span class=
+=3D"math" id=3D"MathJax-Span-1" style=3D"width: 10.211em; display: inline-b=
+lock;"><span style=3D"display: inline-block; position: relative; width: 8.4=
+92em; height: 0px; font-size: 120%;"><span style=3D"position: absolute; cli=
+p: rect(1.305em, 1008.44em, 2.346em, -999.997em); top: -2.185em; left: 0em;=
+"><span class=3D"mrow" id=3D"MathJax-Span-2"><span class=3D"mn" id=3D"MathJ=
+ax-Span-3" style=3D"font-family: MathJax_Main;">4</span><span class=3D"mo" =
+id=3D"MathJax-Span-4" style=3D"font-family: MathJax_Main;">!</span><span cl=
+ass=3D"mo" id=3D"MathJax-Span-5" style=3D"font-family: MathJax_Main; paddin=
+g-left: 0.263em;">=3D</span><span class=3D"mn" id=3D"MathJax-Span-6" style=
+=3D"font-family: MathJax_Main; padding-left: 0.263em;">4</span><span class=
+=3D"mo" id=3D"MathJax-Span-7" style=3D"font-family: MathJax_Main; padding-l=
+eft: 0.211em;">=E2=8B=85</span><span class=3D"mn" id=3D"MathJax-Span-8" sty=
+le=3D"font-family: MathJax_Main; padding-left: 0.211em;">3</span><span clas=
+s=3D"mo" id=3D"MathJax-Span-9" style=3D"font-family: MathJax_Main; padding-=
+left: 0.211em;">=E2=8B=85</span><span class=3D"mn" id=3D"MathJax-Span-10" s=
+tyle=3D"font-family: MathJax_Main; padding-left: 0.211em;">2</span><span cl=
+ass=3D"mo" id=3D"MathJax-Span-11" style=3D"font-family: MathJax_Main; paddi=
+ng-left: 0.211em;">=E2=8B=85</span><span class=3D"mn" id=3D"MathJax-Span-12=
+" style=3D"font-family: MathJax_Main; padding-left: 0.211em;">1</span><span=
+ class=3D"mo" id=3D"MathJax-Span-13" style=3D"font-family: MathJax_Main; pa=
+dding-left: 0.263em;">=3D</span><span class=3D"mn" id=3D"MathJax-Span-14" s=
+tyle=3D"font-family: MathJax_Main; padding-left: 0.263em;">24</span></span>=
+<span style=3D"display: inline-block; width: 0px; height: 2.19em;"></span><=
+/span></span><span style=3D"display: inline-block; overflow: hidden; vertic=
+al-align: -0.059em; border-left: 0px solid; width: 0px; height: 1.003em;"><=
+/span></span></nobr><span class=3D"MJX_Assistive_MathML" role=3D"presentati=
+on"><math xmlns=3D"http://www.w3.org/1998/Math/MathML"><mn _mstHash=3D"129"=
+>4</mn><mo _mstHash=3D"130">!</mo><mo>=3D</mo><mn _mstHash=3D"131">4</mn><m=
+o _mstHash=3D"132">=E2=8B=85</mo><mn _mstHash=3D"133">3</mn><mo _mstHash=3D=
+"134">=E2=8B=85</mo><mn _mstHash=3D"135">2</mn><mo _mstHash=3D"136">=E2=8B=
+=85</mo><mn _mstHash=3D"137">1</mn><mo>=3D</mo><mn _mstHash=3D"138">24</mn>=
+</math></span></span></span><font _mstmutation=3D"1">.</font></p>
+<p>A natural implementation using a <tt class=3D"docutils literal">while</t=
+t> statement accumulates the total by
+multiplying together each positive integer up to <tt class=3D"docutils lite=
+ral">n</tt>.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">fact_iter</span><spa=
+n class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"n">total</s=
+pan><span class=3D"p">,</span> <span class=3D"n">k</span> <span class=3D"o"=
+>=3D</span> <span class=3D"mi">1</span><span class=3D"p">,</span> <span cla=
+ss=3D"mi">1</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">while</s=
+pan> <span class=3D"n">k</span> <span class=3D"o">&lt;=3D</span> <span clas=
+s=3D"n">n</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">tota=
+l</span><span class=3D"p">,</span> <span class=3D"n">k</span> <span class=
+=3D"o">=3D</span> <span class=3D"n">total</span> <span class=3D"o">*</span>=
+ <span class=3D"n">k</span><span class=3D"p">,</span> <span class=3D"n">k</=
+span> <span class=3D"o">+</span> <span class=3D"mi">1</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">return</=
+span> <span class=3D"n">total</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">fact_iter</span><span class=3D"p">(</span><span cl=
+ass=3D"mi">4</span><span class=3D"p">)</span>
+<span class=3D"go">24</span>
+</pre></div>
+
+<p>On the other hand, a recursive implementation of factorial can express
+<tt class=3D"docutils literal">fact(n)</tt> in terms of <tt class=3D"docuti=
+ls literal"><span class=3D"pre">fact(n-1)</span></tt>, a simpler problem.  =
+The base case of the
+recursion is the simplest form of the problem: <tt class=3D"docutils litera=
+l">fact(1)</tt> is 1.</p>
+<div class=3D"example" data-output=3D"False" data-showallframelabels=3D"Tru=
+e" data-step=3D"-1" id=3D"example_42" style=3D""><div class=3D"ExecutionVis=
+ualizer" style=3D"min-height: 566px;"><div id=3D"vizHeader" style=3D"displa=
+y: none;">       <textarea class=3D"vizTitleText" id=3D"vizTitleEditor" col=
+s=3D"60" rows=3D"1" style=3D"display: none;"></textarea>       <div class=
+=3D"vizTitleText" id=3D"vizTitleViewer"></div>       <textarea class=3D"viz=
+DescriptionText" id=3D"vizDescriptionEditor" cols=3D"75" rows=3D"2" style=
+=3D"display: none;"></textarea>       <div class=3D"vizDescriptionText" id=
+=3D"vizDescriptionViewer"></div>    </div><table border=3D"0" class=3D"visu=
+alizer"><tbody><tr><td class=3D"vizLayoutTd" id=3D"vizLayoutTdFirst"><div i=
+d=3D"codeDisplayDiv" class=3D"ui-resizable">       <div id=3D"pyCodeOutputD=
+iv" style=3D"max-height: 400px;"><table id=3D"pyCodeOutput"><tr><td id=3D"g=
+utterTD" valign=3D"top" rowspan=3D"7"><svg id=3D"leftCodeGutterSVG" style=
+=3D"height: 152px;"><polygon id=3D"prevLineArrow" points=3D"0,0 6,5 0,10" f=
+ill=3D"#c9e6ca" transform=3D"translate(0, 105.5830078125)"></polygon><polyg=
+on id=3D"curLineArrow" points=3D"0,0 6,5 0,10" fill=3D"#e93f34" transform=
+=3D"translate(0, 148.37451171875)"></polygon></svg></td><td class=3D"lineNo=
+" id=3D"lineNo1">1</td><td class=3D"cod" id=3D"v2__cod1">def&nbsp;fact(n):<=
+/td></tr><tr><td class=3D"lineNo" id=3D"lineNo2">2</td><td class=3D"cod" id=
+=3D"v2__cod2">&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;n&nbsp;=3D=3D&nbsp;1:</td></t=
+r><tr><td class=3D"lineNo" id=3D"lineNo3">3</td><td class=3D"cod" id=3D"v2_=
+_cod3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;1</td></=
+tr><tr><td class=3D"lineNo" id=3D"lineNo4">4</td><td class=3D"cod" id=3D"v2=
+__cod4">&nbsp;&nbsp;&nbsp;&nbsp;else:</td></tr><tr><td class=3D"lineNo" id=
+=3D"lineNo5">5</td><td class=3D"cod" id=3D"v2__cod5">&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;n&nbsp;*&nbsp;fact(n-1)</td></tr><tr>=
+<td class=3D"lineNo" id=3D"lineNo6">6</td><td class=3D"cod" id=3D"v2__cod6"=
+></td></tr><tr><td class=3D"lineNo" id=3D"lineNo7">7</td><td class=3D"cod" =
+id=3D"v2__cod7">fact(4)</td></tr></table></div>       <div id=3D"editCodeLi=
+nkDiv"><a id=3D"editBtn" href=3D"http://composingprograms.com/tutor.html#co=
+de=3Ddef+fact(n)%3A%0A++++if+n+%3D%3D+1%3A%0A++++++++return+1%0A++++else%3A=
+%0A++++++++return+n+*+fact(n-1)%0A%0Afact(4)">Edit code in Online Python Tu=
+tor</a></div>       <div id=3D"executionSlider" class=3D"ui-slider ui-slide=
+r-horizontal ui-widget ui-widget-content ui-corner-all" style=3D"font-size:=
+ 0.9em;"><a class=3D"ui-slider-handle ui-state-default ui-corner-all" href=
+=3D"https://www.composingprograms.com/pages/17-recursive-functions.html#" s=
+tyle=3D"left: 100%; width: 0.8em; height: 1.4em;"></a></div>       <div id=
+=3D"vcrControls">         <button id=3D"jmpStepBack" ,=3D"" type=3D"button"=
+>&lt; Back</button>         <span id=3D"curInstr">End</span>         <butto=
+n id=3D"jmpStepFwd" ,=3D"" type=3D"button" disabled=3D"disabled">Forward &g=
+t;</button>       </div>       <div id=3D"errorOutput" style=3D"display: no=
+ne;"></div>       <div id=3D"legendDiv"><svg id=3D"prevLegendArrowSVG"><pol=
+ygon points=3D"0,0 6,5 0,10" fill=3D"#c9e6ca"></polygon></svg><font _mstmut=
+ation=3D"1"> line that has just executed</font><p style=3D"margin-top: 4px"=
+><svg id=3D"curLegendArrowSVG"><polygon points=3D"0,0 6,5 0,10" fill=3D"#e9=
+3f34"></polygon></svg><font _mstmutation=3D"1"> next line to execute</font>=
+</p></div>       <div id=3D"stepAnnotationDiv">         <textarea class=3D"=
+annotationText" id=3D"stepAnnotationEditor" cols=3D"60" rows=3D"3" style=3D=
+"display: none;"></textarea>         <div class=3D"annotationText" id=3D"st=
+epAnnotationViewer"></div>       </div>       <div id=3D"annotateLinkDiv"><=
+button id=3D"annotateBtn" type=3D"button" style=3D"display: none;">Annotate=
+ this step</button></div>     <div class=3D"ui-resizable-handle ui-resizabl=
+e-e" style=3D"z-index: 1000;"></div></div><div id=3D"htmlOutputDiv"></div> =
+    <div id=3D"progOutputs" style=3D"display: none;"><font _mstmutation=3D"=
+1">       Program output:</font><br>       <textarea id=3D"pyStdout" cols=
+=3D"50" rows=3D"10" wrap=3D"off" readonly=3D""></textarea>     </div></td><=
+td class=3D"vizLayoutTd" id=3D"vizLayoutTdSecond"><div id=3D"dataViz">     =
+  <table id=3D"stackHeapTable">         <tbody><tr>           <td id=3D"sta=
+ck_td">             <div id=3D"globals_area">             <div class=3D"sta=
+ckFrame highlightedStackFrame" id=3D"v2__globals"><div id=3D"v2__globals_he=
+ader" class=3D"stackFrameHeader">Global</div><table class=3D"stackFrameVarT=
+able" id=3D"v2__global_table"><tr class=3D"variableTr" id=3D"v2__global__fa=
+ct_tr"><td class=3D"stackFrameVar">fact</td><td class=3D"stackFrameValue"><=
+div class=3D"stack_pointer" id=3D"v2__global__fact">&nbsp;</div><div class=
+=3D"_jsPlumb_endpoint " style=3D"position: absolute; height: 6px; width: 6p=
+x; left: 807.042px; top: 2820.72px;"><svg style=3D"position:absolute;left:0=
+px;top:0px" width=3D"6" height=3D"6" pointer-events=3D"all" position=3D"abs=
+olute" version=3D"1.1" xmlns=3D"http://www.w3.org/1999/xhtml"><circle cx=3D=
+"3" cy=3D"3" r=3D"3" version=3D"1.1" xmlns=3D"http://www.w3.org/1999/xhtml"=
+ style=3D"" fill=3D"#005583" stroke=3D"none"></circle></svg></div><svg styl=
+e=3D"position:absolute;left:772.8323120117187px;top:2773.3021087646484px" w=
+idth=3D"157.10625" height=3D"72.49996948242188" pointer-events=3D"none" pos=
+ition=3D"absolute" version=3D"1.1" xmlns=3D"http://www.w3.org/1999/xhtml" c=
+lass=3D"_jsPlumb_connector "><path d=3D"M 37.209375 50.41664123535156 C 68.=
+553125 26.249984741210938 68.553125 26.249984741210938 119.896875 22.083328=
+247070312" pointer-events=3D"all" version=3D"1.1" xmlns=3D"http://www.w3.or=
+g/1999/xhtml" style=3D"" fill=3D"none" stroke=3D"#005583" stroke-width=3D"1=
+"></path><path pointer-events=3D"all" version=3D"1.1" xmlns=3D"http://www.w=
+3.org/1999/xhtml" d=3D"M119.896875,22.083328247070312 L110.21370340039066,2=
+6.382884941954003 L114.41499611933162,22.529426821022412 L109.6459415789970=
+7,19.405948184739714 L119.896875,22.083328247070312" class=3D"" stroke=3D"#=
+005583" fill=3D"#005583"></path></svg></td></tr></table></div></div>       =
+      <div id=3D"stack"><div class=3D"zombieStackFrame" id=3D"v2__zombie_st=
+ack0" data-frame_id=3D"1"><div class=3D"stackFrameHeader">f1: fact [parent=
+=3DGlobal]</div><table class=3D"stackFrameVarTable"><tr class=3D"variableTr=
+" id=3D"v2__fact_f1_z__n_tr"><td class=3D"stackFrameVar">n</td><td class=3D=
+"stackFrameValue"><span class=3D"numberObj">4</span></td></tr><tr class=3D"=
+variableTr" id=3D"v2__fact_f1_z____return___tr"><td class=3D"stackFrameVar"=
+><span class=3D"retval">Return<br>value</span></td><td class=3D"stackFrameV=
+alue"><span class=3D"numberObj">24</span></td></tr></table></div><div class=
+=3D"zombieStackFrame" id=3D"v2__zombie_stack1" data-frame_id=3D"2"><div cla=
+ss=3D"stackFrameHeader">f2: fact [parent=3DGlobal]</div><table class=3D"sta=
+ckFrameVarTable"><tr class=3D"variableTr" id=3D"v2__fact_f2_z__n_tr"><td cl=
+ass=3D"stackFrameVar">n</td><td class=3D"stackFrameValue"><span class=3D"nu=
+mberObj">3</span></td></tr><tr class=3D"variableTr" id=3D"v2__fact_f2_z____=
+return___tr"><td class=3D"stackFrameVar"><span class=3D"retval">Return<br>v=
+alue</span></td><td class=3D"stackFrameValue"><span class=3D"numberObj">6</=
+span></td></tr></table></div><div class=3D"zombieStackFrame" id=3D"v2__zomb=
+ie_stack2" data-frame_id=3D"3"><div class=3D"stackFrameHeader">f3: fact [pa=
+rent=3DGlobal]</div><table class=3D"stackFrameVarTable"><tr class=3D"variab=
+leTr" id=3D"v2__fact_f3_z__n_tr"><td class=3D"stackFrameVar">n</td><td clas=
+s=3D"stackFrameValue"><span class=3D"numberObj">2</span></td></tr><tr class=
+=3D"variableTr" id=3D"v2__fact_f3_z____return___tr"><td class=3D"stackFrame=
+Var"><span class=3D"retval">Return<br>value</span></td><td class=3D"stackFr=
+ameValue"><span class=3D"numberObj">2</span></td></tr></table></div><div cl=
+ass=3D"zombieStackFrame" id=3D"v2__zombie_stack3" data-frame_id=3D"4"><div =
+class=3D"stackFrameHeader">f4: fact [parent=3DGlobal]</div><table class=3D"=
+stackFrameVarTable"><tr class=3D"variableTr" id=3D"v2__fact_f4_z__n_tr"><td=
+ class=3D"stackFrameVar">n</td><td class=3D"stackFrameValue"><span class=3D=
+"numberObj">1</span></td></tr><tr class=3D"variableTr" id=3D"v2__fact_f4_z_=
+___return___tr"><td class=3D"stackFrameVar"><span class=3D"retval">Return<b=
+r>value</span></td><td class=3D"stackFrameValue"><span class=3D"numberObj">=
+1</span></td></tr></table></div></div>           </td>           <td id=3D"=
+heap_td">             <div id=3D"heap"><table id=3D"heapRow0" class=3D"heap=
+Row"><td class=3D"toplevelHeapObject" id=3D"toplevel_heap_object_1"><div cl=
+ass=3D"heapObject" id=3D"v2__heap_object_1_s14"><div class=3D"funcObj">func=
+ fact(n) [parent=3DGlobal]</div></div><div class=3D"_jsPlumb_endpoint " sty=
+le=3D"position: absolute; height: 6px; width: 6px; left: 889.729px; top: 27=
+92.39px;"><svg style=3D"position:absolute;left:0px;top:0px" width=3D"6" hei=
+ght=3D"6" pointer-events=3D"all" position=3D"absolute" version=3D"1.1" xmln=
+s=3D"http://www.w3.org/1999/xhtml"><circle cx=3D"3" cy=3D"3" r=3D"3" versio=
+n=3D"1.1" xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"" fill=3D"none" s=
+troke=3D"none"></circle></svg></div></td></table></div>           </td>    =
+     </tr>       </tbody></table>     </div></td></tr></tbody></table></div=
+></div>
+<p>These two factorial functions differ conceptually.  The iterative functi=
+on
+constructs the result from the base case of 1 to the final total by
+successively multiplying in each term.  The recursive function, on the othe=
+r
+hand, constructs the result directly from the final term, <tt class=3D"docu=
+tils literal">n</tt>,  and the
+result of the simpler problem, <tt class=3D"docutils literal"><span class=
+=3D"pre">fact(n-1)</span></tt>.</p>
+<p>As the recursion "unwinds" through successive applications of the <em>fa=
+ct</em>
+function to simpler and simpler problem instances, the result is eventually
+built starting from the base case.  The recursion ends by passing the argum=
+ent
+1 to <tt class=3D"docutils literal">fact</tt>; the result of each call depe=
+nds on the next until the base
+case is reached.</p>
+<p>The correctness of this recursive function is easy to verify from the st=
+andard
+definition of the mathematical function for factorial:</p>
+<span class=3D"MathJax_Preview" style=3D"color: inherit; display: none;"></=
+span><div class=3D"MathJax_Display" style=3D"text-align: center;"><span cla=
+ss=3D"MathJax" id=3D"MathJax-Element-2-Frame" tabindex=3D"0" data-mathml=3D=
+"<math xmlns=3D&quot;http://www.w3.org/1998/Math/MathML&quot; display=3D&qu=
+ot;block&quot;><mtable columnalign=3D&quot;right left right left right left=
+ right left right left right left&quot; rowspacing=3D&quot;3pt&quot; column=
+spacing=3D&quot;0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em&quot; displayst=
+yle=3D&quot;true&quot;><mtr><mtd><mo stretchy=3D&quot;false&quot;>(</mo><mi=
+>n</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=3D&quot;false&quot;>)</m=
+o><mo>!</mo></mtd><mtd><mi></mi><mo>=3D</mo><mo stretchy=3D&quot;false&quot=
+;>(</mo><mi>n</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=3D&quot;false=
+&quot;>)</mo><mo>&amp;#x22C5;</mo><mo stretchy=3D&quot;false&quot;>(</mo><m=
+i>n</mi><mo>&amp;#x2212;</mo><mn>2</mn><mo stretchy=3D&quot;false&quot;>)</=
+mo><mo>&amp;#x22C5;</mo><mo>&amp;#x22EF;</mo><mo>&amp;#x22C5;</mo><mn>1</mn=
+></mtd></mtr><mtr><mtd><mi>n</mi><mo>!</mo></mtd><mtd><mi></mi><mo>=3D</mo>=
+<mi>n</mi><mo>&amp;#x22C5;</mo><mo stretchy=3D&quot;false&quot;>(</mo><mi>n=
+</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=3D&quot;false&quot;>)</mo>=
+<mo>&amp;#x22C5;</mo><mo stretchy=3D&quot;false&quot;>(</mo><mi>n</mi><mo>&=
+amp;#x2212;</mo><mn>2</mn><mo stretchy=3D&quot;false&quot;>)</mo><mo>&amp;#=
+x22C5;</mo><mo>&amp;#x22EF;</mo><mo>&amp;#x22C5;</mo><mn>1</mn></mtd></mtr>=
+<mtr><mtd><mi>n</mi><mo>!</mo></mtd><mtd><mi></mi><mo>=3D</mo><mi>n</mi><mo=
+>&amp;#x22C5;</mo><mo stretchy=3D&quot;false&quot;>(</mo><mi>n</mi><mo>&amp=
+;#x2212;</mo><mn>1</mn><mo stretchy=3D&quot;false&quot;>)</mo><mo>!</mo></m=
+td></mtr></mtable></math>" role=3D"presentation" style=3D"text-align: cente=
+r; position: relative;"><nobr aria-hidden=3D"true"><span class=3D"math" id=
+=3D"MathJax-Span-15" style=3D"width: 19.482em; display: inline-block;"><spa=
+n style=3D"display: inline-block; position: relative; width: 16.201em; heig=
+ht: 0px; font-size: 120%;"><span style=3D"position: absolute; clip: rect(-0=
+.154em, 1015.99em, 3.909em, -999.997em); top: -2.133em; left: 0em;"><span c=
+lass=3D"mrow" id=3D"MathJax-Span-16"><span class=3D"mtable" id=3D"MathJax-S=
+pan-17" style=3D"padding-right: 0.159em; padding-left: 0.159em;"><span styl=
+e=3D"display: inline-block; position: relative; width: 15.888em; height: 0p=
+x;"><span style=3D"position: absolute; clip: rect(2.242em, 1003.28em, 6.044=
+em, -999.997em); top: -4.477em; left: 0em;"><span style=3D"display: inline-=
+block; position: relative; width: 3.336em; height: 0px;"><span style=3D"pos=
+ition: absolute; clip: rect(3.128em, 1003.28em, 4.43em, -999.997em); top: -=
+5.31em; right: 0em;"><span class=3D"mtd" id=3D"MathJax-Span-18"><span class=
+=3D"mrow" id=3D"MathJax-Span-19"><span class=3D"mo" id=3D"MathJax-Span-20" =
+style=3D"font-family: MathJax_Main;">(</span><span class=3D"mi" id=3D"MathJ=
+ax-Span-21" style=3D"font-family: MathJax_Math-italic;">n</span><span class=
+=3D"mo" id=3D"MathJax-Span-22" style=3D"font-family: MathJax_Main; padding-=
+left: 0.211em;">=E2=88=92</span><span class=3D"mn" id=3D"MathJax-Span-23" s=
+tyle=3D"font-family: MathJax_Main; padding-left: 0.211em;">1</span><span cl=
+ass=3D"mo" id=3D"MathJax-Span-24" style=3D"font-family: MathJax_Main;">)</s=
+pan><span class=3D"mo" id=3D"MathJax-Span-25" style=3D"font-family: MathJax=
+_Main;">!</span></span></span><span style=3D"display: inline-block; width: =
+0px; height: 4.013em;"></span></span><span style=3D"position: absolute; cli=
+p: rect(3.128em, 1000.78em, 4.169em, -999.997em); top: -4.008em; right: 0em=
+;"><span class=3D"mtd" id=3D"MathJax-Span-45"><span class=3D"mrow" id=3D"Ma=
+thJax-Span-46"><span class=3D"mi" id=3D"MathJax-Span-47" style=3D"font-fami=
+ly: MathJax_Math-italic;">n</span><span class=3D"mo" id=3D"MathJax-Span-48"=
+ style=3D"font-family: MathJax_Main;">!</span></span></span><span style=3D"=
+display: inline-block; width: 0px; height: 4.013em;"></span></span><span st=
+yle=3D"position: absolute; clip: rect(3.128em, 1000.78em, 4.169em, -999.997=
+em); top: -2.654em; right: 0em;"><span class=3D"mtd" id=3D"MathJax-Span-70"=
+><span class=3D"mrow" id=3D"MathJax-Span-71"><span class=3D"mi" id=3D"MathJ=
+ax-Span-72" style=3D"font-family: MathJax_Math-italic;">n</span><span class=
+=3D"mo" id=3D"MathJax-Span-73" style=3D"font-family: MathJax_Main;">!</span=
+></span></span><span style=3D"display: inline-block; width: 0px; height: 4.=
+013em;"></span></span></span><span style=3D"display: inline-block; width: 0=
+px; height: 4.482em;"></span></span><span style=3D"position: absolute; clip=
+: rect(2.451em, 1012.45em, 6.461em, -999.997em); top: -4.685em; left: 3.336=
+em;"><span style=3D"display: inline-block; position: relative; width: 12.55=
+5em; height: 0px;"><span style=3D"position: absolute; clip: rect(3.128em, 1=
+011.15em, 4.43em, -999.997em); top: -5.31em; left: 0em;"><span class=3D"mtd=
+" id=3D"MathJax-Span-26"><span class=3D"mrow" id=3D"MathJax-Span-27"><span =
+class=3D"mi" id=3D"MathJax-Span-28"></span><span class=3D"mo" id=3D"MathJax=
+-Span-29" style=3D"font-family: MathJax_Main; padding-left: 0.263em;">=3D</=
+span><span class=3D"mo" id=3D"MathJax-Span-30" style=3D"font-family: MathJa=
+x_Main; padding-left: 0.263em;">(</span><span class=3D"mi" id=3D"MathJax-Sp=
+an-31" style=3D"font-family: MathJax_Math-italic;">n</span><span class=3D"m=
+o" id=3D"MathJax-Span-32" style=3D"font-family: MathJax_Main; padding-left:=
+ 0.211em;">=E2=88=92</span><span class=3D"mn" id=3D"MathJax-Span-33" style=
+=3D"font-family: MathJax_Main; padding-left: 0.211em;">1</span><span class=
+=3D"mo" id=3D"MathJax-Span-34" style=3D"font-family: MathJax_Main;">)</span=
+><span class=3D"mo" id=3D"MathJax-Span-35" style=3D"font-family: MathJax_Ma=
+in; padding-left: 0.211em;">=E2=8B=85</span><span class=3D"mo" id=3D"MathJa=
+x-Span-36" style=3D"font-family: MathJax_Main; padding-left: 0.211em;">(</s=
+pan><span class=3D"mi" id=3D"MathJax-Span-37" style=3D"font-family: MathJax=
+_Math-italic;">n</span><span class=3D"mo" id=3D"MathJax-Span-38" style=3D"f=
+ont-family: MathJax_Main; padding-left: 0.211em;">=E2=88=92</span><span cla=
+ss=3D"mn" id=3D"MathJax-Span-39" style=3D"font-family: MathJax_Main; paddin=
+g-left: 0.211em;">2</span><span class=3D"mo" id=3D"MathJax-Span-40" style=
+=3D"font-family: MathJax_Main;">)</span><span class=3D"mo" id=3D"MathJax-Sp=
+an-41" style=3D"font-family: MathJax_Main; padding-left: 0.211em;">=E2=8B=
+=85</span><span class=3D"mo" id=3D"MathJax-Span-42" style=3D"font-family: M=
+athJax_Main; padding-left: 0.211em;">=E2=8B=AF</span><span class=3D"mo" id=
+=3D"MathJax-Span-43" style=3D"font-family: MathJax_Main; padding-left: 0.21=
+1em;">=E2=8B=85</span><span class=3D"mn" id=3D"MathJax-Span-44" style=3D"fo=
+nt-family: MathJax_Main; padding-left: 0.211em;">1</span></span></span><spa=
+n style=3D"display: inline-block; width: 0px; height: 4.013em;"></span></sp=
+an><span style=3D"position: absolute; clip: rect(3.128em, 1012.45em, 4.43em=
+, -999.997em); top: -4.008em; left: 0em;"><span class=3D"mtd" id=3D"MathJax=
+-Span-49"><span class=3D"mrow" id=3D"MathJax-Span-50"><span class=3D"mi" id=
+=3D"MathJax-Span-51"></span><span class=3D"mo" id=3D"MathJax-Span-52" style=
+=3D"font-family: MathJax_Main; padding-left: 0.263em;">=3D</span><span clas=
+s=3D"mi" id=3D"MathJax-Span-53" style=3D"font-family: MathJax_Math-italic; =
+padding-left: 0.263em;">n</span><span class=3D"mo" id=3D"MathJax-Span-54" s=
+tyle=3D"font-family: MathJax_Main; padding-left: 0.211em;">=E2=8B=85</span>=
+<span class=3D"mo" id=3D"MathJax-Span-55" style=3D"font-family: MathJax_Mai=
+n; padding-left: 0.211em;">(</span><span class=3D"mi" id=3D"MathJax-Span-56=
+" style=3D"font-family: MathJax_Math-italic;">n</span><span class=3D"mo" id=
+=3D"MathJax-Span-57" style=3D"font-family: MathJax_Main; padding-left: 0.21=
+1em;">=E2=88=92</span><span class=3D"mn" id=3D"MathJax-Span-58" style=3D"fo=
+nt-family: MathJax_Main; padding-left: 0.211em;">1</span><span class=3D"mo"=
+ id=3D"MathJax-Span-59" style=3D"font-family: MathJax_Main;">)</span><span =
+class=3D"mo" id=3D"MathJax-Span-60" style=3D"font-family: MathJax_Main; pad=
+ding-left: 0.211em;">=E2=8B=85</span><span class=3D"mo" id=3D"MathJax-Span-=
+61" style=3D"font-family: MathJax_Main; padding-left: 0.211em;">(</span><sp=
+an class=3D"mi" id=3D"MathJax-Span-62" style=3D"font-family: MathJax_Math-i=
+talic;">n</span><span class=3D"mo" id=3D"MathJax-Span-63" style=3D"font-fam=
+ily: MathJax_Main; padding-left: 0.211em;">=E2=88=92</span><span class=3D"m=
+n" id=3D"MathJax-Span-64" style=3D"font-family: MathJax_Main; padding-left:=
+ 0.211em;">2</span><span class=3D"mo" id=3D"MathJax-Span-65" style=3D"font-=
+family: MathJax_Main;">)</span><span class=3D"mo" id=3D"MathJax-Span-66" st=
+yle=3D"font-family: MathJax_Main; padding-left: 0.211em;">=E2=8B=85</span><=
+span class=3D"mo" id=3D"MathJax-Span-67" style=3D"font-family: MathJax_Main=
+; padding-left: 0.211em;">=E2=8B=AF</span><span class=3D"mo" id=3D"MathJax-=
+Span-68" style=3D"font-family: MathJax_Main; padding-left: 0.211em;">=E2=8B=
+=85</span><span class=3D"mn" id=3D"MathJax-Span-69" style=3D"font-family: M=
+athJax_Main; padding-left: 0.211em;">1</span></span></span><span style=3D"d=
+isplay: inline-block; width: 0px; height: 4.013em;"></span></span><span sty=
+le=3D"position: absolute; clip: rect(3.128em, 1005.89em, 4.43em, -999.997em=
+); top: -2.654em; left: 0em;"><span class=3D"mtd" id=3D"MathJax-Span-74"><s=
+pan class=3D"mrow" id=3D"MathJax-Span-75"><span class=3D"mi" id=3D"MathJax-=
+Span-76"></span><span class=3D"mo" id=3D"MathJax-Span-77" style=3D"font-fam=
+ily: MathJax_Main; padding-left: 0.263em;">=3D</span><span class=3D"mi" id=
+=3D"MathJax-Span-78" style=3D"font-family: MathJax_Math-italic; padding-lef=
+t: 0.263em;">n</span><span class=3D"mo" id=3D"MathJax-Span-79" style=3D"fon=
+t-family: MathJax_Main; padding-left: 0.211em;">=E2=8B=85</span><span class=
+=3D"mo" id=3D"MathJax-Span-80" style=3D"font-family: MathJax_Main; padding-=
+left: 0.211em;">(</span><span class=3D"mi" id=3D"MathJax-Span-81" style=3D"=
+font-family: MathJax_Math-italic;">n</span><span class=3D"mo" id=3D"MathJax=
+-Span-82" style=3D"font-family: MathJax_Main; padding-left: 0.211em;">=E2=
+=88=92</span><span class=3D"mn" id=3D"MathJax-Span-83" style=3D"font-family=
+: MathJax_Main; padding-left: 0.211em;">1</span><span class=3D"mo" id=3D"Ma=
+thJax-Span-84" style=3D"font-family: MathJax_Main;">)</span><span class=3D"=
+mo" id=3D"MathJax-Span-85" style=3D"font-family: MathJax_Main;">!</span></s=
+pan></span><span style=3D"display: inline-block; width: 0px; height: 4.013e=
+m;"></span></span></span><span style=3D"display: inline-block; width: 0px; =
+height: 4.69em;"></span></span></span></span></span><span style=3D"display:=
+ inline-block; width: 0px; height: 2.138em;"></span></span></span><span sty=
+le=3D"display: inline-block; overflow: hidden; vertical-align: -1.997em; bo=
+rder-left: 0px solid; width: 0px; height: 4.628em;"></span></span></nobr><s=
+pan class=3D"MJX_Assistive_MathML MJX_Assistive_MathML_Block" role=3D"prese=
+ntation"><math xmlns=3D"http://www.w3.org/1998/Math/MathML" display=3D"bloc=
+k"><mtable columnalign=3D"right left right left right left right left right=
+ left right left" rowspacing=3D"3pt" columnspacing=3D"0em 2em 0em 2em 0em 2=
+em 0em 2em 0em 2em 0em" displaystyle=3D"true"><mtr><mtd><mo stretchy=3D"fal=
+se">(</mo><mi _mstHash=3D"195">n</mi><mo _mstHash=3D"196">=E2=88=92</mo><mn=
+ _mstHash=3D"197">1</mn><mo stretchy=3D"false">)</mo><mo _mstHash=3D"198">!=
+</mo></mtd><mtd><mi></mi><mo>=3D</mo><mo stretchy=3D"false">(</mo><mi _mstH=
+ash=3D"199">n</mi><mo _mstHash=3D"200">=E2=88=92</mo><mn _mstHash=3D"201">1=
+</mn><mo stretchy=3D"false">)</mo><mo _mstHash=3D"202">=E2=8B=85</mo><mo st=
+retchy=3D"false">(</mo><mi _mstHash=3D"203">n</mi><mo _mstHash=3D"204">=E2=
+=88=92</mo><mn _mstHash=3D"205">2</mn><mo stretchy=3D"false">)</mo><mo _mst=
+Hash=3D"206">=E2=8B=85</mo><mo _mstHash=3D"207">=E2=8B=AF</mo><mo _mstHash=
+=3D"208">=E2=8B=85</mo><mn _mstHash=3D"209">1</mn></mtd></mtr><mtr><mtd><mi=
+ _mstHash=3D"210">n</mi><mo _mstHash=3D"211">!</mo></mtd><mtd><mi></mi><mo>=
+=3D</mo><mi _mstHash=3D"212">n</mi><mo _mstHash=3D"213">=E2=8B=85</mo><mo s=
+tretchy=3D"false">(</mo><mi _mstHash=3D"214">n</mi><mo _mstHash=3D"215">=E2=
+=88=92</mo><mn _mstHash=3D"216">1</mn><mo stretchy=3D"false">)</mo><mo _mst=
+Hash=3D"217">=E2=8B=85</mo><mo stretchy=3D"false">(</mo><mi _mstHash=3D"218=
+">n</mi><mo _mstHash=3D"219">=E2=88=92</mo><mn _mstHash=3D"220">2</mn><mo s=
+tretchy=3D"false">)</mo><mo _mstHash=3D"221">=E2=8B=85</mo><mo _mstHash=3D"=
+222">=E2=8B=AF</mo><mo _mstHash=3D"223">=E2=8B=85</mo><mn _mstHash=3D"224">=
+1</mn></mtd></mtr><mtr><mtd><mi _mstHash=3D"225">n</mi><mo _mstHash=3D"226"=
+>!</mo></mtd><mtd><mi></mi><mo>=3D</mo><mi _mstHash=3D"227">n</mi><mo _mstH=
+ash=3D"228">=E2=8B=85</mo><mo stretchy=3D"false">(</mo><mi _mstHash=3D"229"=
+>n</mi><mo _mstHash=3D"230">=E2=88=92</mo><mn _mstHash=3D"231">1</mn><mo st=
+retchy=3D"false">)</mo><mo _mstHash=3D"232">!</mo></mtd></mtr></mtable></ma=
+th></span></span></div><p>While we can unwind the recursion using our model=
+ of computation, it is often
+clearer to think about recursive calls as functional abstractions.  That is=
+, we
+should not care about how <tt class=3D"docutils literal"><span class=3D"pre=
+">fact(n-1)</span></tt> is implemented in the body of <tt class=3D"docutils=
+ literal">fact</tt>;
+we should simply trust that it computes the factorial of <tt class=3D"docut=
+ils literal"><span class=3D"pre">n-1</span></tt>.  Treating a
+recursive call as a functional abstraction has been called a <em>recursive =
+leap
+of faith</em>. We define a function in terms of itself, but simply trust th=
+at the
+simpler cases will work correctly when verifying the correctness of the
+function. In this example, we trust that <tt class=3D"docutils literal"><sp=
+an class=3D"pre">fact(n-1)</span></tt> will correctly compute
+<tt class=3D"docutils literal"><span class=3D"pre">(n-1)!</span></tt>; we m=
+ust only check that <tt class=3D"docutils literal">n!</tt> is computed corr=
+ectly if this
+assumption holds. In this way, verifying the correctness of a recursive fun=
+ction
+is a form of proof by induction.</p>
+<p>The functions <em>fact_iter</em> and <em>fact</em> also differ because t=
+he former must
+introduce two additional names, <tt class=3D"docutils literal">total</tt> a=
+nd <tt class=3D"docutils literal">k</tt>, that are not required in
+the recursive implementation.  In general, iterative functions must maintai=
+n
+some local state that changes throughout the course of computation.  At any
+point in the iteration, that state characterizes the result of completed wo=
+rk
+and the amount of work remaining.  For example, when <tt class=3D"docutils =
+literal">k</tt> is 3 and total
+is 2, there are still two terms remaining to be processed, 3 and 4.
+On the other hand, <em>fact</em> is characterized by its single argument <t=
+t class=3D"docutils literal">n</tt>. The
+state of the computation is entirely contained within the structure of the
+environment, which has return values that take the role of <tt class=3D"doc=
+utils literal">total</tt>, and binds
+<tt class=3D"docutils literal">n</tt> to different values in different fram=
+es rather than explicitly tracking
+<tt class=3D"docutils literal">k</tt>.</p>
+<p>Recursive functions leverage the rules of evaluating call expressions to=
+ bind
+names to values, often avoiding the nuisance of correctly assigning local n=
+ames
+during iteration. For this reason, recursive functions can be easier to def=
+ine
+correctly. However, learning to recognize the computational processes evolv=
+ed by
+recursive functions certainly requires practice.</p>
+</div>
+<div class=3D"section" id=3D"mutual-recursion">
+<h3>1.7.2&nbsp;&nbsp;&nbsp;Mutual Recursion</h3>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"aIhY2cNaFktw" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>When a recursive procedure is divided among two =
+functions that call each other,
+the functions are said to be <em>mutually recursive</em>. As an example, co=
+nsider the
+following definition of even and odd for non-negative integers:</p>
+<ul class=3D"simple">
+<li>a number is even if it is one more than an odd number</li>
+<li>a number is odd if it is one more than an even number</li>
+<li>0 is even</li>
+</ul>
+<p>Using this definition, we can implement mutually recursive functions to
+determine whether a number is even or odd:</p>
+<div class=3D"example" data-output=3D"False" data-showallframelabels=3D"Tru=
+e" data-step=3D"0" id=3D"example_43" style=3D""><div class=3D"ExecutionVisu=
+alizer" style=3D"min-height: 466px;"><div id=3D"vizHeader" style=3D"display=
+: none;">       <textarea class=3D"vizTitleText" id=3D"vizTitleEditor" cols=
+=3D"60" rows=3D"1" style=3D"display: none;"></textarea>       <div class=3D=
+"vizTitleText" id=3D"vizTitleViewer"></div>       <textarea class=3D"vizDes=
+criptionText" id=3D"vizDescriptionEditor" cols=3D"75" rows=3D"2" style=3D"d=
+isplay: none;"></textarea>       <div class=3D"vizDescriptionText" id=3D"vi=
+zDescriptionViewer"></div>    </div><table border=3D"0" class=3D"visualizer=
+"><tbody><tr><td class=3D"vizLayoutTd" id=3D"vizLayoutTdFirst"><div id=3D"c=
+odeDisplayDiv" class=3D"ui-resizable">       <div id=3D"pyCodeOutputDiv" st=
+yle=3D"max-height: 400px;"><table id=3D"pyCodeOutput"><tr><td id=3D"gutterT=
+D" valign=3D"top" rowspan=3D"13"><svg id=3D"leftCodeGutterSVG" style=3D"hei=
+ght: 284px;"><polygon id=3D"prevLineArrow" points=3D"0,0 6,5 0,10" fill=3D"=
+#c9e6ca" style=3D"display: none;"></polygon><polygon id=3D"curLineArrow" po=
+ints=3D"0,0 6,5 0,10" fill=3D"#e93f34" transform=3D"translate(0, 5)"></poly=
+gon></svg></td><td class=3D"lineNo" id=3D"lineNo1">1</td><td class=3D"cod" =
+id=3D"v3__cod1">def&nbsp;is_even(n):</td></tr><tr><td class=3D"lineNo" id=
+=3D"lineNo2">2</td><td class=3D"cod" id=3D"v3__cod2">&nbsp;&nbsp;&nbsp;&nbs=
+p;if&nbsp;n&nbsp;=3D=3D&nbsp;0:</td></tr><tr><td class=3D"lineNo" id=3D"lin=
+eNo3">3</td><td class=3D"cod" id=3D"v3__cod3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;return&nbsp;True</td></tr><tr><td class=3D"lineNo" id=3D=
+"lineNo4">4</td><td class=3D"cod" id=3D"v3__cod4">&nbsp;&nbsp;&nbsp;&nbsp;e=
+lse:</td></tr><tr><td class=3D"lineNo" id=3D"lineNo5">5</td><td class=3D"co=
+d" id=3D"v3__cod5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&n=
+bsp;is_odd(n-1)</td></tr><tr><td class=3D"lineNo" id=3D"lineNo6">6</td><td =
+class=3D"cod" id=3D"v3__cod6"></td></tr><tr><td class=3D"lineNo" id=3D"line=
+No7">7</td><td class=3D"cod" id=3D"v3__cod7">def&nbsp;is_odd(n):</td></tr><=
+tr><td class=3D"lineNo" id=3D"lineNo8">8</td><td class=3D"cod" id=3D"v3__co=
+d8">&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;n&nbsp;=3D=3D&nbsp;0:</td></tr><tr><td =
+class=3D"lineNo" id=3D"lineNo9">9</td><td class=3D"cod" id=3D"v3__cod9">&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;False</td></tr><tr=
+><td class=3D"lineNo" id=3D"lineNo10">10</td><td class=3D"cod" id=3D"v3__co=
+d10">&nbsp;&nbsp;&nbsp;&nbsp;else:</td></tr><tr><td class=3D"lineNo" id=3D"=
+lineNo11">11</td><td class=3D"cod" id=3D"v3__cod11">&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;is_even(n-1)</td></tr><tr><td class=3D=
+"lineNo" id=3D"lineNo12">12</td><td class=3D"cod" id=3D"v3__cod12"></td></t=
+r><tr><td class=3D"lineNo" id=3D"lineNo13">13</td><td class=3D"cod" id=3D"v=
+3__cod13">result&nbsp;=3D&nbsp;is_even(4)</td></tr></table></div>       <di=
+v id=3D"editCodeLinkDiv"><a id=3D"editBtn" href=3D"http://composingprograms=
+.com/tutor.html#code=3Ddef+is_even(n)%3A%0A++++if+n+%3D%3D+0%3A%0A++++++++r=
+eturn+True%0A++++else%3A%0A++++++++return+is_odd(n-1)%0A%0Adef+is_odd(n)%3A=
+%0A++++if+n+%3D%3D+0%3A%0A++++++++return+False%0A++++else%3A%0A++++++++retu=
+rn+is_even(n-1)%0A%0Aresult+%3D+is_even(4)">Edit code in Online Python Tuto=
+r</a></div>       <div id=3D"executionSlider" class=3D"ui-slider ui-slider-=
+horizontal ui-widget ui-widget-content ui-corner-all" style=3D"font-size: 0=
+.9em;"><a class=3D"ui-slider-handle ui-state-default ui-corner-all" href=3D=
+"https://www.composingprograms.com/pages/17-recursive-functions.html#" styl=
+e=3D"left: 0%; width: 0.8em; height: 1.4em;"></a></div>       <div id=3D"vc=
+rControls">         <button id=3D"jmpStepBack" ,=3D"" type=3D"button" disab=
+led=3D"disabled">&lt; Back</button>         <span id=3D"curInstr">Step 1 of=
+ 18</span>         <button id=3D"jmpStepFwd" ,=3D"" type=3D"button">Forward=
+ &gt;</button>       </div>       <div id=3D"errorOutput" style=3D"display:=
+ none;"></div>       <div id=3D"legendDiv"><svg id=3D"prevLegendArrowSVG"><=
+polygon points=3D"0,0 6,5 0,10" fill=3D"#c9e6ca"></polygon></svg><font _mst=
+mutation=3D"1"> line that has just executed</font><p style=3D"margin-top: 4=
+px"><svg id=3D"curLegendArrowSVG"><polygon points=3D"0,0 6,5 0,10" fill=3D"=
+#e93f34"></polygon></svg><font _mstmutation=3D"1"> next line to execute</fo=
+nt></p></div>       <div id=3D"stepAnnotationDiv">         <textarea class=
+=3D"annotationText" id=3D"stepAnnotationEditor" cols=3D"60" rows=3D"3" styl=
+e=3D"display: none;"></textarea>         <div class=3D"annotationText" id=
+=3D"stepAnnotationViewer"></div>       </div>       <div id=3D"annotateLink=
+Div"><button id=3D"annotateBtn" type=3D"button" style=3D"display: none;">An=
+notate this step</button></div>     <div class=3D"ui-resizable-handle ui-re=
+sizable-e" style=3D"z-index: 1000;"></div></div><div id=3D"htmlOutputDiv"><=
+/div>     <div id=3D"progOutputs" style=3D"display: none;"><font _mstmutati=
+on=3D"1">       Program output:</font><br>       <textarea id=3D"pyStdout" =
+cols=3D"50" rows=3D"10" wrap=3D"off" readonly=3D""></textarea>     </div></=
+td><td class=3D"vizLayoutTd" id=3D"vizLayoutTdSecond"><div id=3D"dataViz"> =
+      <table id=3D"stackHeapTable">         <tbody><tr>           <td id=3D=
+"stack_td">             <div id=3D"globals_area">             <div class=3D=
+"stackFrame highlightedStackFrame" id=3D"v3__globals" style=3D"display: non=
+e;"><div id=3D"v3__globals_header" class=3D"stackFrameHeader">Global</div><=
+table class=3D"stackFrameVarTable" id=3D"v3__global_table"></table></div></=
+div>             <div id=3D"stack"></div>           </td>           <td id=
+=3D"heap_td">             <div id=3D"heap"></div>           </td>         <=
+/tr>       </tbody></table>     </div></td></tr></tbody></table></div></div=
+>
+<p>Mutually recursive functions can be turned into a single recursive funct=
+ion
+by breaking the abstraction boundary between the two functions. In this
+example, the body of <tt class=3D"docutils literal">is_odd</tt> can be inco=
+rporated into that of <tt class=3D"docutils literal">is_even</tt>,
+making sure to replace <tt class=3D"docutils literal">n</tt> with <tt class=
+=3D"docutils literal"><span class=3D"pre">n-1</span></tt> in the body of <t=
+t class=3D"docutils literal">is_odd</tt> to reflect
+the argument passed into it:</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">is_even</span><span =
+class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">=3D=3D</span> <span class=3D=
+"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"kc">True</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">else</sp=
+an><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">if</=
+span> <span class=3D"p">(</span><span class=3D"n">n</span><span class=3D"o"=
+>-</span><span class=3D"mi">1</span><span class=3D"p">)</span> <span class=
+=3D"o">=3D=3D</span> <span class=3D"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>            <span class=3D"k">=
+return</span> <span class=3D"kc">False</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">else=
+</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>            <span class=3D"k">=
+return</span> <span class=3D"n">is_even</span><span class=3D"p">((</span><s=
+pan class=3D"n">n</span><span class=3D"o">-</span><span class=3D"mi">1</spa=
+n><span class=3D"p">)</span><span class=3D"o">-</span><span class=3D"mi">1<=
+/span><span class=3D"p">)</span>
+</pre></div>
+
+<p>As such, mutual recursion is no more mysterious or powerful than simple
+recursion, and it provides a mechanism for maintaining abstraction within a
+complicated recursive program.</p>
+</div>
+<div class=3D"section" id=3D"printing-in-recursive-functions">
+<h3>1.7.3&nbsp;&nbsp;&nbsp;Printing in Recursive Functions</h3>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"aVYYkJ1OLXBw" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>The computational process evolved by a recursive=
+ function can often be
+visualized using calls to <tt class=3D"docutils literal">print</tt>.  As an=
+ example, we will implement a
+function <tt class=3D"docutils literal">cascade</tt> that prints all prefix=
+es of a number from largest to
+smallest to largest.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">cascade</span><span =
+class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"sd">"""Prin=
+t a cascade of prefixes of n."""</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">&lt;</span> <span class=3D"m=
+i">10</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"nb">pri=
+nt</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D=
+"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">else</sp=
+an><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"nb">pri=
+nt</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D=
+"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">casc=
+ade</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=
+=3D"o">//</span><span class=3D"mi">10</span><span class=3D"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"nb">pri=
+nt</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D=
+"p">)</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">cascade</span><span class=3D"p">(</span><span clas=
+s=3D"mi">2013</span><span class=3D"p">)</span>
+<span class=3D"go">2013</span>
+<span class=3D"go">201</span>
+<span class=3D"go">20</span>
+<span class=3D"go">2</span>
+<span class=3D"go">20</span>
+<span class=3D"go">201</span>
+<span class=3D"go">2013</span>
+</pre></div>
+
+<p>In this recursive function, the base case is a single-digit number, whic=
+h is
+printed.  Otherwise, a recursive call is placed between two calls to <tt cl=
+ass=3D"docutils literal">print</tt>.</p>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"auK3KrG8qxPg" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>It is not a rigid requirement that base cases be=
+ expressed before recursive
+calls.  In fact, this function can be expressed more compactly by observing=
+ that
+<tt class=3D"docutils literal">print(n)</tt> is repeated in both clauses of=
+ the conditional statement, and
+therefore can precede it.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">cascade</span><span =
+class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"sd">"""Prin=
+t a cascade of prefixes of n."""</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"nb">print</=
+span><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">=
+)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">&gt;=3D</span> <span class=
+=3D"mi">10</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">casc=
+ade</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=
+=3D"o">//</span><span class=3D"mi">10</span><span class=3D"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"nb">pri=
+nt</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D=
+"p">)</span>
+</pre></div>
+
+<p>As another example of mutual recursion, consider a two-player game in wh=
+ich
+there are <tt class=3D"docutils literal">n</tt> initial pebbles on a table.=
+ The players take turns, removing
+either one or two pebbles from the table, and the player who removes the
+final pebble wins. Suppose that Alice and Bob play this game, each using a
+simple strategy:</p>
+<ul class=3D"simple">
+<li>Alice always removes a single pebble</li>
+<li>Bob removes two pebbles if an even number of pebbles is on the table, a=
+nd
+one otherwise</li>
+</ul>
+<p>Given <tt class=3D"docutils literal">n</tt> initial pebbles and Alice st=
+arting, who wins the game?</p>
+<p>A natural decomposition of this problem is to encapsulate each strategy =
+in its
+own function. This allows us to modify one strategy without affecting the o=
+ther,
+maintaining the abstraction barrier between the two. In order to incorporat=
+e the
+turn-by-turn nature of the game, these two functions call each other at the=
+ end
+of each turn.</p>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">play_alice</span><sp=
+an class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span=
+>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">=3D=3D</span> <span class=3D=
+"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"nb">pri=
+nt</span><span class=3D"p">(</span><span class=3D"s2">"Bob wins!"</span><sp=
+an class=3D"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">else</sp=
+an><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">play=
+_bob</span><span class=3D"p">(</span><span class=3D"n">n</span><span class=
+=3D"o">-</span><span class=3D"mi">1</span><span class=3D"p">)</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">play_bob</span><span=
+ class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">=3D=3D</span> <span class=3D=
+"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"nb">pri=
+nt</span><span class=3D"p">(</span><span class=3D"s2">"Alice wins!"</span><=
+span class=3D"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">elif</sp=
+an> <span class=3D"n">is_even</span><span class=3D"p">(</span><span class=
+=3D"n">n</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">play=
+_alice</span><span class=3D"p">(</span><span class=3D"n">n</span><span clas=
+s=3D"o">-</span><span class=3D"mi">2</span><span class=3D"p">)</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">else</sp=
+an><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"n">play=
+_alice</span><span class=3D"p">(</span><span class=3D"n">n</span><span clas=
+s=3D"o">-</span><span class=3D"mi">1</span><span class=3D"p">)</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">play_alice</span><span class=3D"p">(</span><span c=
+lass=3D"mi">20</span><span class=3D"p">)</span>
+<span class=3D"go">Bob wins!</span>
+</pre></div>
+
+<p>In <tt class=3D"docutils literal">play_bob</tt>, we see that multiple re=
+cursive calls may appear in the body of
+a function.  However, in this example, each call to <tt class=3D"docutils l=
+iteral">play_bob</tt> calls
+<tt class=3D"docutils literal">play_alice</tt> at most once. In the next se=
+ction, we consider what happens when
+a single function call makes multiple direct recursive calls.</p>
+</div>
+<div class=3D"section" id=3D"tree-recursion">
+<h3>1.7.4&nbsp;&nbsp;&nbsp;Tree Recursion</h3>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"als0GsJyLVLw" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>Another common pattern of computation is called =
+tree recursion, in which a
+function calls itself more than once. As an example, consider computing the
+sequence of Fibonacci numbers, in which each number is the sum of the prece=
+ding
+two.</p>
+<div class=3D"example" data-output=3D"False" data-showallframelabels=3D"Tru=
+e" data-step=3D"0" id=3D"example_44" style=3D""><div class=3D"ExecutionVisu=
+alizer" style=3D"min-height: 378px;"><div id=3D"vizHeader" style=3D"display=
+: none;">       <textarea class=3D"vizTitleText" id=3D"vizTitleEditor" cols=
+=3D"60" rows=3D"1" style=3D"display: none;"></textarea>       <div class=3D=
+"vizTitleText" id=3D"vizTitleViewer"></div>       <textarea class=3D"vizDes=
+criptionText" id=3D"vizDescriptionEditor" cols=3D"75" rows=3D"2" style=3D"d=
+isplay: none;"></textarea>       <div class=3D"vizDescriptionText" id=3D"vi=
+zDescriptionViewer"></div>    </div><table border=3D"0" class=3D"visualizer=
+"><tbody><tr><td class=3D"vizLayoutTd" id=3D"vizLayoutTdFirst"><div id=3D"c=
+odeDisplayDiv" class=3D"ui-resizable">       <div id=3D"pyCodeOutputDiv" st=
+yle=3D"max-height: 400px;"><table id=3D"pyCodeOutput"><tr><td id=3D"gutterT=
+D" valign=3D"top" rowspan=3D"9"><svg id=3D"leftCodeGutterSVG" style=3D"heig=
+ht: 196px;"><polygon id=3D"prevLineArrow" points=3D"0,0 6,5 0,10" fill=3D"#=
+c9e6ca" style=3D"display: none;"></polygon><polygon id=3D"curLineArrow" poi=
+nts=3D"0,0 6,5 0,10" fill=3D"#e93f34" transform=3D"translate(0, 5)"></polyg=
+on></svg></td><td class=3D"lineNo" id=3D"lineNo1">1</td><td class=3D"cod" i=
+d=3D"v4__cod1">def&nbsp;fib(n):</td></tr><tr><td class=3D"lineNo" id=3D"lin=
+eNo2">2</td><td class=3D"cod" id=3D"v4__cod2">&nbsp;&nbsp;&nbsp;&nbsp;if&nb=
+sp;n&nbsp;=3D=3D&nbsp;1:</td></tr><tr><td class=3D"lineNo" id=3D"lineNo3">3=
+</td><td class=3D"cod" id=3D"v4__cod3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;return&nbsp;0</td></tr><tr><td class=3D"lineNo" id=3D"lineNo4">=
+4</td><td class=3D"cod" id=3D"v4__cod4">&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;n&n=
+bsp;=3D=3D&nbsp;2:</td></tr><tr><td class=3D"lineNo" id=3D"lineNo5">5</td><=
+td class=3D"cod" id=3D"v4__cod5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;return&nbsp;1</td></tr><tr><td class=3D"lineNo" id=3D"lineNo6">6</td>=
+<td class=3D"cod" id=3D"v4__cod6">&nbsp;&nbsp;&nbsp;&nbsp;else:</td></tr><t=
+r><td class=3D"lineNo" id=3D"lineNo7">7</td><td class=3D"cod" id=3D"v4__cod=
+7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;fib(n-2)&nbs=
+p;+&nbsp;fib(n-1)</td></tr><tr><td class=3D"lineNo" id=3D"lineNo8">8</td><t=
+d class=3D"cod" id=3D"v4__cod8"></td></tr><tr><td class=3D"lineNo" id=3D"li=
+neNo9">9</td><td class=3D"cod" id=3D"v4__cod9">result&nbsp;=3D&nbsp;fib(6)<=
+/td></tr></table></div>       <div id=3D"editCodeLinkDiv"><a id=3D"editBtn"=
+ href=3D"http://composingprograms.com/tutor.html#code=3Ddef+fib(n)%3A%0A+++=
++if+n+%3D%3D+1%3A%0A++++++++return+0%0A++++if+n+%3D%3D+2%3A%0A++++++++retur=
+n+1%0A++++else%3A%0A++++++++return+fib(n-2)+%2B+fib(n-1)%0A%0Aresult+%3D+fi=
+b(6)">Edit code in Online Python Tutor</a></div>       <div id=3D"execution=
+Slider" class=3D"ui-slider ui-slider-horizontal ui-widget ui-widget-content=
+ ui-corner-all" style=3D"font-size: 0.9em;"><a class=3D"ui-slider-handle ui=
+-state-default ui-corner-all" href=3D"https://www.composingprograms.com/pag=
+es/17-recursive-functions.html#" style=3D"left: 0%; width: 0.8em; height: 1=
+.4em;"></a></div>       <div id=3D"vcrControls">         <button id=3D"jmpS=
+tepBack" ,=3D"" type=3D"button" disabled=3D"disabled">&lt; Back</button>   =
+      <span id=3D"curInstr">Step 1 of 59</span>         <button id=3D"jmpSt=
+epFwd" ,=3D"" type=3D"button">Forward &gt;</button>       </div>       <div=
+ id=3D"errorOutput" style=3D"display: none;"></div>       <div id=3D"legend=
+Div"><svg id=3D"prevLegendArrowSVG"><polygon points=3D"0,0 6,5 0,10" fill=
+=3D"#c9e6ca"></polygon></svg><font _mstmutation=3D"1"> line that has just e=
+xecuted</font><p style=3D"margin-top: 4px"><svg id=3D"curLegendArrowSVG"><p=
+olygon points=3D"0,0 6,5 0,10" fill=3D"#e93f34"></polygon></svg><font _mstm=
+utation=3D"1"> next line to execute</font></p></div>       <div id=3D"stepA=
+nnotationDiv">         <textarea class=3D"annotationText" id=3D"stepAnnotat=
+ionEditor" cols=3D"60" rows=3D"3" style=3D"display: none;"></textarea>     =
+    <div class=3D"annotationText" id=3D"stepAnnotationViewer"></div>       =
+</div>       <div id=3D"annotateLinkDiv"><button id=3D"annotateBtn" type=3D=
+"button" style=3D"display: none;">Annotate this step</button></div>     <di=
+v class=3D"ui-resizable-handle ui-resizable-e" style=3D"z-index: 1000;"></d=
+iv></div><div id=3D"htmlOutputDiv"></div>     <div id=3D"progOutputs" style=
+=3D"display: none;"><font _mstmutation=3D"1">       Program output:</font><=
+br>       <textarea id=3D"pyStdout" cols=3D"50" rows=3D"10" wrap=3D"off" re=
+adonly=3D""></textarea>     </div></td><td class=3D"vizLayoutTd" id=3D"vizL=
+ayoutTdSecond"><div id=3D"dataViz">       <table id=3D"stackHeapTable">    =
+     <tbody><tr>           <td id=3D"stack_td">             <div id=3D"glob=
+als_area">             <div class=3D"stackFrame highlightedStackFrame" id=
+=3D"v4__globals" style=3D"display: none;"><div id=3D"v4__globals_header" cl=
+ass=3D"stackFrameHeader">Global</div><table class=3D"stackFrameVarTable" id=
+=3D"v4__global_table"></table></div></div>             <div id=3D"stack"></=
+div>           </td>           <td id=3D"heap_td">             <div id=3D"h=
+eap"></div>           </td>         </tr>       </tbody></table>     </div>=
+</td></tr></tbody></table></div></div>
+<p>This recursive definition is tremendously appealing relative to our prev=
+ious
+attempts: it exactly mirrors the familiar definition of Fibonacci numbers.
+A function with multiple recursive calls is said to be <em>tree recursive</=
+em> because
+each call branches into multiple smaller calls, each of which branches into
+yet smaller calls, just as the branches of a tree become smaller but more
+numerous as they extend from the trunk.</p>
+<p>We were already able to define a function to compute Fibonacci numbers w=
+ithout
+tree recursion. In fact, our previous attempts were more efficient, a topic
+discussed later in the text. Next, we consider a problem for which the tree
+recursive solution is substantially simpler than any iterative alternative.=
+</p>
+</div>
+<div class=3D"section" id=3D"example-partitions">
+<h3>1.7.5&nbsp;&nbsp;&nbsp;Example: Partitions</h3>
+<div align=3D"center" class=3D"youtube">
+<font _mstmutation=3D"1"><b _mstmutation=3D"1">Video:</b>
+<a _mstmutation=3D"1">Show</a>
+<a _mstmutation=3D"1">Hide</a></font><iframe allowfullscreen=3D"" framebord=
+er=3D"0" height=3D"360" id=3D"aDvgT4dnSMVM" style=3D"display:none;" width=
+=3D"640"></iframe></div><p>The number of partitions of a positive integer <=
+tt class=3D"docutils literal">n</tt>, using parts up to size
+<tt class=3D"docutils literal">m</tt>, is the number of ways in which <tt c=
+lass=3D"docutils literal">n</tt> can be expressed as the sum of
+positive integer parts up to <tt class=3D"docutils literal">m</tt> in incre=
+asing order.  For example, the
+number of partitions of 6 using parts up to 4 is 9.</p>
+<ol class=3D"arabic simple">
+<li><tt class=3D"docutils literal">6 =3D 2 + 4</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 1 + 1 + 4</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 3 + 3</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 1 + 2 + 3</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 1 + 1 + 1 + 3</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 2 + 2 + 2</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 1 + 1 + 2 + 2</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 1 + 1 + 1 + 1 + 2</tt></li>
+<li><tt class=3D"docutils literal">6 =3D 1 + 1 + 1 + 1 + 1 + 1</tt></li>
+</ol>
+<p>We will define a function <tt class=3D"docutils literal">count_partition=
+s(n, m)</tt> that returns the number of
+different partitions of <tt class=3D"docutils literal">n</tt> using parts u=
+p to <tt class=3D"docutils literal">m</tt>.  This function has a
+simple solution as a tree-recursive function, based on the following
+observation:</p>
+<p>The number of ways to partition <tt class=3D"docutils literal">n</tt> us=
+ing integers up to <tt class=3D"docutils literal">m</tt> equals</p>
+<ol class=3D"arabic simple">
+<li>the number of ways to partition <tt class=3D"docutils literal"><span cl=
+ass=3D"pre">n-m</span></tt> using integers up to <tt class=3D"docutils lite=
+ral">m</tt>, and</li>
+<li>the number of ways to partition <tt class=3D"docutils literal">n</tt> u=
+sing integers up to <tt class=3D"docutils literal"><span class=3D"pre">m-1<=
+/span></tt>.</li>
+</ol>
+<p>To see why this is true, observe that all the ways of partitioning <tt c=
+lass=3D"docutils literal">n</tt> can be
+divided into two groups: those that include at least one <tt class=3D"docut=
+ils literal">m</tt> and those that do
+not.  Moreover, each partition in the first group is a partition of <tt cla=
+ss=3D"docutils literal"><span class=3D"pre">n-m</span></tt>,
+followed by <tt class=3D"docutils literal">m</tt> added at the end. In the =
+example above, the first two
+partitions contain 4, and the rest do not.</p>
+<p>Therefore, we can recursively reduce the problem of partitioning <tt cla=
+ss=3D"docutils literal">n</tt> using
+integers up to <tt class=3D"docutils literal">m</tt> into two simpler probl=
+ems: (1) partition a smaller number
+<tt class=3D"docutils literal"><span class=3D"pre">n-m</span></tt>, and (2)=
+ partition with smaller components up to <tt class=3D"docutils literal"><sp=
+an class=3D"pre">m-1</span></tt>.</p>
+<p>To complete the implementation, we need to specify the following base ca=
+ses:</p>
+<ol class=3D"arabic simple">
+<li>There is one way to partition 0: include no parts.</li>
+<li>There are 0 ways to partition a negative <tt class=3D"docutils literal"=
+>n</tt>.</li>
+<li>There are 0 ways to partition any <tt class=3D"docutils literal">n</tt>=
+ greater than 0 using parts of
+size 0 or less.</li>
+</ol>
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"k">def</span> <span class=3D"nf">count_partitions</sp=
+an><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">,<=
+/span> <span class=3D"n">m</span><span class=3D"p">):</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"sd">"""Coun=
+t the ways to partition n using parts up to m."""</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">if</span=
+> <span class=3D"n">n</span> <span class=3D"o">=3D=3D</span> <span class=3D=
+"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"mi">1</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">elif</sp=
+an> <span class=3D"n">n</span> <span class=3D"o">&lt;</span> <span class=3D=
+"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"mi">0</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">elif</sp=
+an> <span class=3D"n">m</span> <span class=3D"o">=3D=3D</span> <span class=
+=3D"mi">0</span><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"mi">0</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>    <span class=3D"k">else</sp=
+an><span class=3D"p">:</span>
+<span class=3D"gp">&nbsp;&nbsp;&nbsp; </span>        <span class=3D"k">retu=
+rn</span> <span class=3D"n">count_partitions</span><span class=3D"p">(</spa=
+n><span class=3D"n">n</span><span class=3D"o">-</span><span class=3D"n">m</=
+span><span class=3D"p">,</span> <span class=3D"n">m</span><span class=3D"p"=
+>)</span> <span class=3D"o">+</span> <span class=3D"n">count_partitions</sp=
+an><span class=3D"p">(</span><span class=3D"n">n</span><span class=3D"p">,<=
+/span> <span class=3D"n">m</span><span class=3D"o">-</span><span class=3D"m=
+i">1</span><span class=3D"p">)</span>
+</pre></div>
+
+<div class=3D"highlight"><pre><span></span><span class=3D"gp">&gt;&gt;&gt; =
+</span><span class=3D"n">count_partitions</span><span class=3D"p">(</span><=
+span class=3D"mi">6</span><span class=3D"p">,</span> <span class=3D"mi">4</=
+span><span class=3D"p">)</span>
+<span class=3D"go">9</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">count_partitions</=
+span><span class=3D"p">(</span><span class=3D"mi">5</span><span class=3D"p"=
+>,</span> <span class=3D"mi">5</span><span class=3D"p">)</span>
+<span class=3D"go">7</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">count_partitions</=
+span><span class=3D"p">(</span><span class=3D"mi">10</span><span class=3D"p=
+">,</span> <span class=3D"mi">10</span><span class=3D"p">)</span>
+<span class=3D"go">42</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">count_partitions</=
+span><span class=3D"p">(</span><span class=3D"mi">15</span><span class=3D"p=
+">,</span> <span class=3D"mi">15</span><span class=3D"p">)</span>
+<span class=3D"go">176</span>
+<span class=3D"gp">&gt;&gt;&gt; </span><span class=3D"n">count_partitions</=
+span><span class=3D"p">(</span><span class=3D"mi">20</span><span class=3D"p=
+">,</span> <span class=3D"mi">20</span><span class=3D"p">)</span>
+<span class=3D"go">627</span>
+</pre></div>
+
+<p>We can think of a tree-recursive function as exploring different possibi=
+lities.
+In this case, we explore the possibility that we use a part of size <tt cla=
+ss=3D"docutils literal">m</tt> and
+the possibility that we do not.  The first and second recursive calls corre=
+spond
+to these possibilities.</p>
+<p>Implementing this function without recursion would be substantially more
+involved. Interested readers are encouraged to try.</p>
+</div>
+</div>
+      </div>
+    </section>
+
+    <div class=3D"wrap">
+      <footer id=3D"contentinfo" class=3D"body">
+          Composing Programs by <a href=3D"http://www.denero.org/">John
+          DeNero</a>, based on the textbook <a href=3D"http://mitpress.mit.=
+edu/sicp/">Structure and
+          Interpretation of Computer Programs</a> by Harold Abelson and
+          Gerald Jay Sussman, is licensed under a <a rel=3D"license" href=
+=3D"http://creativecommons.org/licenses/by-sa/3.0/">Creative
+          Commons Attribution-ShareAlike 3.0 Unported License</a>.
+      </footer><!-- /#contentinfo -->
+    </div>
+  </div>
+
+<div style=3D"position: absolute; width: 0px; height: 0px; overflow: hidden=
+; padding: 0px; border: 0px; margin: 0px;"><div id=3D"MathJax_Font_Test" st=
+yle=3D"position: absolute; visibility: hidden; top: 0px; left: 0px; width: =
+auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-ali=
+gn: left; text-indent: 0px; text-transform: none; line-height: normal; lett=
+er-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: nor=
+mal; font-style: normal; font-size-adjust: none; font-family: MathJax_Math-=
+italic, sans-serif;"></div></div></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/coding-js/coding.css
+
+@charset "utf-8";
+
+.output_displayed_text { color: blue; }
+
+.output_error { color: red; }
+
+.p-link { text-decoration: underline; text-align: right; }
+
+.p-link:hover { cursor: pointer; }
+
+.output { font-family: monospace; font-style: italic; padding: 0pt 4pt; col=
+or: rgb(68, 68, 68); }
+
+.CodeMirror-scroll { height: auto; width: auto; overflow: auto hidden; }
+
+.CodeMirror-scroll:hover:not(.static):not(.CodeMirror-focused) { background=
+: rgba(0, 0, 0, 0.05); }
+
+.CodeMirror-scroll:hover.static:not(.CodeMirror-focused) { background-color=
+: rgba(0, 0, 0, 0.01); }
+
+.CodeMirror-focused:not(:hover) { background: rgba(0, 0, 0, 0.07); }
+
+.CodeMirror-focused:hover { background: rgba(0, 0, 0, 0.075); }
+
+.CodeMirror-matchingbracket { background: rgba(0, 0, 0, 0.1); }
+
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(95, 95, 95); }
+
+.CodeMirror { line-height: 1.3em; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/tutor/css/codemirror.css
+
+@charset "utf-8";
+
+.CodeMirror { line-height: 1.2em; font-family: monospace; position: relativ=
+e; overflow: hidden; }
+
+.CodeMirror-scroll { overflow: auto; height: 300px; position: relative; out=
+line: none; }
+
+.CodeMirror-scrollbar { position: absolute; right: 0px; top: 0px; overflow:=
+ hidden scroll; z-index: 5; }
+
+.CodeMirror-scrollbar-inner { width: 1px; }
+
+.CodeMirror-scrollbar.cm-sb-overlap { position: absolute; z-index: 1; float=
+: none; right: 0px; min-width: 12px; }
+
+.CodeMirror-scrollbar.cm-sb-nonoverlap { min-width: 12px; }
+
+.CodeMirror-scrollbar.cm-sb-ie7 { min-width: 18px; }
+
+.CodeMirror-gutter { position: absolute; left: 0px; top: 0px; z-index: 10; =
+background-color: rgb(247, 247, 247); border-right: 1px solid rgb(238, 238,=
+ 238); min-width: 2em; height: 100%; }
+
+.CodeMirror-gutter-text { color: rgb(170, 170, 170); text-align: right; pad=
+ding: 0.4em 0.2em 0.4em 0.4em; cursor: default; white-space: pre !important=
+; }
+
+.CodeMirror-lines { padding: 0.4em; white-space: pre; cursor: text; }
+
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: transp=
+arent; font-family: inherit; font-size: inherit; padding: 0px; margin: 0px;=
+ white-space: pre; overflow-wrap: normal; line-height: inherit; color: inhe=
+rit; }
+
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; wo=
+rd-break: normal; }
+
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+
+.CodeMirror textarea { outline: none !important; }
+
+.CodeMirror pre.CodeMirror-cursor { z-index: 10; position: absolute; visibi=
+lity: hidden; border-left: 1px solid black; border-right: none; width: 0px;=
+ }
+
+.cm-keymap-fat-cursor pre.CodeMirror-cursor { width: auto; border: 0px; bac=
+kground: rgba(0, 200, 0, 0.4); }
+
+.cm-keymap-fat-cursor pre.CodeMirror-cursor:not(#nonsense_id) { }
+
+.CodeMirror pre.CodeMirror-cursor.CodeMirror-overwrite { }
+
+.CodeMirror-focused pre.CodeMirror-cursor { visibility: visible; }
+
+div.CodeMirror-selected { background: rgb(217, 217, 217); }
+
+.CodeMirror-focused div.CodeMirror-selected { background: rgb(215, 212, 240=
+); }
+
+.CodeMirror-searching { background: rgba(255, 255, 0, 0.4); }
+
+.cm-s-default span.cm-keyword { color: rgb(119, 0, 136); }
+
+.cm-s-default span.cm-atom { color: rgb(34, 17, 153); }
+
+.cm-s-default span.cm-number { color: rgb(17, 102, 68); }
+
+.cm-s-default span.cm-def { color: rgb(0, 0, 255); }
+
+.cm-s-default span.cm-variable { color: black; }
+
+.cm-s-default span.cm-variable-2 { color: rgb(0, 85, 170); }
+
+.cm-s-default span.cm-variable-3 { color: rgb(0, 136, 85); }
+
+.cm-s-default span.cm-property { color: black; }
+
+.cm-s-default span.cm-operator { color: black; }
+
+.cm-s-default span.cm-comment { color: rgb(170, 85, 0); }
+
+.cm-s-default span.cm-string { color: rgb(170, 17, 17); }
+
+.cm-s-default span.cm-string-2 { color: rgb(255, 85, 0); }
+
+.cm-s-default span.cm-meta { color: rgb(85, 85, 85); }
+
+.cm-s-default span.cm-error { color: rgb(255, 0, 0); }
+
+.cm-s-default span.cm-qualifier { color: rgb(85, 85, 85); }
+
+.cm-s-default span.cm-builtin { color: rgb(51, 0, 170); }
+
+.cm-s-default span.cm-bracket { color: rgb(204, 204, 119); }
+
+.cm-s-default span.cm-tag { color: rgb(17, 119, 0); }
+
+.cm-s-default span.cm-attribute { color: rgb(0, 0, 204); }
+
+.cm-s-default span.cm-header { color: blue; }
+
+.cm-s-default span.cm-quote { color: rgb(0, 153, 0); }
+
+.cm-s-default span.cm-hr { color: rgb(153, 153, 153); }
+
+.cm-s-default span.cm-link { color: rgb(0, 0, 204); }
+
+span.cm-header, span.cm-strong { font-weight: bold; }
+
+span.cm-em { font-style: italic; }
+
+span.cm-emstrong { font-style: italic; font-weight: bold; }
+
+span.cm-link { text-decoration: underline; }
+
+span.cm-invalidchar { color: rgb(255, 0, 0); }
+
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34)=
+; }
+
+@media print {
+  .CodeMirror pre.CodeMirror-cursor { visibility: hidden; }
+}
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.composingprograms.com/theme/tutor/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAAL0lEQVQ4je3HsQ0AIBDDwIT9F/4i
+gpYiAyDk5mRrZvaSJAD4liT32u7bqi0APMcBiYQKDwcroFAAAAAASUVORK5CYII=
+
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.composingprograms.com/theme/tutor/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAYAAABHLFpgAAAAIUlEQVQYlWP48ePHfyYGBgaGIUT8
+//8fO5cSFn6J4UQAAJSgIpAFCJPdAAAAAElFTkSuQmCC
+
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/tutor/css/ui-lightness/jquery-ui-1.8.21.custom.css
+
+@charset "utf-8";
+
+.ui-helper-hidden { display: none; }
+
+.ui-helper-hidden-accessible { clip: rect(1px, 1px, 1px, 1px); position: ab=
+solute !important; }
+
+.ui-helper-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; li=
+ne-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+
+.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ""; disp=
+lay: table; }
+
+.ui-helper-clearfix::after { clear: both; }
+
+.ui-helper-clearfix { zoom: 1; }
+
+.ui-helper-zfix { width: 100%; height: 100%; top: 0px; left: 0px; position:=
+ absolute; opacity: 0; }
+
+.ui-state-disabled { cursor: default !important; }
+
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; backgro=
+und-repeat: no-repeat; }
+
+.ui-widget-overlay { position: absolute; top: 0px; left: 0px; width: 100%; =
+height: 100%; }
+
+.ui-widget { font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-seri=
+f; font-size: 1.1em; }
+
+.ui-widget .ui-widget { font-size: 1em; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button=
+ { font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif; font-si=
+ze: 1em; }
+
+.ui-widget-content { border: 1px solid rgb(204, 204, 204); background: url(=
+"images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x rgb(23=
+8, 238, 238); color: rgb(51, 51, 51); }
+
+.ui-widget-content a { color: rgb(51, 51, 51); }
+
+.ui-widget-header { border: 1px solid rgb(231, 143, 8); background: url("im=
+ages/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x rgb(246, 168=
+, 40); color: rgb(255, 255, 255); font-weight: bold; }
+
+.ui-widget-header a { color: rgb(255, 255, 255); }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header =
+.ui-state-default { border: 1px solid rgb(204, 204, 204); background: url("=
+images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x rgb(246, 246, 24=
+6); font-weight: bold; color: rgb(28, 148, 196); }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited =
+{ color: rgb(28, 148, 196); text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .u=
+i-state-active { border: 1px solid rgb(251, 216, 80); background: url("imag=
+es/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x rgb(255, 255, 255); f=
+ont-weight: bold; color: rgb(235, 143, 0); }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { c=
+olor: rgb(235, 143, 0); text-decoration: none; }
+
+.ui-widget :active { outline: none; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-hea=
+der .ui-state-highlight { border: 1px solid rgb(254, 210, 47); background: =
+url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x rgb=
+(255, 228, 92); color: rgb(54, 54, 54); }
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget=
+-header .ui-state-highlight a { color: rgb(54, 54, 54); }
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-=
+state-error { border: 1px solid rgb(205, 10, 10); background: url("images/u=
+i-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat rgb(184, 25, 0); =
+color: rgb(255, 255, 255); }
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header =
+.ui-state-error a { color: rgb(255, 255, 255); }
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-h=
+eader .ui-state-error-text { color: rgb(255, 255, 255); }
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-h=
+eader .ui-priority-primary { font-weight: bold; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widg=
+et-header .ui-priority-secondary { opacity: 0.7; font-weight: normal; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-heade=
+r .ui-state-disabled { opacity: 0.35; background-image: none; }
+
+.ui-icon { width: 16px; height: 16px; background-image: url("images/ui-icon=
+s_222222_256x240.png"); }
+
+.ui-widget-content .ui-icon { background-image: url("images/ui-icons_222222=
+_256x240.png"); }
+
+.ui-widget-header .ui-icon { background-image: url("images/ui-icons_ffffff_=
+256x240.png"); }
+
+.ui-state-default .ui-icon { background-image: url("images/ui-icons_ef8c08_=
+256x240.png"); }
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon { background-image: url(=
+"images/ui-icons_ef8c08_256x240.png"); }
+
+.ui-state-active .ui-icon { background-image: url("images/ui-icons_ef8c08_2=
+56x240.png"); }
+
+.ui-state-highlight .ui-icon { background-image: url("images/ui-icons_228ef=
+1_256x240.png"); }
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon { background-image:=
+ url("images/ui-icons_ffd27a_256x240.png"); }
+
+.ui-icon-carat-1-n { background-position: 0px 0px; }
+
+.ui-icon-carat-1-ne { background-position: -16px 0px; }
+
+.ui-icon-carat-1-e { background-position: -32px 0px; }
+
+.ui-icon-carat-1-se { background-position: -48px 0px; }
+
+.ui-icon-carat-1-s { background-position: -64px 0px; }
+
+.ui-icon-carat-1-sw { background-position: -80px 0px; }
+
+.ui-icon-carat-1-w { background-position: -96px 0px; }
+
+.ui-icon-carat-1-nw { background-position: -112px 0px; }
+
+.ui-icon-carat-2-n-s { background-position: -128px 0px; }
+
+.ui-icon-carat-2-e-w { background-position: -144px 0px; }
+
+.ui-icon-triangle-1-n { background-position: 0px -16px; }
+
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+
+.ui-icon-arrow-1-n { background-position: 0px -32px; }
+
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+
+.ui-icon-arrowthick-1-n { background-position: 0px -48px; }
+
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+
+.ui-icon-arrowreturnthick-1-w { background-position: 0px -64px; }
+
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+
+.ui-icon-arrow-4 { background-position: 0px -80px; }
+
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+
+.ui-icon-extlink { background-position: -32px -80px; }
+
+.ui-icon-newwin { background-position: -48px -80px; }
+
+.ui-icon-refresh { background-position: -64px -80px; }
+
+.ui-icon-shuffle { background-position: -80px -80px; }
+
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+
+.ui-icon-folder-collapsed { background-position: 0px -96px; }
+
+.ui-icon-folder-open { background-position: -16px -96px; }
+
+.ui-icon-document { background-position: -32px -96px; }
+
+.ui-icon-document-b { background-position: -48px -96px; }
+
+.ui-icon-note { background-position: -64px -96px; }
+
+.ui-icon-mail-closed { background-position: -80px -96px; }
+
+.ui-icon-mail-open { background-position: -96px -96px; }
+
+.ui-icon-suitcase { background-position: -112px -96px; }
+
+.ui-icon-comment { background-position: -128px -96px; }
+
+.ui-icon-person { background-position: -144px -96px; }
+
+.ui-icon-print { background-position: -160px -96px; }
+
+.ui-icon-trash { background-position: -176px -96px; }
+
+.ui-icon-locked { background-position: -192px -96px; }
+
+.ui-icon-unlocked { background-position: -208px -96px; }
+
+.ui-icon-bookmark { background-position: -224px -96px; }
+
+.ui-icon-tag { background-position: -240px -96px; }
+
+.ui-icon-home { background-position: 0px -112px; }
+
+.ui-icon-flag { background-position: -16px -112px; }
+
+.ui-icon-calendar { background-position: -32px -112px; }
+
+.ui-icon-cart { background-position: -48px -112px; }
+
+.ui-icon-pencil { background-position: -64px -112px; }
+
+.ui-icon-clock { background-position: -80px -112px; }
+
+.ui-icon-disk { background-position: -96px -112px; }
+
+.ui-icon-calculator { background-position: -112px -112px; }
+
+.ui-icon-zoomin { background-position: -128px -112px; }
+
+.ui-icon-zoomout { background-position: -144px -112px; }
+
+.ui-icon-search { background-position: -160px -112px; }
+
+.ui-icon-wrench { background-position: -176px -112px; }
+
+.ui-icon-gear { background-position: -192px -112px; }
+
+.ui-icon-heart { background-position: -208px -112px; }
+
+.ui-icon-star { background-position: -224px -112px; }
+
+.ui-icon-link { background-position: -240px -112px; }
+
+.ui-icon-cancel { background-position: 0px -128px; }
+
+.ui-icon-plus { background-position: -16px -128px; }
+
+.ui-icon-plusthick { background-position: -32px -128px; }
+
+.ui-icon-minus { background-position: -48px -128px; }
+
+.ui-icon-minusthick { background-position: -64px -128px; }
+
+.ui-icon-close { background-position: -80px -128px; }
+
+.ui-icon-closethick { background-position: -96px -128px; }
+
+.ui-icon-key { background-position: -112px -128px; }
+
+.ui-icon-lightbulb { background-position: -128px -128px; }
+
+.ui-icon-scissors { background-position: -144px -128px; }
+
+.ui-icon-clipboard { background-position: -160px -128px; }
+
+.ui-icon-copy { background-position: -176px -128px; }
+
+.ui-icon-contact { background-position: -192px -128px; }
+
+.ui-icon-image { background-position: -208px -128px; }
+
+.ui-icon-video { background-position: -224px -128px; }
+
+.ui-icon-script { background-position: -240px -128px; }
+
+.ui-icon-alert { background-position: 0px -144px; }
+
+.ui-icon-info { background-position: -16px -144px; }
+
+.ui-icon-notice { background-position: -32px -144px; }
+
+.ui-icon-help { background-position: -48px -144px; }
+
+.ui-icon-check { background-position: -64px -144px; }
+
+.ui-icon-bullet { background-position: -80px -144px; }
+
+.ui-icon-radio-off { background-position: -96px -144px; }
+
+.ui-icon-radio-on { background-position: -112px -144px; }
+
+.ui-icon-pin-w { background-position: -128px -144px; }
+
+.ui-icon-pin-s { background-position: -144px -144px; }
+
+.ui-icon-play { background-position: 0px -160px; }
+
+.ui-icon-pause { background-position: -16px -160px; }
+
+.ui-icon-seek-next { background-position: -32px -160px; }
+
+.ui-icon-seek-prev { background-position: -48px -160px; }
+
+.ui-icon-seek-end { background-position: -64px -160px; }
+
+.ui-icon-seek-start { background-position: -80px -160px; }
+
+.ui-icon-seek-first { background-position: -80px -160px; }
+
+.ui-icon-stop { background-position: -96px -160px; }
+
+.ui-icon-eject { background-position: -112px -160px; }
+
+.ui-icon-volume-off { background-position: -128px -160px; }
+
+.ui-icon-volume-on { background-position: -144px -160px; }
+
+.ui-icon-power { background-position: 0px -176px; }
+
+.ui-icon-signal-diag { background-position: -16px -176px; }
+
+.ui-icon-signal { background-position: -32px -176px; }
+
+.ui-icon-battery-0 { background-position: -48px -176px; }
+
+.ui-icon-battery-1 { background-position: -64px -176px; }
+
+.ui-icon-battery-2 { background-position: -80px -176px; }
+
+.ui-icon-battery-3 { background-position: -96px -176px; }
+
+.ui-icon-circle-plus { background-position: 0px -192px; }
+
+.ui-icon-circle-minus { background-position: -16px -192px; }
+
+.ui-icon-circle-close { background-position: -32px -192px; }
+
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+
+.ui-icon-circle-check { background-position: -208px -192px; }
+
+.ui-icon-circlesmall-plus { background-position: 0px -208px; }
+
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+
+.ui-icon-grip-dotted-vertical { background-position: 0px -224px; }
+
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { border-top=
+-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { border-to=
+p-right-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { border-=
+bottom-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { border=
+-bottom-right-radius: 4px; }
+
+.ui-widget-overlay { background: url("images/ui-bg_diagonals-thick_20_66666=
+6_40x40.png") 50% 50% repeat rgb(102, 102, 102); opacity: 0.5; }
+
+.ui-widget-shadow { margin: -5px 0px 0px -5px; padding: 5px; background: ur=
+l("images/ui-bg_flat_10_000000_40x100.png") 50% 50% repeat-x rgb(0, 0, 0); =
+opacity: 0.2; border-radius: 5px; }
+
+.ui-slider { position: relative; text-align: left; }
+
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em=
+; height: 1.2em; cursor: default; }
+
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: 0.=
+7em; display: block; border: 0px; background-position: 0px 0px; }
+
+.ui-slider-horizontal { height: 0.8em; }
+
+.ui-slider-horizontal .ui-slider-handle { top: -0.3em; margin-left: -0.6em;=
+ }
+
+.ui-slider-horizontal .ui-slider-range { top: 0px; height: 100%; }
+
+.ui-slider-horizontal .ui-slider-range-min { left: 0px; }
+
+.ui-slider-horizontal .ui-slider-range-max { right: 0px; }
+
+.ui-slider-vertical { width: 0.8em; height: 100px; }
+
+.ui-slider-vertical .ui-slider-handle { left: -0.3em; margin-left: 0px; mar=
+gin-bottom: -0.6em; }
+
+.ui-slider-vertical .ui-slider-range { left: 0px; width: 100%; }
+
+.ui-slider-vertical .ui-slider-range-min { bottom: 0px; }
+
+.ui-slider-vertical .ui-slider-range-max { top: 0px; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/tutor/css/pytutor.css
+
+@charset "utf-8";
+
+div.ExecutionVisualizer { }
+
+div.ExecutionVisualizer table.visualizer { font-family: verdana, arial, hel=
+vetica, sans-serif; font-size: 10pt; margin-bottom: 10px; }
+
+div.ExecutionVisualizer table.visualizer td.vizLayoutTd { vertical-align: t=
+op; }
+
+div.ExecutionVisualizer td#stack_td, div.ExecutionVisualizer td#heap_td { v=
+ertical-align: top; font-size: 10pt; }
+
+div.ExecutionVisualizer #dataViz { margin-left: 25px; }
+
+div.ExecutionVisualizer div#codeDisplayDiv { margin-left: 0px; }
+
+div.ExecutionVisualizer div#pyCodeOutputDiv { max-height: 450px; overflow: =
+auto; margin-left: auto; margin-right: auto; }
+
+div.ExecutionVisualizer table#pyCodeOutput { font-family: "Andale mono", mo=
+nospace; font-size: 11pt; line-height: 1.1em; border-collapse: separate; bo=
+rder-spacing: 0px; border-top: 1px solid rgb(187, 187, 187); padding-top: 3=
+px; border-bottom: 1px solid rgb(187, 187, 187); margin: 6px auto; white-sp=
+ace: nowrap; }
+
+div.ExecutionVisualizer table#pyCodeOutput td { white-space: nowrap; vertic=
+al-align: middle; }
+
+div.ExecutionVisualizer #leftCodeGutterSVG { width: 18px; height: 0px; }
+
+div.ExecutionVisualizer #prevLegendArrowSVG, div.ExecutionVisualizer #curLe=
+gendArrowSVG { width: 18px; height: 10px; }
+
+div.ExecutionVisualizer .arrow { font-size: 16pt; }
+
+div.ExecutionVisualizer table#pyCodeOutput .lineNo { color: rgb(170, 170, 1=
+70); padding: 0.2em 0.5em 0.2em 0.3em; text-align: right; }
+
+div.ExecutionVisualizer table#pyCodeOutput .cod { margin-left: 3px; padding=
+-left: 7px; text-align: left; }
+
+div.ExecutionVisualizer div#progOutputs { margin-top: 8px; }
+
+div.ExecutionVisualizer div#legendDiv { margin-top: 10px; padding: 0px; tex=
+t-align: left; color: rgb(102, 102, 102); font-size: 9pt; }
+
+div.ExecutionVisualizer div#editCodeLinkDiv { text-align: center; margin: 8=
+px auto; }
+
+div.ExecutionVisualizer div#annotateLinkDiv { margin-top: 0px; margin-botto=
+m: 12px; }
+
+div.ExecutionVisualizer div#stepAnnotationDiv { margin-bottom: 12px; }
+
+div.ExecutionVisualizer textarea#stepAnnotationEditor, div.ExecutionVisuali=
+zer textarea#vizTitleEditor, div.ExecutionVisualizer textarea#vizDescriptio=
+nEditor { border: 1px solid rgb(153, 153, 153); padding: 4px; overflow: aut=
+o; resize: none; }
+
+div.ExecutionVisualizer #errorOutput { color: rgb(233, 63, 52); font-size: =
+12pt; padding: 2px; line-height: 1.5em; margin-bottom: 4px; }
+
+div.ExecutionVisualizer #vcrControls { margin: 15px auto; text-align: cente=
+r; }
+
+div.ExecutionVisualizer #vcrControls button { margin-left: 2px; margin-righ=
+t: 2px; }
+
+div.ExecutionVisualizer #vcrControls #curInstr { margin-left: 4px; margin-r=
+ight: 4px; }
+
+div.ExecutionVisualizer #pyStdout { border: 1px solid rgb(153, 153, 153); f=
+ont-size: 12pt; padding: 4px; font-family: "Andale mono", monospace; overfl=
+ow: auto; resize: none; }
+
+div.ExecutionVisualizer .vizFrame { margin-bottom: 20px; padding-left: 8px;=
+ border-left: 2px solid rgb(204, 204, 204); }
+
+div.ExecutionVisualizer .nullObj { }
+
+div.ExecutionVisualizer .stringObj, div.ExecutionVisualizer .customObj, div=
+.ExecutionVisualizer .funcObj { font-family: "Andale mono", monospace; whit=
+e-space: nowrap; }
+
+div.ExecutionVisualizer .retval { font-size: 9pt; }
+
+div.ExecutionVisualizer .stackFrame .retval { color: rgb(233, 63, 52); }
+
+div.ExecutionVisualizer table.listTbl, div.ExecutionVisualizer table.tupleT=
+bl, div.ExecutionVisualizer table.setTbl { background-color: rgb(255, 255, =
+198); }
+
+div.ExecutionVisualizer table.listTbl { border: 0px solid black; border-spa=
+cing: 0px; }
+
+div.ExecutionVisualizer table.listTbl td.listHeader, div.ExecutionVisualize=
+r table.tupleTbl td.tupleHeader { padding-left: 4px; padding-top: 2px; padd=
+ing-bottom: 3px; font-size: 8pt; color: rgb(119, 119, 119); text-align: lef=
+t; border-left: 1px solid rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.tupleTbl { border-spacing: 0px; color: black;=
+ border-bottom: 1px solid rgb(85, 85, 85); border-top: 1px solid rgb(85, 85=
+, 85); border-right: 1px solid rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.listTbl td.listElt { border-bottom: 1px solid=
+ rgb(85, 85, 85); border-left: 1px solid rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.tupleTbl td.tupleElt { border-left: 1px solid=
+ rgb(85, 85, 85); }
+
+div.ExecutionVisualizer table.customObjTbl { background-color: white; color=
+: black; border: 1px solid black; }
+
+div.ExecutionVisualizer table.customObjTbl td.customObjElt { padding: 5px; =
+}
+
+div.ExecutionVisualizer table.listTbl td.listElt, div.ExecutionVisualizer t=
+able.tupleTbl td.tupleElt { padding: 0px 10px 8px; vertical-align: bottom; =
+}
+
+div.ExecutionVisualizer table.setTbl { border: 1px solid rgb(85, 85, 85); b=
+order-spacing: 0px; text-align: center; }
+
+div.ExecutionVisualizer table.setTbl td.setElt { padding: 8px; }
+
+div.ExecutionVisualizer table.dictTbl, div.ExecutionVisualizer table.instTb=
+l, div.ExecutionVisualizer table.classTbl { border-spacing: 1px; }
+
+div.ExecutionVisualizer table.dictTbl td.dictKey, div.ExecutionVisualizer t=
+able.instTbl td.instKey, div.ExecutionVisualizer table.classTbl td.classKey=
+ { background-color: rgb(250, 235, 191); }
+
+div.ExecutionVisualizer table.dictTbl td.dictVal, div.ExecutionVisualizer t=
+able.instTbl td.instVal, div.ExecutionVisualizer table.classTbl td.classVal=
+ { background-color: rgb(255, 255, 198); }
+
+div.ExecutionVisualizer table.dictTbl td.dictKey, div.ExecutionVisualizer t=
+able.instTbl td.instKey, div.ExecutionVisualizer table.classTbl td.classKey=
+ { padding: 12px 4px 5px 10px; text-align: right; }
+
+div.ExecutionVisualizer table.dictTbl td.dictVal, div.ExecutionVisualizer t=
+able.instTbl td.instVal, div.ExecutionVisualizer table.classTbl td.classVal=
+ { padding: 12px 10px 5px 4px; }
+
+div.ExecutionVisualizer table.classTbl td, div.ExecutionVisualizer table.in=
+stTbl td { border-bottom: 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer table.classTbl td.classVal, div.ExecutionVisualizer=
+ table.instTbl td.instVal { border-left: 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer table.classTbl { border-collapse: collapse; border:=
+ 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer td.listElt table.dictTbl, div.ExecutionVisualizer t=
+d.tupleElt table.dictTbl, div.ExecutionVisualizer td.dictVal table.dictTbl,=
+ div.ExecutionVisualizer td.instVal table.dictTbl, div.ExecutionVisualizer =
+td.classVal table.dictTbl { border: 1px solid rgb(136, 136, 136); }
+
+div.ExecutionVisualizer .objectIdLabel { font-size: 8pt; color: rgb(68, 68,=
+ 68); margin-bottom: 2px; }
+
+div.ExecutionVisualizer .typeLabel { font-size: 8pt; color: rgb(85, 85, 85)=
+; margin-bottom: 2px; }
+
+div.ExecutionVisualizer div#stack, div.ExecutionVisualizer div#globals_area=
+ { padding-left: 10px; padding-right: 30px; }
+
+div.ExecutionVisualizer div.stackFrame, div.ExecutionVisualizer div.zombieS=
+tackFrame { background-color: rgb(255, 255, 255); margin-bottom: 15px; padd=
+ing: 2px 6px 4px; font-size: 10pt; white-space: nowrap; }
+
+div.ExecutionVisualizer div.zombieStackFrame { border-left: 1px dotted rgb(=
+170, 170, 170); color: rgb(128, 128, 128); }
+
+div.ExecutionVisualizer div.highlightedStackFrame { background-color: rgb(2=
+15, 231, 251); }
+
+div.ExecutionVisualizer div.stackFrame, div.ExecutionVisualizer div.highlig=
+htedStackFrame { border-left: 1px solid rgb(166, 179, 182); }
+
+div.ExecutionVisualizer div.stackFrameHeader { font-family: "Andale mono", =
+monospace; font-size: 10pt; margin-top: 4px; margin-bottom: 3px; white-spac=
+e: nowrap; }
+
+div.ExecutionVisualizer td.stackFrameVar { text-align: right; padding-right=
+: 8px; padding-top: 3px; padding-bottom: 3px; }
+
+div.ExecutionVisualizer td.stackFrameValue { text-align: left; border-botto=
+m: 1px solid rgb(170, 170, 170); border-left: 1px solid rgb(170, 170, 170);=
+ vertical-align: middle; padding-top: 3px; padding-left: 3px; padding-botto=
+m: 3px; }
+
+div.ExecutionVisualizer .stackFrameVarTable tr { }
+
+div.ExecutionVisualizer .stackFrameVarTable { text-align: right; padding-to=
+p: 3px; margin-left: auto; margin-right: 0px; border-collapse: separate; bo=
+rder-spacing: 2px; }
+
+div.ExecutionVisualizer div#heap { float: left; padding-left: 30px; }
+
+div.ExecutionVisualizer td.toplevelHeapObject { padding: 4px 8px; }
+
+div.ExecutionVisualizer table.heapRow { margin-bottom: 10px; }
+
+div.ExecutionVisualizer div.heapObject { padding-left: 2px; }
+
+div.ExecutionVisualizer div.heapPrimitive { padding-left: 4px; }
+
+div.ExecutionVisualizer div#stackHeader { margin-bottom: 15px; text-align: =
+right; }
+
+div.ExecutionVisualizer div#heapHeader { margin-bottom: 15px; }
+
+div.ExecutionVisualizer div#stackHeader, div.ExecutionVisualizer div#heapHe=
+ader { color: rgb(51, 51, 51); font-size: 10pt; }
+
+div.ExecutionVisualizer #executionSlider { margin: 15px auto 5px; width: 95=
+%; }
+
+div.ExecutionVisualizer #executionSliderCaption { font-size: 8pt; color: rg=
+b(102, 102, 102); margin-top: 15px; }
+
+div.ExecutionVisualizer #executionSliderFooter { margin-top: -7px; }
+
+div.ExecutionVisualizer .ui-slider .ui-slider-handle { border: 1px solid rg=
+b(153, 153, 153); }
+
+textarea.bubbleInputText { border: 1px solid rgb(204, 204, 204); outline: n=
+one; overflow: auto; resize: none; width: 225px; max-width: 225px; height: =
+35px; max-height: 35px; }
+
+.ui-tooltip-pgbootstrap, textarea.bubbleInputText { font-family: verdana, a=
+rial, helvetica, sans-serif; font-size: 9pt; line-height: 1.3em; }
+
+.ui-tooltip-pgbootstrap { color: rgb(51, 51, 51); background-color: rgb(255=
+, 255, 255); max-width: 250px; min-width: 10px; border: 2px solid rgb(66, 1=
+32, 211); cursor: pointer; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.=
+2) 2px 2px 3px 0px; background-clip: padding-box; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-titlebar { font-size: 18px; line-height=
+: 22px; border-bottom: 1px solid rgb(204, 204, 204); background-color: tran=
+sparent; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-content { padding: 5px 8px; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-titlebar .ui-state-default { right: 9px=
+; top: 49%; border-style: none; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-icon { background: white; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-icon .ui-icon { width: auto; height: au=
+to; float: right; font-size: 20px; font-weight: bold; line-height: 18px; co=
+lor: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px 0px; opacity: 0.=
+2; }
+
+.ui-tooltip-pgbootstrap .ui-tooltip-icon .ui-icon:hover { color: rgb(0, 0, =
+0); text-decoration: none; cursor: pointer; opacity: 0.4; }
+
+.ui-tooltip-pgbootstrap { border-radius: 5px; }
+
+.ui-tooltip-pgbootstrap-stub { border: 1px solid rgb(153, 153, 153); }
+
+.ui-tooltip-pgbootstrap-stub .ui-tooltip-content { padding: 6px 9px; }
+
+div.ExecutionVisualizer .annotationText, div.ExecutionVisualizer .vizDescri=
+ptionText { font-family: verdana, arial, helvetica, sans-serif; font-size: =
+11pt; line-height: 1.5em; }
+
+div.ExecutionVisualizer .vizTitleText { font-family: verdana, arial, helvet=
+ica, sans-serif; font-size: 16pt; margin-bottom: 12pt; }
+
+div.ExecutionVisualizer div#vizHeader { margin-bottom: 10px; width: 700px; =
+max-width: 700px; }
+
+div.ExecutionVisualizer .highlight-prev { background-color: rgb(240, 240, 2=
+34); }
+
+div.ExecutionVisualizer .highlight-curr { background-color: rgb(255, 255, 1=
+02); }
+
+div.ExecutionVisualizer .highlight-legend { padding: 2px; }
+
+.ui-resizable-e { background-color: rgb(221, 221, 221); width: 1px; border:=
+ 3px solid white; }
+
+.ui-resizable-e:hover { border-color: rgb(221, 221, 221); }
+
+div.ExecutionVisualizer .pycrazy-highlight-prev { background-color: rgb(238=
+, 238, 238); }
+
+div.ExecutionVisualizer .pycrazy-highlight-cur { background-color: rgb(255,=
+ 255, 102); }
+
+div.ExecutionVisualizer .pycrazy-highlight-prev-and-cur { background-color:=
+ rgb(255, 255, 102); text-decoration: none; border-bottom: 1px solid rgb(15=
+3, 153, 153); }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/css/pygment.css
+
+@charset "utf-8";
+
+.hll { background-color: rgb(238, 238, 238); }
+
+.c { color: rgb(64, 128, 144); font-style: italic; }
+
+.err { border: 1px solid rgb(255, 0, 0); }
+
+.k { color: rgb(0, 112, 32); font-weight: bold; }
+
+.o { color: rgb(102, 102, 102); }
+
+.cm { color: rgb(64, 128, 144); font-style: italic; }
+
+.cp { color: rgb(0, 112, 32); }
+
+.c1 { color: rgb(64, 128, 144); font-style: italic; }
+
+.cs { background-color: rgb(255, 240, 240); color: rgb(64, 128, 144); }
+
+.gd { color: rgb(160, 0, 0); }
+
+.ge { font-style: italic; }
+
+.gr { color: rgb(255, 0, 0); }
+
+.gh { color: rgb(0, 0, 128); font-weight: bold; }
+
+.gi { color: rgb(0, 160, 0); }
+
+.go { color: rgb(48, 48, 48); }
+
+.gp { color: rgb(198, 93, 9); font-weight: bold; }
+
+.gs { font-weight: bold; }
+
+.gu { color: rgb(128, 0, 128); font-weight: bold; }
+
+.gt { color: rgb(0, 64, 208); }
+
+.kc { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kd { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kn { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kp { color: rgb(0, 112, 32); }
+
+.kr { color: rgb(0, 112, 32); font-weight: bold; }
+
+.kt { color: rgb(144, 32, 0); }
+
+.m { color: rgb(32, 128, 80); }
+
+.s { color: rgb(64, 112, 160); }
+
+.na { color: rgb(64, 112, 160); }
+
+.nb { color: rgb(0, 112, 32); }
+
+.nc { color: rgb(14, 132, 181); font-weight: bold; }
+
+.no { color: rgb(96, 173, 213); }
+
+.nd { color: rgb(85, 85, 85); font-weight: bold; }
+
+.ni { color: rgb(213, 85, 55); font-weight: bold; }
+
+.ne { color: rgb(0, 112, 32); }
+
+.nf { color: rgb(6, 40, 126); }
+
+.nl { color: rgb(0, 32, 112); font-weight: bold; }
+
+.nn { color: rgb(14, 132, 181); font-weight: bold; }
+
+.nt { color: rgb(6, 40, 115); font-weight: bold; }
+
+.nv { color: rgb(187, 96, 213); }
+
+.ow { color: rgb(0, 112, 32); font-weight: bold; }
+
+.w { color: rgb(187, 187, 187); }
+
+.mf { color: rgb(32, 128, 80); }
+
+.mh { color: rgb(32, 128, 80); }
+
+.mi { color: rgb(32, 128, 80); }
+
+.mo { color: rgb(32, 128, 80); }
+
+.sb { color: rgb(64, 112, 160); }
+
+.sc { color: rgb(64, 112, 160); }
+
+.sd { color: rgb(64, 112, 160); font-style: italic; }
+
+.s2 { color: rgb(64, 112, 160); }
+
+.se { color: rgb(64, 112, 160); font-weight: bold; }
+
+.sh { color: rgb(64, 112, 160); }
+
+.si { color: rgb(112, 160, 208); font-style: italic; }
+
+.sx { color: rgb(198, 93, 9); }
+
+.sr { color: rgb(35, 83, 136); }
+
+.s1 { color: rgb(64, 112, 160); }
+
+.ss { color: rgb(81, 121, 24); }
+
+.bp { color: rgb(0, 112, 32); }
+
+.vc { color: rgb(187, 96, 213); }
+
+.vg { color: rgb(187, 96, 213); }
+
+.vi { color: rgb(187, 96, 213); }
+
+.il { color: rgb(32, 128, 80); }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.composingprograms.com/theme/css/cp.css
+
+@charset "utf-8";
+
+@import url("pygment.css");
+
+html { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-we=
+ight: 400; color: rgb(72, 72, 72); line-height: 1.3; }
+
+p { margin: 0px 0px 10px; }
+
+.subHeader { font-size: 21px; font-weight: 200; line-height: 30px; margin-b=
+ottom: 10px; }
+
+em { font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: 700; line-heigh=
+t: 20px; color: inherit; text-rendering: optimizelegibility; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: 4=
+00; color: rgb(123, 123, 123); }
+
+h1, h2, h3 { line-height: 40px; vertical-align: top; }
+
+h1 { font-size: 24px; }
+
+h2 { font-size: 20px; }
+
+h3 { font-size: 18px; }
+
+h4 { font-size: 16px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 14px; }
+
+h1 small { font-size: 20px; }
+
+h2 small { font-size: 16px; }
+
+h3 small { font-size: 14px; }
+
+h4 small { font-size: 14px; }
+
+ul, ol { margin: 0px 0px 10px 25px; padding: 0px; }
+
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0px; }
+
+li { line-height: 20px; }
+
+a { color: rgb(192, 91, 77); text-decoration: none; }
+
+a:hover, a:focus { color: rgb(165, 71, 58); text-decoration: underline; }
+
+a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px;=
+ }
+
+.center { text-align: center; }
+
+html { background: rgb(255, 255, 255); }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.container { }
+
+.wrap { width: 960px; padding-left: 20px; padding-right: 20px; }
+
+.skinnyWrap { width: 690px; margin-left: auto; margin-right: auto; padding-=
+left: 20px; padding-right: 20px; }
+
+hr { height: 0px; border-top: 1px solid rgb(204, 204, 204); border-bottom: =
+1px solid rgb(238, 238, 238); }
+
+ul, li { margin-left: 20px; }
+
+.nav-main { background: rgb(34, 34, 34); color: rgb(250, 250, 250); top: 0p=
+x; height: 40px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px; width: 100%; z=
+-index: 100; }
+
+.nav-main::before, .nav-main::after { content: " "; display: table; }
+
+.nav-main::after { clear: both; }
+
+.nav-main a { color: rgb(233, 233, 233); text-decoration: none; }
+
+.nav-main .nav-site { margin: 0px; padding-left: 50px; }
+
+.nav-main .nav-site li { margin: 0px; }
+
+.nav-main .nav-site a { padding: 0px 8px; text-transform: uppercase; letter=
+-spacing: 1px; line-height: 40px; display: inline-block; height: 40px; colo=
+r: rgb(170, 170, 170); }
+
+.nav-main .nav-site a:hover { color: rgb(250, 250, 250); background: rgb(85=
+, 85, 85); }
+
+.nav-main .nav-home { color: rgb(250, 250, 250); font-size: 20px; line-heig=
+ht: 38px; }
+
+.nav-main .nav-logo { color: rgb(221, 221, 221); vertical-align: middle; te=
+xt-transform: uppercase; }
+
+.nav-main .nav-logo-compose { color: rgb(0, 216, 255); vertical-align: top;=
+ }
+
+.nav-main ul { display: inline; }
+
+.nav-main li { display: inline; }
+
+.hero { height: 300px; background: rgb(45, 45, 45); padding-top: 50px; colo=
+r: rgb(233, 233, 233); font-weight: 300; }
+
+.hero .text { font-size: 64px; text-align: center; }
+
+.hero .minitext { font-size: 16px; text-align: center; text-transform: uppe=
+rcase; }
+
+.hero strong { color: rgb(97, 218, 251); font-weight: 400; }
+
+.nav-docs { color: rgb(45, 45, 45); font-size: 12px; float: left; top: 100p=
+x; width: 180px; }
+
+.nav-docs ul { list-style: none; margin: 0px; }
+
+.nav-docs ul ul { margin-left: 10px; }
+
+.nav-docs li { margin: 0px; list-style-type: none; }
+
+.nav-docs h3 { font-size: 12px; line-height: 20px; }
+
+.nav-docs a { color: rgb(102, 102, 102); display: block; }
+
+.nav-docs a:hover { text-decoration: none; color: rgb(204, 122, 111); }
+
+.nav-docs a.active { color: rgb(204, 122, 111); }
+
+.nav-docs .nav-docs-section { border-bottom: 1px solid rgb(204, 204, 204); =
+border-top: 1px solid rgb(238, 238, 238); padding: 12px 0px; }
+
+.nav-docs .nav-docs-section:first-child { padding-top: 0px; border-top: 0px=
+; }
+
+.nav-docs .nav-docs-section:last-child { padding-bottom: 0px; border-bottom=
+: 0px; }
+
+.home-section { margin: 50px 0px; }
+
+.home-divider { border-top-color: rgb(187, 187, 187); margin: 0px auto; wid=
+th: 400px; }
+
+footer { font-size: 11px; margin-top: 36px; margin-bottom: 18px; border-top=
+: 1px solid rgb(170, 170, 170); padding-top: 4px; overflow: auto; }
+
+section.black content { padding-bottom: 18px; }
+
+.documentationContent { padding-top: 10px; }
+
+.documentationContent::before, .documentationContent::after { content: " ";=
+ display: table; }
+
+.documentationContent::after { clear: both; }
+
+.documentationContent .subHeader { font-size: 24px; }
+
+.documentationContent h2 { margin-top: 0px; }
+
+.documentationContent blockquote { padding: 15px 30px 15px 15px; margin: 20=
+px 0px; background-color: rgba(204, 122, 111, 0.1); border-left: 5px solid =
+rgba(191, 87, 73, 0.2); }
+
+.documentationContent blockquote h4 { margin-top: 0px; }
+
+.documentationContent blockquote p:last-child { margin-bottom: 0px; }
+
+.documentationContent blockquote p:first-child { margin-top: 0px; text-rend=
+ering: optimizelegibility; }
+
+.docs-prevnext { padding-top: 40px; padding-bottom: 40px; }
+
+.row { padding-bottom: 4px; }
+
+.row .span4 { width: 33.33%; display: table-cell; }
+
+.row .span8 { width: 66.66%; display: table-cell; }
+
+.row .span6 { width: 50%; display: table-cell; }
+
+p { margin: 10px 0px; }
+
+pre { margin: 0px; }
+
+.highlight { padding: 10px 0px; margin: 0px; }
+
+figure { text-align: center; }
+
+.inner-content { float: right; width: 720px; }
+
+.nosidebar .inner-content { float: none; margin: 0px auto; }
+
+.post-list-item + .post-list-item { margin-top: 60px; }
+
+div.CodeMirror pre, div.CodeMirror-linenumber, code { font-family: source-c=
+ode-pro, Menlo, "Courier New", Consolas, monospace; font-size: 13px; line-h=
+eight: 20px; }
+
+div.CodeMirror-linenumber::after { content: "."; }
+
+.CodeMirror, div.CodeMirror-gutters, div.highlight { border: none; }
+
+small code, li code, p code { color: rgb(85, 85, 85); background-color: rgb=
+a(0, 0, 0, 0.04); padding: 1px 3px; }
+
+.cm-s-default span.cm-string-2 { color: inherit; }
+
+.playground { }
+
+.playground::before, .playground::after { content: " "; display: table; }
+
+.playground::after { clear: both; }
+
+.playground::before { border-radius: 3px 3px 0px 0px; padding: 3px 7px; fon=
+t-size: 12px; font-weight: 700; color: rgb(194, 192, 188); background-color=
+: rgb(241, 237, 228); content: "Live editor"; border-bottom: none !importan=
+t; }
+
+.playground::before, .playgroundCode, .playgroundPreview { border: 1px soli=
+d rgba(16, 16, 16, 0.1); }
+
+.playgroundCode { border-radius: 0px 3px 3px; float: left; overflow: hidden=
+; width: 600px; }
+
+.playgroundPreview { background-color: rgb(255, 255, 255); border-radius: 3=
+px; float: right; padding: 15px 20px; width: 280px; }
+
+.MarkdownEditor textarea { width: 100%; height: 100px; }
+
+.hll { background-color: rgb(247, 235, 198); border-left: 5px solid rgb(247=
+, 216, 124); display: block; margin-left: -14px; margin-right: -14px; paddi=
+ng-left: 9px; }
+
+.downloadCenter { text-align: center; margin-top: 20px; margin-bottom: 25px=
+; }
+
+.downloadSection:hover { text-decoration: none !important; }
+
+@media screen and (max-width: 960px) {
+  .nav-main { position: static; }
+  .container { padding-top: 0px; }
+}
+
+.post { margin-bottom: 30px; }
+
+p.attribution { text-align: right; }
+
+.vizLayoutDiv { margin-top: 10px; }
+
+.literal { font-weight: 500; color: rgb(0, 0, 0); }
+
+table.docutils { margin: 30px 0px; border: 0px; border-collapse: collapse; =
+table-layout: auto; }
+
+table.docutils th, table.docutils td { border: inherit; padding: 8px; }
+
+table.docutils th { white-space: nowrap; text-align: left; background-color=
+: rgb(221, 221, 221); }
+
+table.docutils tr:nth-child(2n) { background-color: rgb(221, 221, 221); bor=
+der: inherit; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-217f8335-9405-416a-abc1-c13e758ce944@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Display { text-align: center; margin: 1em 0em; position: relative;=
+ text-indent: 0px; max-width: none; max-height: none; min-width: 0px; min-h=
+eight: 0px; width: 100%; display: block !important; }
+
+.MathJax .merror { background-color: rgb(255, 255, 136); color: rgb(204, 0,=
+ 0); border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal=
+; font-size: 90%; }
+
+.MathJax .MJX-monospace { font-family: monospace; }
+
+.MathJax .MJX-sans-serif { font-family: sans-serif; }
+
+#MathJax_Tooltip { background-color: infobackground; color: infotext; borde=
+r: 1px solid black; box-shadow: rgb(170, 170, 170) 2px 2px 5px; padding: 3p=
+x 4px; z-index: 401; position: absolute; left: 0px; top: 0px; width: auto; =
+height: auto; display: none; }
+
+.MathJax { display: inline; font-style: normal; font-weight: normal; line-h=
+eight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0px; t=
+ext-align: left; text-transform: none; letter-spacing: normal; word-spacing=
+: normal; overflow-wrap: normal; white-space: nowrap; float: none; directio=
+n: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px;=
+ border: 0px; padding: 0px; margin: 0px; }
+
+.MathJax:focus, body :focus .MathJax { display: inline-table; }
+
+.MathJax.MathJax_FullWidth { text-align: center; display: table-cell !impor=
+tant; width: 10000em !important; }
+
+.MathJax img, .MathJax nobr, .MathJax a { border: 0px; padding: 0px; margin=
+: 0px; max-width: none; max-height: none; min-width: 0px; min-height: 0px; =
+vertical-align: 0px; line-height: normal; text-decoration: none; }
+
+img.MathJax_strut { border: 0px !important; padding: 0px !important; margin=
+: 0px !important; vertical-align: 0px !important; }
+
+.MathJax span { display: inline; position: static; border: 0px; padding: 0p=
+x; margin: 0px; vertical-align: 0px; line-height: normal; text-decoration: =
+none; }
+
+.MathJax nobr { white-space: nowrap !important; }
+
+.MathJax img { display: inline !important; float: none !important; }
+
+.MathJax * { transition: none; }
+
+.MathJax_Processing { visibility: hidden; position: fixed; width: 0px; heig=
+ht: 0px; overflow: hidden; }
+
+.MathJax_Processed { display: none !important; }
+
+.MathJax_ExBox { overflow: hidden; width: 1px; height: 60ex; min-height: 0p=
+x; max-height: none; display: block !important; }
+
+.MathJax .MathJax_EmBox { overflow: hidden; width: 1px; height: 60em; min-h=
+eight: 0px; max-height: none; display: block !important; }
+
+.MathJax_LineBox { display: table !important; }
+
+.MathJax_LineBox span { min-width: 0px; max-width: none; padding: 0px; bord=
+er: 0px; margin: 0px; display: table-cell !important; width: 10000em !impor=
+tant; }
+
+.MathJax .MathJax_HitBox { cursor: text; background: white; opacity: 0; }
+
+.MathJax .MathJax_HitBox * { filter: none; opacity: 1; background: transpar=
+ent; }
+
+#MathJax_Tooltip * { filter: none; opacity: 1; background: transparent; }
+
+@font-face { font-family: MathJax_Main; src: url("https://cdnjs.cloudflare.=
+com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.wo=
+ff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/=
+mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=3D2.7.1") f=
+ormat("opentype"); }
+
+@font-face { font-family: MathJax_Main-bold; src: url("https://cdnjs.cloudf=
+lare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=3D2.7.1") fo=
+rmat("opentype"); }
+
+@font-face { font-family: MathJax_Main-italic; src: url("https://cdnjs.clou=
+dflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Ita=
+lic.woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax=
+/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=3D2.7.=
+1") format("opentype"); }
+
+@font-face { font-family: MathJax_Math-italic; src: url("https://cdnjs.clou=
+dflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Ita=
+lic.woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax=
+/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=3D2.7.=
+1") format("opentype"); }
+
+@font-face { font-family: MathJax_Caligraphic; src: url("https://cdnjs.clou=
+dflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligrap=
+hic-Regular.woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.=
+com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regu=
+lar.otf?V=3D2.7.1") format("opentype"); }
+
+@font-face { font-family: MathJax_Size1; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+@font-face { font-family: MathJax_Size2; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+@font-face { font-family: MathJax_Size3; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+@font-face { font-family: MathJax_Size4; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+.MathJax .mo, .MathJax .mi { color: black !important; }
+
+.MathJax .noError { font-size: 90%; text-align: left; color: black; padding=
+: 1px 3px; border: 1px solid; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-4cb9407c-0cf5-412e-8d3a-aae0ef13cd38@mhtml.blink
+
+@charset "utf-8";
+
+.MJXp-script { font-size: 0.8em; }
+
+.MJXp-right { transform-origin: right center; }
+
+.MJXp-bold { font-weight: bold; }
+
+.MJXp-italic { font-style: italic; }
+
+.MJXp-scr { font-family: MathJax_Script, "Times New Roman", Times, STIXGene=
+ral, serif; }
+
+.MJXp-frak { font-family: MathJax_Fraktur, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-sf { font-family: MathJax_SansSerif, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-cal { font-family: MathJax_Caligraphic, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-mono { font-family: MathJax_Typewriter, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-largeop { font-size: 150%; }
+
+.MJXp-largeop.MJXp-int { vertical-align: -0.2em; }
+
+.MJXp-math { display: inline-block; line-height: 1.2; text-indent: 0px; fon=
+t-family: "Times New Roman", Times, STIXGeneral, serif; white-space: nowrap=
+; border-collapse: collapse; }
+
+.MJXp-display { display: block; text-align: center; margin: 1em 0px; }
+
+.MJXp-math span { display: inline-block; }
+
+.MJXp-box { display: block !important; text-align: center; }
+
+.MJXp-box::after { content: " "; }
+
+.MJXp-rule { display: block !important; margin-top: 0.1em; }
+
+.MJXp-char { display: block !important; }
+
+.MJXp-mo { margin: 0px 0.15em; }
+
+.MJXp-mfrac { margin: 0px 0.125em; vertical-align: 0.25em; }
+
+.MJXp-denom { display: inline-table !important; width: 100%; }
+
+.MJXp-denom > * { display: table-row !important; }
+
+.MJXp-surd { vertical-align: top; }
+
+.MJXp-surd > * { display: block !important; }
+
+.MJXp-script-box > * { display: table !important; height: 50%; }
+
+.MJXp-script-box > * > * { display: table-cell !important; vertical-align: =
+top; }
+
+.MJXp-script-box > :last-child > * { vertical-align: bottom; }
+
+.MJXp-script-box > * > * > * { display: block !important; }
+
+.MJXp-mphantom { visibility: hidden; }
+
+.MJXp-munderover { display: inline-table !important; }
+
+.MJXp-over { display: inline-block !important; text-align: center; }
+
+.MJXp-over > * { display: block !important; }
+
+.MJXp-munderover > * { display: table-row !important; }
+
+.MJXp-mtable { vertical-align: 0.25em; margin: 0px 0.125em; }
+
+.MJXp-mtable > * { display: inline-table !important; vertical-align: middle=
+; }
+
+.MJXp-mtr { display: table-row !important; }
+
+.MJXp-mtd { text-align: center; padding: 0.5em 0px 0px 0.5em; display: tabl=
+e-cell !important; }
+
+.MJXp-mtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-mlabeledtr { display: table-row !important; }
+
+.MJXp-mlabeledtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mlabeledtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-merror { background-color: rgb(255, 255, 136); color: rgb(204, 0, 0);=
+ border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; fo=
+nt-size: 90%; }
+
+.MJXp-scale0 { transform: scaleX(0); }
+
+.MJXp-scale1 { transform: scaleX(0.1); }
+
+.MJXp-scale2 { transform: scaleX(0.2); }
+
+.MJXp-scale3 { transform: scaleX(0.3); }
+
+.MJXp-scale4 { transform: scaleX(0.4); }
+
+.MJXp-scale5 { transform: scaleX(0.5); }
+
+.MJXp-scale6 { transform: scaleX(0.6); }
+
+.MJXp-scale7 { transform: scaleX(0.7); }
+
+.MJXp-scale8 { transform: scaleX(0.8); }
+
+.MJXp-scale9 { transform: scaleX(0.9); }
+
+.MathJax_PHTML .noError { font-size: 90%; text-align: left; color: black; p=
+adding: 1px 3px; border: 1px solid; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-c9fb3ff8-e1c7-46ed-a709-291fa78f7c8c@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview { color: rgb(136, 136, 136); }
+
+#MathJax_Message { position: fixed; left: 1em; bottom: 1.5em; background-co=
+lor: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px;=
+ padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto;=
+ white-space: nowrap; }
+
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; =
+z-index: 101; border: 0px; margin: 0px; padding: 0px; }
+
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-08c369d9-e1b0-4dbe-b36f-1eb3da8a3309@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_Zoom { position: absolute; background-color: rgb(240, 240, 240); o=
+verflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px so=
+lid black; margin: 0px; font-weight: normal; font-style: normal; text-align=
+: left; text-indent: 0px; text-transform: none; line-height: normal; letter=
+-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space:=
+ nowrap; float: none; box-sizing: content-box; box-shadow: rgb(170, 170, 17=
+0) 5px 5px 15px; }
+
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 30=
+0; display: inline-block; width: 100%; height: 100%; border: 0px; padding: =
+0px; margin: 0px; background-color: white; opacity: 0; }
+
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px=
+; width: 0px; }
+
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: =
+302; display: inline-block; border: 0px; padding: 0px; margin: 0px; backgro=
+und-color: white; opacity: 0; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-026f4a0c-1d26-47d7-ad66-2023d8df9a43@mhtml.blink
+
+@charset "utf-8";
+
+.MJX_Assistive_MathML { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px)=
+; user-select: none; position: absolute !important; padding: 1px 0px 0px !i=
+mportant; border: 0px !important; height: 1px !important; width: 1px !impor=
+tant; overflow: hidden !important; display: block !important; }
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block { width: 100% !important; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b2c04515-dc3f-431c-a368-a48a23990e24@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview .MJXf-math { color: inherit !important; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-4ba0471e-850b-40f5-abf5-622c57aa3888@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: cente=
+r; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 22=
+1); color: black; cursor: default; font-family: message-box; font-size: 120=
+%; font-style: normal; text-indent: 0px; text-transform: none; line-height:=
+ normal; letter-spacing: normal; word-spacing: normal; overflow-wrap: norma=
+l; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; box=
+-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+#MathJax_About.MathJax_MousePost { outline: none; }
+
+.MathJax_Menu { position: absolute; background-color: white; color: black; =
+width: auto; padding: 2px; border: 1px solid rgb(204, 204, 204); margin: 0p=
+x; cursor: default; font-style: ; font-variant: normal; font-weight: ; font=
+-stretch: ; font-size: ; font-family: ; font-optical-sizing: ; font-size-ad=
+just: ; font-kerning: ; font-feature-settings: ; font-variation-settings: ;=
+ text-align: left; text-indent: 0px; text-transform: none; line-height: nor=
+mal; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; w=
+hite-space: nowrap; float: none; z-index: 201; box-shadow: rgb(128, 128, 12=
+8) 0px 10px 20px; }
+
+.MathJax_MenuItem { padding: 2px 2em; background: transparent; }
+
+.MathJax_MenuArrow { position: absolute; right: 0.5em; padding-top: 0.25em;=
+ color: rgb(102, 102, 102); font-size: 0.75em; }
+
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+
+.MathJax_MenuArrow.RTL { left: 0.5em; right: auto; }
+
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuCheck.RTL { right: 0.7em; left: auto; }
+
+.MathJax_MenuRadioCheck { position: absolute; left: 1em; }
+
+.MathJax_MenuRadioCheck.RTL { right: 1em; left: auto; }
+
+.MathJax_MenuLabel { padding: 2px 2em 4px 1.33em; font-style: italic; }
+
+.MathJax_MenuRule { border-top: 1px solid rgb(204, 204, 204); margin: 4px 1=
+px 0px; }
+
+.MathJax_MenuDisabled { color: graytext; }
+
+.MathJax_MenuActive { background-color: highlight; color: highlighttext; }
+
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus { background-color: r=
+gb(232, 232, 232); }
+
+.MathJax_ContextMenu:focus { outline: none; }
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus { outline: none; }
+
+#MathJax_AboutClose { top: 0.2em; right: 0.2em; }
+
+.MathJax_Menu .MathJax_MenuClose { top: -10px; left: -10px; }
+
+.MathJax_MenuClose { position: absolute; cursor: pointer; display: inline-b=
+lock; border: 2px solid rgb(170, 170, 170); border-radius: 18px; font-famil=
+y: "Courier New", Courier; font-size: 24px; color: rgb(240, 240, 240); }
+
+.MathJax_MenuClose span { display: block; background-color: rgb(170, 170, 1=
+70); border: 1.5px solid; border-radius: 18px; line-height: 0; padding: 8px=
+ 0px 6px; }
+
+.MathJax_MenuClose:hover { color: white !important; border: 2px solid rgb(2=
+04, 204, 204) !important; }
+
+.MathJax_MenuClose:hover span { background-color: rgb(204, 204, 204) !impor=
+tant; }
+
+.MathJax_MenuClose:hover:focus { outline: none; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b8de6a4a-a040-4641-b172-04c9fd143dea@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Hover_Frame { border-radius: 0.25em; box-shadow: rgb(136, 51, 170)=
+ 0px 0px 15px; display: inline-block; position: absolute; border: 1px solid=
+ rgb(170, 102, 221) !important; }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow { position: absolute; cursor: poi=
+nter; display: inline-block; border: 2px solid rgb(170, 170, 170); border-r=
+adius: 4px; font-family: "Courier New", Courier; font-size: 9px; color: rgb=
+(240, 240, 240); }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span { display: block; background=
+-color: rgb(170, 170, 170); border: 1px solid; border-radius: 3px; line-hei=
+ght: 0; padding: 4px; }
+
+.MathJax_Hover_Arrow:hover { color: white !important; border: 2px solid rgb=
+(204, 204, 204) !important; }
+
+.MathJax_Hover_Arrow:hover span { background-color: rgb(204, 204, 204) !imp=
+ortant; }
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-F7553FC90EB601738682529A77F4BF27@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-D0CC963F378FEE7D3A7A64B31C46C045@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-6058D7408D54EF2C73FDBDCFD00E5B22@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-80DFCB312881F7FE6E084706E43A2840@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-D45635439F118B28BA30C55978E5BF9C@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-EDBC0023CB1D57C24D6F7002F012D6EC@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp----
+Content-Type: text/html
+Content-ID: <frame-03CC58EB21F677D135FE9A53C9EA0808@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--9BZqZO5s4dRcYZoREN4m7z16snRC9HVfJ8jrsI1oAp------

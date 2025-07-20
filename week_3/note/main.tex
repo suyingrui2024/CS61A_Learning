@@ -1,0 +1,75 @@
+% modified from NeurIPS 2022 Latex template
+% authors: Yixin Zhu (yixin.zhu@pku.edu.cn), Liangru Xiang
+% v1.0: 2022.07.21
+
+\documentclass{article}
+\PassOptionsToPackage{numbers,compress}{natbib}
+\usepackage[final]{template22}
+\input{config.tex}
+
+\title{The learning of week 3}
+
+\author{%
+  SuYingrui \\
+  Department of Madicine\\
+  Peking University\\
+  \texttt{2310306221@stu.pku.edu.cn} \\
+  % examples of more authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+\begin{document}
+\maketitle
+
+\section{The return of print()}
+It returns the None.
+
+\section{The lambda function can be nested}
+Such as 
+
+lambda f: lambda x: f(f(x))
+
+And the function is called in nested way.
+
+\section{The or, and}
+
+The 'and' should 'or' have the property of short-circuit, which denote the expression
+will stop calculating when it reaches the first sub expression that can determine right or wrong.
+
+\section{The name of the function}
+def f(x):
+
+    return x*x
+
+def f(x,y):
+
+    return x+y
+
+The second will cover the first
+
+\section{The definition of curry}
+
+Transform a multi-argument function into a single-argument, higher-order function
+
+
+
+\end{document}
